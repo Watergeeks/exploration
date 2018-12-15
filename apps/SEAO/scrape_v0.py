@@ -151,4 +151,4 @@ if __name__ == '__main__':
     time.sleep(50)
 
     # close browser
-    browser.quit()
+    # browser.quit()
