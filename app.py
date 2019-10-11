@@ -17,31 +17,33 @@ df = df.rename(columns={
 })
 
 # TODO: delete after testing with smaller daf 
-df = df[:5]
+df = df[:15]
 print(df)
 
 # initialize geolocator
 geolocator = Nominatim(user_agent="my-application")
 
 # get coordinates
-# df["coordinates"] = df["municipality"].apply(geolocator.geocode)
-# df["latitide"] = df["coordinates"].apply(lambda x: x.latitude if x != None else None)
-# df["longitude"] = df["coordinates"].apply(lambda x: x.longitude if x != None else None)
+df["coordinates"] = df["municipality"].apply(geolocator.geocode)
+df["latitide"] = df["coordinates"].apply(lambda x: x.latitude if x != None else None)
+df["longitude"] = df["coordinates"].apply(lambda x: x.longitude if x != None else None)
 
-# TODO: delete this after check if we don't need to define new columns
-# df["chloration"] = df["process"].apply(lambda x: True if "chloration" in x else False)
-# df["filtration"] = df["process"].apply(lambda x: True if "filtration" in x else False)
-# df["ultraviolet"] = df["process"].apply(lambda x: True if "ultraviolet" in x else False)
-# df["ozonation"] = df["process"].apply(lambda x: True if "ozonation" in x else False)
-# df["charbon"] = df["process"].apply(lambda x: True if "charbon" in x else False)
+# rearrange columns for next step
+df = df[["region", "municipality", "installation_name", "installation_code", "latitide", "longitude", "process"]]
+print(df)
 
 # create new dataframe to handle processes as individual data points
 new_list = []
 for index, row in df.iterrows():
-    for p in row["process"].split("\n"):
-        new_row = row.tolist()
-        new_row.pop() # TODO: need to remove element at certain index after adding coordinates?
-        new_row.append(p)
+    new_row = row.tolist()
+    if type(row["process"]) is str:
+        for p in row["process"].split("\n"):
+            new_row.pop() # TODO: need to remove element at certain index after adding coordinates?
+            new_row.append(p)
+            new_list.append(new_row)
+    else:
+        new_row.pop()
+        new_row.append("n/a")
         new_list.append(new_row)
 new_df = pd.DataFrame(new_list, columns=list(df.columns))
 print(new_df)
