@@ -17,14 +17,14 @@ df = df.rename(columns={
 })
 
 # TODO: delete after testing with smaller daf 
-df = df[:15]
+df = df[:5]
 print(df)
 
 # initialize geolocator
 geolocator = Nominatim(user_agent="my-application")
 
 # get coordinates
-df["coordinates"] = df["municipality"].apply(geolocator.geocode)
+df["coordinates"] = df["municipality"].apply(lambda x: geolocator.geocode(x + ", Quebec"))
 df["latitide"] = df["coordinates"].apply(lambda x: x.latitude if x != None else None)
 df["longitude"] = df["coordinates"].apply(lambda x: x.longitude if x != None else None)
 
@@ -47,3 +47,36 @@ for index, row in df.iterrows():
         new_list.append(new_row)
 new_df = pd.DataFrame(new_list, columns=list(df.columns))
 print(new_df)
+
+# define colors to depend on process
+colors = {
+    "Chloration": "#3498DB",
+    "Filtration": "#E74C3C",
+    "Ultraviolet": "#9B59B6",
+    "Ozonation": "#17A589",
+    "Charbon": "#E67E22",
+    "n/a": "#000000"
+}
+new_df["color"] = new_df["process"].apply(lambda x: colors[x])
+
+# define size of data point
+new_df["size"] = 0.2
+print(new_df)
+
+# define map figure
+fig = px.scatter_mapbox(
+    new_df, 
+    lat = "latitide", 
+    lon = "longitude", 
+    # hover_name = "municipality", 
+    hover_data = ["region", "municipality", "installation_name", "installation_code", "process"],
+    color = "color", 
+    # mode = "markers",
+    # marker = go.scattermapbox.Marker(size=14),
+    # size = "size",
+    zoom = 4, 
+    height = 800
+)
+fig.update_layout(mapbox_style="open-street-map")
+fig.update_layout(margin={"r":0,"t":20,"l":20,"b":20})
+fig.show()
