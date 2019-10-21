@@ -71,6 +71,12 @@ def get_process_dropdown_items(df):
 df["water"]["size"] = 10
 df["wastewater"]["size"] = 10
 
+# round coordinates
+df["water"]["latitude"] = round(df["water"]["latitude"], 5)
+df["water"]["longitude"] = round(df["water"]["longitude"], 5)
+df["wastewater"]["latitude"] = round(df["wastewater"]["latitude"], 5)
+df["wastewater"]["longitude"] = round(df["wastewater"]["longitude"], 5)
+
 side_panel_layout = html.Div(
     id = "panel-left",
     children = [
@@ -143,10 +149,11 @@ main_panel_layout = html.Div(
                                 "type": "scattermapbox",
                                 "lat": df["water"]["latitude"],
                                 "lon": df["water"]["longitude"],
-                                "mode": "markers",
+                                "mode": "markers+text",
+                                "hoverinfo": "text+lon+lat",
+                                "hoverdata": df["water"]["municipality_name"],
                                 #"hoverinfo": "text+lon+lat",
                                 #"text": df["water"]["municipality_name"],
-                                #"textposition": "bottom right",
                                 #"hoverdata": df["water"][["region_name", "municipality_name", "process_name"]],
                                 "marker": {
                                     "size": df["water"]["size"], 
