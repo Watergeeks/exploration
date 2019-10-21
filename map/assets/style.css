@@ -15,7 +15,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1e1e1e;
-    color: #f3f6fa;
+    color: #F3F6FA;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -42,10 +43,10 @@ body {
     height: calc(100vh - 8rem);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: flex-start;
     background-color: #2b2b2b;
-    flex: 1 30%; /*TODO: fix ratio?*/
+    flex: 1 0; /*TODO: fix ratio?*/
 }
 #panel-left h1, #panel-left h2 {
     font-family: "Open Sans", sans-serif;
@@ -56,7 +57,7 @@ body {
     text-align: left;
 }
 #panel-left h1 {
-    color: #f3f6fa;
+    color: #F3F6FA;
 }
 #panel-left h2 {
     color: #FEC036;
@@ -103,8 +104,12 @@ body {
     cursor: pointer;
 }
 
-.dropdown .Select-control, .dropdown .Select-menu-outer/*, .Select--single > .Select-control .Select-value, .Select-placeholder*/ {
-    color: #f3f6fa;
+.dropdown .Select-control, 
+.dropdown .Select.is-focused .Select-control, 
+.dropdown .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.dropdown .Select-menu-outer/*, 
+.Select--single > .Select-control .Select-value, .Select-placeholder*/ {
+    color: #F3F6FA;
     border: 1px solid #1e1e1e;
     background-color: #1e1e1e;
 }
@@ -140,11 +145,24 @@ body {
 /* RADIO ITEMS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*
-.radio-items .label {
-   padding: 0.2rem;
+.radio-items label input {
+    margin-right: 0.5rem;
+    color: #FEC036;
+    background-color: #FEC036;
 }
-*/
+.radio-items label {
+    padding-bottom: 0.5rem;
+}
+
+/* BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#panel-left button {
+    font-size: 15px;
+    color: #F3F6FA !important;
+    background-color: #FEC036 !important;
+    border-color: #FEC036 !important;
+}
 
 /* MAIN PANEL 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -152,7 +170,7 @@ body {
 #panel-right {
     display: flex;
     flex-direction: column;
-    flex: 5 70%; /*TODO: fix ratio?*/
+    flex: 3 0; /*TODO: fix ratio?*/
     /*padding: 1rem;*/
 }
 
@@ -167,8 +185,7 @@ body {
 /* WORLD MAP 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#world-map-wrapper {
-    height: calc(100vh);
+#panel-right-top {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -178,4 +195,16 @@ body {
 #world-map {
     height: 100%;
     width: 100%;
+}
+
+/* DATA TABLE 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#panel-right-bottom {
+    height: calc(0vh);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: scroll;
 }
