@@ -1,35 +1,265 @@
 ,region_name,municipality_name,installation_name,installation_code,latitude,longitude,process_name,process_code
-0,Gaspésie—Îles-de-la-Madeleine,Cloridorme,Station de purification - Cloridorme (poste chl.),X0009052,49.1857903,-64.8527274,Chloration,CHL
-1,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Chloration,CHL
-2,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Filtration,FIL
-3,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Ozonation,OZ
-4,Saguenay—Lac-Saint-Jean,Saint-David-de-Falardeau,"Station de purification - Post chl. (Village alpin ""Le Valinouet"")",X0009613,48.621563,-71.111069,Chloration,CHL
-5,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Chloration,CHL
-6,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Filtration,FIL
-7,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Ozonation,OZ
-8,Capitale-Nationale,Donnacona,Installation de production d'eau potable Donnacona,X0008212,46.676532,-71.73008,Chloration,CHL
-9,Capitale-Nationale,Donnacona,Installation de production d'eau potable Donnacona,X0008212,46.676532,-71.73008,Filtration,FIL
-10,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Chloration,CHL
-11,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Filtration,FIL
-12,Côte-Nord,La Romaine,Station de purification (Bande indienne de montagnais de la Romaine),X2094939,50.2130197,-60.6762607,Chloration,CHL
-13,Côte-Nord,La Romaine,Station de purification (Bande indienne de montagnais de la Romaine),X2094939,50.2130197,-60.6762607,Filtration,FIL
-14,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Chloration,CHL
-15,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Filtration,FIL
-16,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Ozonation,OZ
-17,Laurentides,Labelle,Station de purification - Labelle (post. chl.),X0009632,46.279106,-74.732094,Chloration,CHL
-18,Laurentides,Labelle,Station de purification - Labelle (post. chl.),X0009632,46.279106,-74.732094,Ultraviolet,UB
-19,Bas-Saint-Laurent,Grosses-Roches,Station de purification Grosses-Roches,X0009832,48.9382206,-67.1703669,Chloration,CHL
-20,Bas-Saint-Laurent,Grosses-Roches,Station de purification Grosses-Roches,X0009832,48.9382206,-67.1703669,Ultraviolet,UB
-21,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Chloration,CHL
-22,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Filtration,FIL
-23,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Ultraviolet,UB
-24,Côte-Nord,Sept-Îles,Station de purification Sept-Îles (aut. trai.),X0008231,50.2109579,-66.3790642,Chloration,CHL
-25,Côte-Nord,Sept-Îles,Station de purification Sept-Îles (aut. trai.),X0008231,50.2109579,-66.3790642,Filtration,FIL
-26,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Chloration,CHL
-27,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Filtration,FIL
-28,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Charbon,CHB
-29,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Ultraviolet,UB
-30,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Chloration,CHL
-31,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Ultraviolet,UB
-32,Nord-du-Québec,Lebel-sur-Quévillon,Lebel-sur-Quévillon - Approv.,X2114563,49.0532523,-76.9811596,Chloration,CHL
-33,Nord-du-Québec,Lebel-sur-Quévillon,Lebel-sur-Quévillon - Approv.,X2114563,49.0532523,-76.9811596,Filtration,FIL
+0,Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,49.7566137,-77.6303626256527,Chloration,CHL
+1,Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,49.7566137,-77.6303626256527,Filtration,FIL
+2,Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,49.7566137,-77.6303626256527,Ozonation,OZ
+3,Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,49.7566137,-77.6303626256527,Charbon,CHB
+4,Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,49.7566137,-77.6303626256527,Ultraviolet,UB
+5,Mauricie,La Tuque,Station de purification La Tuque,X0010734,47.9697886,-73.8151045,Chloration,CHL
+6,Mauricie,La Tuque,Station de purification La Tuque,X0010734,47.9697886,-73.8151045,Ultraviolet,UB
+7,Lanaudière,Saint-Cuthbert,"Station de purification, St-Cuthbert",90276130,46.14987,-73.227997,Chloration,CHL
+8,Lanaudière,Saint-Cuthbert,"Station de purification, St-Cuthbert",90276130,46.14987,-73.227997,Filtration,FIL
+9,Capitale-Nationale,Boischatel,Installation de production d'eau potable Boischatel,X0009111,46.896801,-71.135788,Chloration,CHL
+10,Capitale-Nationale,Boischatel,Installation de production d'eau potable Boischatel,X0009111,46.896801,-71.135788,Filtration,FIL
+11,Montérégie,Carignan,Station de purification Régie secteau Chambly-Richelieu-Marieville,18188581,45.437955,-73.3554902,Chloration,CHL
+12,Montérégie,Carignan,Station de purification Régie secteau Chambly-Richelieu-Marieville,18188581,45.437955,-73.3554902,Filtration,FIL
+13,Montérégie,Carignan,Station de purification Régie secteau Chambly-Richelieu-Marieville,18188581,45.437955,-73.3554902,Ultraviolet,UB
+14,Saguenay—Lac-Saint-Jean,Roberval,Station de purification Roberval (station purification),X0010100,48.514785,-72.224808,Chloration,CHL
+15,Saguenay—Lac-Saint-Jean,Roberval,Station de purification Roberval (station purification),X0010100,48.514785,-72.224808,Filtration,FIL
+16,Estrie,Windsor,Station de purification Windsor,X0500436,45.5699828,-72.003402,Chloration,CHL
+17,Estrie,Windsor,Station de purification Windsor,X0500436,45.5699828,-72.003402,Filtration,FIL
+18,Laurentides,Sainte-Sophie,Station de purification - Ste-Sophie (sta.pur.),X0008782,45.818718,-73.8991887,Chloration,CHL
+19,Laurentides,Sainte-Sophie,Station de purification - Ste-Sophie (sta.pur.),X0008782,45.818718,-73.8991887,Filtration,FIL
+20,Centre-du-Québec,Saint-Pierre-les-Becquets,Station de purification Saint-Pierre-les-Becque. (post.chl.),X0010543,46.502882,-72.203522,Chloration,CHL
+21,Centre-du-Québec,Saint-Pierre-les-Becquets,Station de purification Saint-Pierre-les-Becque. (post.chl.),X0010543,46.502882,-72.203522,Filtration,FIL
+22,Centre-du-Québec,Saint-Pierre-les-Becquets,Station de purification Saint-Pierre-les-Becque. (post.chl.),X0010543,46.502882,-72.203522,Ultraviolet,UB
+23,Outaouais,Bryson,Station de purification Bryson (post.chl.),X0009407,45.6749131,-76.6186413,Chloration,CHL
+24,Lanaudière,Berthierville,"Station de purification, Berthierville",X0008659,46.0828098,-73.1747099,Chloration,CHL
+25,Lanaudière,Berthierville,"Station de purification, Berthierville",X0008659,46.0828098,-73.1747099,Filtration,FIL
+26,Lanaudière,Berthierville,"Station de purification, Berthierville",X0008659,46.0828098,-73.1747099,Ultraviolet,UB
+27,Outaouais,Portage-du-Fort,Station de purification Portage-du-Fort (post.chl.),X0009422,45.593861,-76.662254,Chloration,CHL
+28,Estrie,Potton,Station de purification Potton-Secteur Owl's Head,X0008501,45.08306525,-72.381609047102,Chloration,CHL
+29,Estrie,Potton,Station de purification Potton-Secteur Owl's Head,X0008501,45.08306525,-72.381609047102,Filtration,FIL
+30,Estrie,Potton,Station de purification Potton-Secteur Owl's Head,X0008501,45.08306525,-72.381609047102,Ultraviolet,UB
+31,Montérégie,Sainte-Barbe,Station de purification Ste-Barbe - trait. complet,X2135885,45.163144,-74.1955876,Chloration,CHL
+32,Montérégie,Sainte-Barbe,Station de purification Ste-Barbe - trait. complet,X2135885,45.163144,-74.1955876,Filtration,FIL
+33,Montérégie,Sainte-Barbe,Station de purification Ste-Barbe - trait. complet,X2135885,45.163144,-74.1955876,Ultraviolet,UB
+34,Outaouais,Gracefield,Station de purification Gracefield (post.chl.),X0008146,46.0933721,-76.0531906,Chloration,CHL
+35,Outaouais,Gracefield,Station de purification Gracefield (post.chl.),X0008146,46.0933721,-76.0531906,Filtration,FIL
+36,Outaouais,Gracefield,Station de purification Gracefield (post.chl.),X0008146,46.0933721,-76.0531906,Ozonation,OZ
+37,Outaouais,Gracefield,Station de purification Gracefield (post.chl.),X0008146,46.0933721,-76.0531906,Charbon,CHB
+38,Laval,Laval,Usine de filtration Sainte-Rose (eau potable),X1300278,45.60558895,-73.7344173056906,Chloration,CHL
+39,Laval,Laval,Usine de filtration Sainte-Rose (eau potable),X1300278,45.60558895,-73.7344173056906,Filtration,FIL
+40,Laval,Laval,Usine de filtration Sainte-Rose (eau potable),X1300278,45.60558895,-73.7344173056906,Ozonation,OZ
+41,Laval,Laval,Usine de filtration Sainte-Rose (eau potable),X1300278,45.60558895,-73.7344173056906,Charbon,CHB
+42,Nord-du-Québec,Akulivik,Akulivik - Approvisionnement,X2114284,60.8815681,-77.8102861666002,Chloration,CHL
+43,Nord-du-Québec,Akulivik,Akulivik - Approvisionnement,X2114284,60.8815681,-77.8102861666002,Filtration,FIL
+44,Nord-du-Québec,Akulivik,Akulivik - Approvisionnement,X2114284,60.8815681,-77.8102861666002,Ultraviolet,UB
+45,Montérégie,Saint-Pie,Station de purification Ville de St-Pie (filtration),X2067353,45.504903,-72.905273,Chloration,CHL
+46,Montérégie,Saint-Pie,Station de purification Ville de St-Pie (filtration),X2067353,45.504903,-72.905273,Filtration,FIL
+47,Montérégie,Saint-Pie,Station de purification Ville de St-Pie (filtration),X2067353,45.504903,-72.905273,Charbon,CHB
+48,Gaspésie—Îles-de-la-Madeleine,Percé,Station de purification - Percé (poste chl.),X0009061,48.5222989,-64.2136423,Chloration,CHL
+49,Montréal,Pointe-Claire,Station de purification Pointe-Claire (usine),X0008943,45.4566767,-73.8067442,Chloration,CHL
+50,Montréal,Pointe-Claire,Station de purification Pointe-Claire (usine),X0008943,45.4566767,-73.8067442,Filtration,FIL
+51,Montréal,Pointe-Claire,Station de purification Pointe-Claire (usine),X0008943,45.4566767,-73.8067442,Charbon,CHB
+52,Laurentides,Deux-Montagnes,Station de purification - Deux-Montagnes,X0010573,45.5255369,-73.9981516,Chloration,CHL
+53,Laurentides,Deux-Montagnes,Station de purification - Deux-Montagnes,X0010573,45.5255369,-73.9981516,Filtration,FIL
+54,Laurentides,Deux-Montagnes,Station de purification - Deux-Montagnes,X0010573,45.5255369,-73.9981516,Ultraviolet,UB
+55,Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Poste d'eau potable du secteur Mistassini,X0010045,48.883231,-72.233734,Chloration,CHL
+56,Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Poste d'eau potable du secteur Mistassini,X0010045,48.883231,-72.233734,Filtration,FIL
+57,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Chloration,CHL
+58,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Filtration,FIL
+59,Montérégie,Bedford,Station de purification - Ville de Bedford,X0008496,45.120537,-72.988701,Chloration,CHL
+60,Montérégie,Bedford,Station de purification - Ville de Bedford,X0008496,45.120537,-72.988701,Filtration,FIL
+61,Montérégie,Bedford,Station de purification - Ville de Bedford,X0008496,45.120537,-72.988701,Charbon,CHB
+62,Chaudière-Appalaches,Lac-Etchemin,Installation de production Lac-Etchemin,X0008245,46.398804,-70.508194,Chloration,CHL
+63,Chaudière-Appalaches,Lac-Etchemin,Installation de production Lac-Etchemin,X0008245,46.398804,-70.508194,Filtration,FIL
+64,Chaudière-Appalaches,Lac-Etchemin,Installation de production Lac-Etchemin,X0008245,46.398804,-70.508194,Ozonation,OZ
+65,Gaspésie—Îles-de-la-Madeleine,Gaspé,Système d'approvisionnement sans traitement - Coopérative d'aqueduc de L'Anse au Griffon,X1101278,48.6580556,-65.7527778,None,None
+66,Côte-Nord,Chute-aux-Outardes,Station de purification Chutes-aux-Outardes (post.chl.),X0008237,49.1260796,-68.3928985,Chloration,CHL
+67,Lanaudière,L'Épiphanie,"Station de purification, L'Épiphanie",X0008718,45.8496673,-73.4820525,Chloration,CHL
+68,Lanaudière,L'Épiphanie,"Station de purification, L'Épiphanie",X0008718,45.8496673,-73.4820525,Filtration,FIL
+69,Lanaudière,L'Épiphanie,"Station de purification, L'Épiphanie",X0008718,45.8496673,-73.4820525,Ozonation,OZ
+70,Lanaudière,L'Épiphanie,"Station de purification, L'Épiphanie",X0008718,45.8496673,-73.4820525,Ultraviolet,UB
+71,Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Station de purification Dolbeau (stat. pur.),X0009850,48.883231,-72.233734,Chloration,CHL
+72,Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Station de purification Dolbeau (stat. pur.),X0009850,48.883231,-72.233734,Filtration,FIL
+73,Laurentides,Sainte-Thérèse,Station de purification - Ste-Thérèse (sta. pur.),X0008104,45.6342923,-73.8362379,Chloration,CHL
+74,Laurentides,Sainte-Thérèse,Station de purification - Ste-Thérèse (sta. pur.),X0008104,45.6342923,-73.8362379,Filtration,FIL
+75,Laurentides,Sainte-Thérèse,Station de purification - Ste-Thérèse (sta. pur.),X0008104,45.6342923,-73.8362379,Ozonation,OZ
+76,Laurentides,Sainte-Thérèse,Station de purification - Ste-Thérèse (sta. pur.),X0008104,45.6342923,-73.8362379,Charbon,CHB
+77,Abitibi-Témiscamingue,Macamic,Macamic - Approvisionnement,X2114265,48.7554185,-79.0011559,Chloration,CHL
+78,Abitibi-Témiscamingue,Macamic,Macamic - Approvisionnement,X2114265,48.7554185,-79.0011559,Filtration,FIL
+79,Abitibi-Témiscamingue,Macamic,Macamic - Approvisionnement,X2114265,48.7554185,-79.0011559,Charbon,CHB
+80,Estrie,Saint-Benoît-du-Lac,Station de purification St-Benoît-du-Lac,X0008273,45.167757,-72.268753,Chloration,CHL
+81,Estrie,Saint-Benoît-du-Lac,Station de purification St-Benoît-du-Lac,X0008273,45.167757,-72.268753,Filtration,FIL
+82,Estrie,Saint-Benoît-du-Lac,Station de purification St-Benoît-du-Lac,X0008273,45.167757,-72.268753,Ultraviolet,UB
+83,Capitale-Nationale,Saint-Thuribe,Installation de production d'eau potable Saint-Casimir,X0010389,46.7080891,-72.1632861,Chloration,CHL
+84,Capitale-Nationale,Saint-Thuribe,Installation de production d'eau potable Saint-Casimir,X0010389,46.7080891,-72.1632861,Filtration,FIL
+85,Côte-Nord,Côte-Nord-du-Golfe-du-Saint-Laurent,Station de purification (Harrington-Harbour 2011),X2132535,50.48120355,-59.7830105013592,Chloration,CHL
+86,Côte-Nord,Côte-Nord-du-Golfe-du-Saint-Laurent,Station de purification (Harrington-Harbour 2011),X2132535,50.48120355,-59.7830105013592,Filtration,FIL
+87,Côte-Nord,Côte-Nord-du-Golfe-du-Saint-Laurent,Station de purification (Harrington-Harbour 2011),X2132535,50.48120355,-59.7830105013592,Ultraviolet,UB
+88,Gaspésie—Îles-de-la-Madeleine,Gaspé,Système d'approv. sans traitement - Aqueduc la montagne (Gaspé secteur Anse-à-Valleau),X1101276,48.6580556,-65.7527778,None,None
+89,Laurentides,Mont-Tremblant,Station de purification - Mont-tremblant (Lac Tremblant),X0008875,46.11588,-74.5891426,Chloration,CHL
+90,Laurentides,Mont-Tremblant,Station de purification - Mont-tremblant (Lac Tremblant),X0008875,46.11588,-74.5891426,Filtration,FIL
+91,Saguenay—Lac-Saint-Jean,Lac-Bouchette,Station d'approvisionnement Lac-Bouchette,X2105066,48.2407963,-72.2034111145962,Chloration,CHL
+92,Saguenay—Lac-Saint-Jean,Lac-Bouchette,Station d'approvisionnement Lac-Bouchette,X2105066,48.2407963,-72.2034111145962,Filtration,FIL
+93,Saguenay—Lac-Saint-Jean,Lac-Bouchette,Station d'approvisionnement Lac-Bouchette,X2105066,48.2407963,-72.2034111145962,Ultraviolet,UB
+94,Centre-du-Québec,Nicolet,Station de purification Nicolet. (sta.pur.),X0008234,46.2273284,-72.6191889,Chloration,CHL
+95,Centre-du-Québec,Nicolet,Station de purification Nicolet. (sta.pur.),X0008234,46.2273284,-72.6191889,Filtration,FIL
+96,Bas-Saint-Laurent,Saint-Donat,Station de purification Saint-Donat,X0009746,48.497498,-68.247757,Chloration,CHL
+97,Lanaudière,Terrebonne,"Station de purification, Terrebonne, Régie intermunicipale des Moulins",24846859,45.7081005,-73.6515157,Chloration,CHL
+98,Lanaudière,Terrebonne,"Station de purification, Terrebonne, Régie intermunicipale des Moulins",24846859,45.7081005,-73.6515157,Filtration,FIL
+99,Lanaudière,Terrebonne,"Station de purification, Terrebonne, Régie intermunicipale des Moulins",24846859,45.7081005,-73.6515157,Ozonation,OZ
+100,Lanaudière,Terrebonne,"Station de purification, Terrebonne, Régie intermunicipale des Moulins",24846859,45.7081005,-73.6515157,Ultraviolet,UB
+101,Lanaudière,Saint-Charles-Borromée,"Station de purification d'eau potable, St-Charles-Borromée municipal",X0009159,46.04931435,-73.4733143041748,Chloration,CHL
+102,Lanaudière,Saint-Charles-Borromée,"Station de purification d'eau potable, St-Charles-Borromée municipal",X0009159,46.04931435,-73.4733143041748,Filtration,FIL
+103,Lanaudière,Saint-Charles-Borromée,"Station de purification d'eau potable, St-Charles-Borromée municipal",X0009159,46.04931435,-73.4733143041748,Ozonation,OZ
+104,Lanaudière,Saint-Charles-Borromée,"Station de purification d'eau potable, St-Charles-Borromée municipal",X0009159,46.04931435,-73.4733143041748,Charbon,CHB
+105,Saguenay—Lac-Saint-Jean,Sainte-Jeanne-d'Arc,Poste d'eau potable de Sainte-Jeanne-d'Arc,X0009834,48.8650471,-72.0840192,Chloration,CHL
+106,Saguenay—Lac-Saint-Jean,Sainte-Jeanne-d'Arc,Poste d'eau potable de Sainte-Jeanne-d'Arc,X0009834,48.8650471,-72.0840192,Filtration,FIL
+107,Saguenay—Lac-Saint-Jean,Sainte-Jeanne-d'Arc,Poste d'eau potable de Sainte-Jeanne-d'Arc,X0009834,48.8650471,-72.0840192,Ultraviolet,UB
+108,Côte-Nord,Fermont,Station de purification Fermont (aut.trai.),X0009997,52.7931065,-67.0845797,Chloration,CHL
+109,Côte-Nord,Port-Cartier,Station de purification Port-Cartier (aut. trait. 2001),X0008255,50.0256962,-66.8818986,Chloration,CHL
+110,Côte-Nord,Port-Cartier,Station de purification Port-Cartier (aut. trait. 2001),X0008255,50.0256962,-66.8818986,Filtration,FIL
+111,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Chloration,CHL
+112,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Ultraviolet,UB
+113,Laurentides,Mont-Tremblant,Station de purification - Mont-Tremblant (La Diable sta. pur.),X0008873,46.11588,-74.5891426,Chloration,CHL
+114,Laurentides,Mont-Tremblant,Station de purification - Mont-Tremblant (La Diable sta. pur.),X0008873,46.11588,-74.5891426,Filtration,FIL
+115,Outaouais,Gatineau,Station de purification Hull (sta.pur.),X0008330,45.457241,-75.723267,Chloration,CHL
+116,Outaouais,Gatineau,Station de purification Hull (sta.pur.),X0008330,45.457241,-75.723267,Filtration,FIL
+117,Capitale-Nationale,Saint-Casimir,Installation de production d'eau potable Saint-Casimir,X0010389,46.656506,-72.139664,Chloration,CHL
+118,Capitale-Nationale,Saint-Casimir,Installation de production d'eau potable Saint-Casimir,X0010389,46.656506,-72.139664,Filtration,FIL
+119,Nord-du-Québec,Kangiqsujuaq,Kangiqsujuaq - Approvisionnement,X2114290,61.578255,-71.714268512768,Chloration,CHL
+120,Nord-du-Québec,Kangiqsujuaq,Kangiqsujuaq - Approvisionnement,X2114290,61.578255,-71.714268512768,Ultraviolet,UB
+121,Chaudière-Appalaches,L'Islet,Installation de production L'Islet,X0009054,47.1037283,-70.0550253,Chloration,CHL
+122,Chaudière-Appalaches,L'Islet,Installation de production L'Islet,X0009054,47.1037283,-70.0550253,Filtration,FIL
+123,Chaudière-Appalaches,L'Islet,Installation de production L'Islet,X0009054,47.1037283,-70.0550253,Charbon,CHB
+124,Montérégie,Varennes,Station de purification Régie S.E.V. Varennes,19050129,45.6834691,-73.4362737,Chloration,CHL
+125,Montérégie,Varennes,Station de purification Régie S.E.V. Varennes,19050129,45.6834691,-73.4362737,Filtration,FIL
+126,Montérégie,Varennes,Station de purification Régie S.E.V. Varennes,19050129,45.6834691,-73.4362737,Ozonation,OZ
+127,Montérégie,Varennes,Station de purification Régie S.E.V. Varennes,19050129,45.6834691,-73.4362737,Charbon,CHB
+128,Bas-Saint-Laurent,Témiscouata-sur-le-Lac,Station de purification Notre-Dame-du-Lac,X0008840,47.684343,-68.883591,Chloration,CHL
+129,Montréal,Montréal,Station de purification Lachine (usine 2),X0008090,45.4972159,-73.6103642,Chloration,CHL
+130,Montréal,Montréal,Station de purification Lachine (usine 2),X0008090,45.4972159,-73.6103642,Filtration,FIL
+131,Montréal,Montréal,Station de purification Lachine (usine 2),X0008090,45.4972159,-73.6103642,Ozonation,OZ
+132,Montérégie,Contrecoeur,Station de purification Contrecoeur,X0010036,45.8573781,-73.2374307,Chloration,CHL
+133,Montérégie,Contrecoeur,Station de purification Contrecoeur,X0010036,45.8573781,-73.2374307,Filtration,FIL
+134,Lanaudière,L'Assomption,"Station de purification, L'Assomption",X0008686,45.8300781,-73.4414925,Chloration,CHL
+135,Lanaudière,L'Assomption,"Station de purification, L'Assomption",X0008686,45.8300781,-73.4414925,Filtration,FIL
+136,Lanaudière,L'Assomption,"Station de purification, L'Assomption",X0008686,45.8300781,-73.4414925,Ozonation,OZ
+137,Lanaudière,L'Assomption,"Station de purification, L'Assomption",X0008686,45.8300781,-73.4414925,Charbon,CHB
+138,Saguenay—Lac-Saint-Jean,Saguenay,Poste d'eau potable de Saguenay (Chicoutimi-Nord),X0010044,48.405959,-71.069183,Chloration,CHL
+139,Saguenay—Lac-Saint-Jean,Saguenay,Poste d'eau potable de Saguenay (Chicoutimi-Nord),X0010044,48.405959,-71.069183,Filtration,FIL
+140,Saguenay—Lac-Saint-Jean,Saguenay,Poste d'eau potable de Saguenay (Chicoutimi-Nord),X0010044,48.405959,-71.069183,Ultraviolet,UB
+141,Capitale-Nationale,Sainte-Catherine-de-la-Jacques-Cartier,Installation de production d'eau potable Duchesnay,X0010966,46.84493,-71.615067,Chloration,CHL
+142,Capitale-Nationale,Sainte-Catherine-de-la-Jacques-Cartier,Installation de production d'eau potable Duchesnay,X0010966,46.84493,-71.615067,Filtration,FIL
+143,Montérégie,Sutton,Station de purification Sutton (canton) - aut.traitement,X0008505,45.1109765,-72.6177899,Chloration,CHL
+144,Montérégie,Sutton,Station de purification Sutton (canton) - aut.traitement,X0008505,45.1109765,-72.6177899,Filtration,FIL
+145,Montérégie,Sutton,Station de purification Sutton (canton) - aut.traitement,X0008505,45.1109765,-72.6177899,Ultraviolet,UB
+146,Côte-Nord,Baie-Comeau,Station de purification Baie-Comeau(Ste-Amélie) (post.chl.),X0010423,49.217597,-68.152313,Chloration,CHL
+147,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Chloration,CHL
+148,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Filtration,FIL
+149,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Ozonation,OZ
+150,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Charlesbourg,X0010062,46.8259601,-71.2352226,Chloration,CHL
+151,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Charlesbourg,X0010062,46.8259601,-71.2352226,Filtration,FIL
+152,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Charlesbourg,X0010062,46.8259601,-71.2352226,Ozonation,OZ
+153,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Charlesbourg,X0010062,46.8259601,-71.2352226,Charbon,CHB
+154,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Québec,X0008181,46.8259601,-71.2352226,Chloration,CHL
+155,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Québec,X0008181,46.8259601,-71.2352226,Filtration,FIL
+156,Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Québec,X0008181,46.8259601,-71.2352226,Ozonation,OZ
+157,Abitibi-Témiscamingue,Témiscaming,Témiscaming - Approvisionnement,X2114319,46.71821,-79.101562,Chloration,CHL
+158,Abitibi-Témiscamingue,Témiscaming,Témiscaming - Approvisionnement,X2114319,46.71821,-79.101562,Filtration,FIL
+159,Côte-Nord,Schefferville,Station de purification Schefferville(post.chl.),X0009570,54.8005133,-66.820626,Chloration,CHL
+160,Nord-du-Québec,Quaqtaq,Quaqtaq - Approvisionnement,X2114291,60.9137462,-69.5619978667093,Chloration,CHL
+161,Nord-du-Québec,Quaqtaq,Quaqtaq - Approvisionnement,X2114291,60.9137462,-69.5619978667093,Filtration,FIL
+162,Nord-du-Québec,Quaqtaq,Quaqtaq - Approvisionnement,X2114291,60.9137462,-69.5619978667093,Ultraviolet,UB
+163,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Chloration,CHL
+164,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Filtration,FIL
+165,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Charbon,CHB
+166,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Ultraviolet,UB
+167,Montérégie,Saint-Zotique,Station de purification Saint-Zotique poste,X0008177,45.2425481,-74.2477841,Chloration,CHL
+168,Montérégie,Saint-Zotique,Station de purification Saint-Zotique poste,X0008177,45.2425481,-74.2477841,Filtration,FIL
+169,Montérégie,Saint-Zotique,Station de purification Saint-Zotique poste,X0008177,45.2425481,-74.2477841,Charbon,CHB
+170,Montérégie,Saint-Zotique,Station de purification Saint-Zotique poste,X0008177,45.2425481,-74.2477841,Ultraviolet,UB
+171,Nord-du-Québec,Salluit,Salluit - Approvisionnement,X2114282,62.1222358,-75.6689908519873,Chloration,CHL
+172,Nord-du-Québec,Salluit,Salluit - Approvisionnement,X2114282,62.1222358,-75.6689908519873,Filtration,FIL
+173,Nord-du-Québec,Salluit,Salluit - Approvisionnement,X2114282,62.1222358,-75.6689908519873,Ultraviolet,UB
+174,Mauricie,Trois-Rivières,Station de purification Trois-Rivières,X0008077,46.3507999,-72.5571257,Chloration,CHL
+175,Mauricie,Trois-Rivières,Station de purification Trois-Rivières,X0008077,46.3507999,-72.5571257,Filtration,FIL
+176,Côte-Nord,Baie-Johan-Beetz,Station de purification Baie-Johan-Beetz (aut.trai.),X0009692,50.289411,-62.8063611,Chloration,CHL
+177,Côte-Nord,Baie-Comeau,Station de purification Baie-Comeau (Mingan) (aut.trai.),X0010426,49.217597,-68.152313,Chloration,CHL
+178,Estrie,Saint-Denis-de-Brompton,Station de purification Domaine Forest-Poste chloration,X2080359,45.457963,-72.080612,Chloration,CHL
+179,Estrie,Saint-Denis-de-Brompton,Station de purification Domaine Forest-Poste chloration,X2080359,45.457963,-72.080612,Filtration,FIL
+180,Estrie,Saint-Denis-de-Brompton,Station de purification Domaine Forest-Poste chloration,X2080359,45.457963,-72.080612,Ultraviolet,UB
+181,Estrie,North Hatley,Poste d'eau potable North Hatley (RIEM),X2128577,45.275611,-71.972122,Chloration,CHL
+182,Estrie,North Hatley,Poste d'eau potable North Hatley (RIEM),X2128577,45.275611,-71.972122,Filtration,FIL
+183,Estrie,North Hatley,Poste d'eau potable North Hatley (RIEM),X2128577,45.275611,-71.972122,Charbon,CHB
+184,Estrie,North Hatley,Poste d'eau potable North Hatley (RIEM),X2128577,45.275611,-71.972122,Ultraviolet,UB
+185,Lanaudière,Crabtree,"Station de purification, Crabtree",X0008665,45.963799,-73.473816,Chloration,CHL
+186,Lanaudière,Crabtree,"Station de purification, Crabtree",X0008665,45.963799,-73.473816,Filtration,FIL
+187,Lanaudière,Crabtree,"Station de purification, Crabtree",X0008665,45.963799,-73.473816,Charbon,CHB
+188,Abitibi-Témiscamingue,Belleterre,Belleterre - Approvisionnement,X2114564,47.3905166,-78.7042972,Chloration,CHL
+189,Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Chicoutimi (sta. pur.),X0010043,48.405959,-71.069183,Chloration,CHL
+190,Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Chicoutimi (sta. pur.),X0010043,48.405959,-71.069183,Filtration,FIL
+191,Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Jonquiere (secteur Arvida),X0009979,48.405959,-71.069183,Chloration,CHL
+192,Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Jonquiere (secteur Arvida),X0009979,48.405959,-71.069183,Filtration,FIL
+193,Chaudière-Appalaches,Saint-Henri,Installation de production Saint-Henri,X2002636,45.4784602,-73.5846178,Chloration,CHL
+194,Chaudière-Appalaches,Saint-Henri,Installation de production Saint-Henri,X2002636,45.4784602,-73.5846178,Filtration,FIL
+195,Chaudière-Appalaches,Saint-Henri,Installation de production Saint-Henri,X2002636,45.4784602,-73.5846178,Charbon,CHB
+196,Chaudière-Appalaches,Saint-Henri,Installation de production Saint-Henri,X2002636,45.4784602,-73.5846178,Ultraviolet,UB
+197,Laurentides,Oka,Station de purification - Oka (sd) (sta. pur.),X0009429,45.4606283,-74.0901085,Chloration,CHL
+198,Laurentides,Oka,Station de purification - Oka (sd) (sta. pur.),X0009429,45.4606283,-74.0901085,Filtration,FIL
+199,Laurentides,Oka,Station de purification - Oka (sd) (sta. pur.),X0009429,45.4606283,-74.0901085,Ozonation,OZ
+200,Montérégie,Lacolle,Station de purification Municipalité de Lacolle,X0008515,45.0796837,-73.3736934,Chloration,CHL
+201,Montérégie,Lacolle,Station de purification Municipalité de Lacolle,X0008515,45.0796837,-73.3736934,Filtration,FIL
+202,Montérégie,Lacolle,Station de purification Municipalité de Lacolle,X0008515,45.0796837,-73.3736934,Charbon,CHB
+203,Centre-du-Québec,Pierreville,Station de purification R.I.A.E.P.B.S.F. (sta.pur.),X0010516,46.070134,-72.810173,Chloration,CHL
+204,Centre-du-Québec,Pierreville,Station de purification R.I.A.E.P.B.S.F. (sta.pur.),X0010516,46.070134,-72.810173,Filtration,FIL
+205,Centre-du-Québec,Pierreville,Station de purification R.I.A.E.P.B.S.F. (sta.pur.),X0010516,46.070134,-72.810173,Ozonation,OZ
+206,Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive ouest),X0008108,45.3056879,-73.2533401,Chloration,CHL
+207,Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive ouest),X0008108,45.3056879,-73.2533401,Filtration,FIL
+208,Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive ouest),X0008108,45.3056879,-73.2533401,Ozonation,OZ
+209,Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive ouest),X0008108,45.3056879,-73.2533401,Charbon,CHB
+210,Montérégie,Farnham,Station de purification - Ville de Farnham,X0008200,45.2831,-72.974968,Chloration,CHL
+211,Montérégie,Farnham,Station de purification - Ville de Farnham,X0008200,45.2831,-72.974968,Filtration,FIL
+212,Montérégie,Farnham,Station de purification - Ville de Farnham,X0008200,45.2831,-72.974968,Charbon,CHB
+213,Outaouais,Fort-Coulonge,Station de purification Fort-Coulonge (post.chl.),X0009273,45.8410995,-76.7364529,Chloration,CHL
+214,Outaouais,Fort-Coulonge,Station de purification Fort-Coulonge (post.chl.),X0009273,45.8410995,-76.7364529,Filtration,FIL
+215,Outaouais,Fort-Coulonge,Station de purification Fort-Coulonge (post.chl.),X0009273,45.8410995,-76.7364529,Ozonation,OZ
+216,Outaouais,Fort-Coulonge,Station de purification Fort-Coulonge (post.chl.),X0009273,45.8410995,-76.7364529,Charbon,CHB
+217,Chaudière-Appalaches,Lévis,Installation de production St-Romuald,X0010478,46.7910096,-71.1753274,Chloration,CHL
+218,Chaudière-Appalaches,Lévis,Installation de production St-Romuald,X0010478,46.7910096,-71.1753274,Filtration,FIL
+219,Chaudière-Appalaches,Lévis,Installation de production St-Romuald,X0010478,46.7910096,-71.1753274,Ozonation,OZ
+220,Chaudière-Appalaches,Lévis,Installation de production St-Romuald,X0010478,46.7910096,-71.1753274,Ultraviolet,UB
+221,Montréal,Dorval,Station de purification Dorval (usine),X0008924,45.4453082,-73.7510888,Chloration,CHL
+222,Montréal,Dorval,Station de purification Dorval (usine),X0008924,45.4453082,-73.7510888,Filtration,FIL
+223,Montréal,Dorval,Station de purification Dorval (usine),X0008924,45.4453082,-73.7510888,Charbon,CHB
+224,Montréal,Montréal,Station de purification Pierrefonds (usine),X0009132,45.4972159,-73.6103642,Chloration,CHL
+225,Montréal,Montréal,Station de purification Pierrefonds (usine),X0009132,45.4972159,-73.6103642,Filtration,FIL
+226,Montréal,Montréal,Station de purification Pierrefonds (usine),X0009132,45.4972159,-73.6103642,Ozonation,OZ
+227,Saguenay—Lac-Saint-Jean,Saint-Nazaire,Poste d'eau potable de Saint-Nazaire de Chicoutimi,X0009588,48.5881118,-71.5498338,Chloration,CHL
+228,Saguenay—Lac-Saint-Jean,Saint-Nazaire,Poste d'eau potable de Saint-Nazaire de Chicoutimi,X0009588,48.5881118,-71.5498338,Filtration,FIL
+229,Saguenay—Lac-Saint-Jean,Saint-Nazaire,Poste d'eau potable de Saint-Nazaire de Chicoutimi,X0009588,48.5881118,-71.5498338,Ultraviolet,UB
+230,Bas-Saint-Laurent,Dégelis,Station de purification Dégelis,X2114834,47.547799,-68.644638,Chloration,CHL
+231,Bas-Saint-Laurent,Dégelis,Station de purification Dégelis,X2114834,47.547799,-68.644638,Filtration,FIL
+232,Bas-Saint-Laurent,Dégelis,Station de purification Dégelis,X2114834,47.547799,-68.644638,Charbon,CHB
+233,Montérégie,Henryville,Station purification de la Régie intermunicipale d'approv. eau potable Henryville-Venise,X1606342,45.137008,-73.191605,Chloration,CHL
+234,Montérégie,Henryville,Station purification de la Régie intermunicipale d'approv. eau potable Henryville-Venise,X1606342,45.137008,-73.191605,Filtration,FIL
+235,Montérégie,Henryville,Station purification de la Régie intermunicipale d'approv. eau potable Henryville-Venise,X1606342,45.137008,-73.191605,Charbon,CHB
+236,Laurentides,Mirabel,Station de purification - Mirabel (St-Benoit - eau surface),X0009451,45.623402,-74.012489,Chloration,CHL
+237,Laurentides,Mirabel,Station de purification - Mirabel (St-Benoit - eau surface),X0009451,45.623402,-74.012489,Filtration,FIL
+238,Bas-Saint-Laurent,Mont-Joli,Station de purification Mont-Joli,X0009742,48.583875,-68.183899,Chloration,CHL
+239,Bas-Saint-Laurent,Mont-Joli,Station de purification Mont-Joli,X0009742,48.583875,-68.183899,Filtration,FIL
+240,Bas-Saint-Laurent,Mont-Joli,Station de purification Mont-Joli,X0009742,48.583875,-68.183899,Ultraviolet,UB
+241,Montérégie,Cowansville,Station de purification Cowansville (autre traitement),X0008328,45.207445,-72.7480524,Chloration,CHL
+242,Montérégie,Cowansville,Station de purification Cowansville (autre traitement),X0008328,45.207445,-72.7480524,Filtration,FIL
+243,Montérégie,Cowansville,Station de purification Cowansville (autre traitement),X0008328,45.207445,-72.7480524,Charbon,CHB
+244,Montérégie,Vaudreuil-Dorion,Station de purification Vaudreuil-Dorion (Vaudreuil-Dorion - station purif.),X0010764,45.3971509,-74.0254577,Chloration,CHL
+245,Montérégie,Vaudreuil-Dorion,Station de purification Vaudreuil-Dorion (Vaudreuil-Dorion - station purif.),X0010764,45.3971509,-74.0254577,Filtration,FIL
+246,Montérégie,Vaudreuil-Dorion,Station de purification Vaudreuil-Dorion (Vaudreuil-Dorion - station purif.),X0010764,45.3971509,-74.0254577,Ozonation,OZ
+247,Abitibi-Témiscamingue,Laverlochère-Angliers,Angliers - Approvisionnement,X2114253,47.51358965,-79.1556191985192,Chloration,CHL
+248,Laurentides,Sainte-Agathe-des-Monts,Station de purification - Ste-Agathe-des-Monts (Petit Lac des Sables),X0008112,46.046072,-74.279938,Chloration,CHL
+249,Laurentides,Sainte-Agathe-des-Monts,Station de purification - Ste-Agathe-des-Monts (Petit Lac des Sables),X0008112,46.046072,-74.279938,Filtration,FIL
+250,Laurentides,Sainte-Agathe-des-Monts,Station de purification - Ste-Agathe-des-Monts (Petit Lac des Sables),X0008112,46.046072,-74.279938,Charbon,CHB
+251,Laurentides,Saint-Jérôme,Station de purification - St-Jérôme (sta. pur.),X0008102,45.775426,-74.013176,Chloration,CHL
+252,Laurentides,Saint-Jérôme,Station de purification - St-Jérôme (sta. pur.),X0008102,45.775426,-74.013176,Filtration,FIL
+253,Laurentides,Saint-Jérôme,Station de purification - St-Jérôme (sta. pur.),X0008102,45.775426,-74.013176,Ultraviolet,UB
+254,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Chloration,CHL
+255,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Filtration,FIL
+256,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Ozonation,OZ
+257,Montérégie,Saint-Damase,Station de purification Municipalité de Saint-Damase (Montérégie),X0008846,45.526795,-73.008614,Chloration,CHL
+258,Montérégie,Saint-Damase,Station de purification Municipalité de Saint-Damase (Montérégie),X0008846,45.526795,-73.008614,Filtration,FIL
+259,Montérégie,Saint-Damase,Station de purification Municipalité de Saint-Damase (Montérégie),X0008846,45.526795,-73.008614,Charbon,CHB
+260,Montérégie,Saint-Hyacinthe,Station de purification Ville de Saint-Hyacinthe,X0010032,45.627484,-72.940636,Chloration,CHL
+261,Montérégie,Saint-Hyacinthe,Station de purification Ville de Saint-Hyacinthe,X0010032,45.627484,-72.940636,Filtration,FIL
+262,Montérégie,Saint-Hyacinthe,Station de purification Ville de Saint-Hyacinthe,X0010032,45.627484,-72.940636,Ozonation,OZ
+263,Montérégie,Saint-Hyacinthe,Station de purification Ville de Saint-Hyacinthe,X0010032,45.627484,-72.940636,Charbon,CHB

@@ -14,7 +14,7 @@ df = pd.read_csv("data/" + args.csv + ".csv")
 
 # select a mixed portion of the data (for testing version) # TODO: delete this
 df = df.iloc[np.random.permutation(len(df))]
-df = df[:15]
+df = df[:100]
 
 # initialize geolocator
 geolocator = Nominatim(user_agent="my-application")
@@ -65,4 +65,3 @@ df.dropna(subset=['latitude'], inplace=True)
 
 # output edited data into a csv file (for testing version) # TODO: delete this
 df.to_csv("data/" + args.csv + "_temp.csv")
-print(df)
