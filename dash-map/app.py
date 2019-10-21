@@ -25,12 +25,25 @@ MAPBOX_STYLE = "mapbox://styles/plotlymapbox/cjyivwt3i014a1dpejm5r7dwr"
 
 # define theme colors
 COLORS = {
-    "orange": "#DD8600",
-    "yellow": "#FEC036", #FEC036 vs #D1A622
-    "mid_grey": "#707070",
-    "dark_grey": "#1E1E1E"
+    "theme": {
+        "white": "#F3F6FA",
+        "grey1": "#707070",
+        "grey2": "#1E1E1E",
+        "orange": "#DD8600", #DD8600 vs #E67E22
+        "yellow": "#FEC036", #FEC036 vs #D1A622
+    },
+    "map": [
+        "#9B59B6", #purple
+        "#3498DB", #blue
+        "#33ccbb" #teal
+        "#33cc88", #teal/green
+        "#44cc33" #green
+        "#CCDD33" #green/yellow
+        "#FEC036", #yellow
+        "#DD8600", #orange
+        "#E74C3C", #red
+    ]
 }
-COLORS_MAP = ["#FFFFFF", "#3498DB", "#E74C3C", "#9B59B6", "#FEC036", "#E67E22"]
 
 # load data
 df = {
@@ -43,7 +56,7 @@ def get_colors(df):
     processes = set(df["process_code"].tolist())
     colors = {"None": "#FFFFFF"}
     for i, p in enumerate(processes):
-        colors[p] = COLORS_MAP[i+1]
+        colors[p] = COLORS["map"][i]
     return colors
 colors_water = get_colors(df["water"])
 colors_wastewater = get_colors(df["wastewater"])
@@ -141,6 +154,7 @@ main_panel_layout = html.Div(
                             "hovermode": "closest",
                             "mapbox": {
                                 "accesstoken": MAPBOX_ACCESS_TOKEN,
+                                #"style": open("assets/style.json", "r"),
                                 "style": MAPBOX_STYLE,
                                 "center": {"lat": 55, "lon": -71},
                                 "zoom": 4,
