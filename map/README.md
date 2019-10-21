@@ -9,7 +9,7 @@ A Dash application that displays the water and wastewater plants in Quebec. The 
 Clone the repository:
 
 ```
-$ git clone https://github.com/watergeeks/exploration.git
+$ git clone https://github.com/Watergeeks/exploration.git
 ```
 
 Redirect to the respective app directory:
