@@ -51,6 +51,7 @@ def get_colors(df):
     processes = set(df["process_code"].tolist())
     colors = {"None": "#FFFFFF"}
     for i, p in enumerate(processes):
+        i = i % len(COLORS["map"])
         colors[p] = COLORS["map"][i]
     return colors
 colors_water = get_colors(df["water"])
@@ -204,7 +205,7 @@ def update_word_map(plant, sort, treatment, old_figure):
     # filter data according to process
     if treatment != None:
         if sort == "ALL":
-            data = data.loc[data['process_code'].isin(treatment)]
+            data = data.loc[data['process_code'].isin(treatment)] #TODO: edit this!
         else:
             data = data.loc[data['process_code'].isin(treatment)]
     figure["data"] = [
