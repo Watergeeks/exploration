@@ -105,6 +105,7 @@ body {
 }
 
 .dropdown .Select-control, 
+.dropdown .Select-control .Select-value, 
 .dropdown .Select.is-focused .Select-control, 
 .dropdown .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
 .dropdown .Select-menu-outer/*, 
