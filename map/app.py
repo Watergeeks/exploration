@@ -4,6 +4,7 @@ import dash_table as dt
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import State, Input, Output
+from generate_colors import generate_colors
 
 app = dash.Dash(
     __name__,
@@ -21,25 +22,12 @@ MAPBOX_STYLE = "mapbox://styles/plotlymapbox/cjyivwt3i014a1dpejm5r7dwr"
 
 # define theme colors
 COLORS = {
-    "theme": {
-        "white": "#F3F6FA",
-        "grey": "#707070",
-        "dark1": "#1E1E1E",
-        "dark2": "#2b2b2b",
-        "orange": "#DD8600", #DD8600 vs #E67E22
-        "yellow": "#FEC036", #FEC036 vs #D1A622
-    },
-    "map": [
-        "#9B59B6", #purple
-        "#3498DB", #blue
-        "#33ccbb" #teal
-        "#33cc88", #teal/green
-        "#44cc33" #green
-        "#CCDD33" #green/yellow
-        "#FEC036", #yellow
-        "#DD8600", #orange
-        "#E74C3C", #red
-    ]
+    "white": "#F3F6FA",
+    "grey": "#707070",
+    "dark1": "#1E1E1E",
+    "dark2": "#2b2b2b",
+    "orange": "#DD8600", #DD8600 vs #E67E22
+    "yellow": "#FEC036", #FEC036 vs #D1A622
 }
 
 # load data
@@ -51,11 +39,11 @@ df = {
 # define colors to depend on process
 def get_colors(df):
     processes = set(df["process_code"].tolist())
-    colors = {"None": "#FFFFFF"}
+    map_colors = {"None": "#FFFFFF"}
+    hex_colors = generate_colors(len(processes))
     for i, p in enumerate(processes):
-        i = i % len(COLORS["map"])
-        colors[p] = COLORS["map"][i]
-    return colors
+        map_colors[p] = hex_colors[i]
+    return map_colors
 colors_water = get_colors(df["water"])
 colors_wastewater = get_colors(df["wastewater"])
 df["water"]["color"] = df["water"]["process_code"].apply(lambda x: colors_water[x])
@@ -202,8 +190,8 @@ main_panel_layout = html.Div(
                         "textAlign": "left",
                         "fontSize": "12px",
                         "fontFamily": "sans-serif",
-                        "backgroundColor": COLORS["theme"]["dark1"],
-                        "border": COLORS["theme"]["dark2"],
+                        "backgroundColor": COLORS["dark1"],
+                        "border": COLORS["dark2"],
                         "width": "100%",
                         "midWidth": "0px",
                         "padding": "5px"
@@ -254,9 +242,14 @@ def update_map_and_data(plant, sort, treatment, old_figure):
     if treatment != None:
         if sort == "ALL":
             data = data.loc[data['process_code'].isin(treatment)] #TODO: edit this!
-            check = True
-            for m in data["municipality_name"].drop_duplicates():
-                print(m)
+            # check = True
+            # for t in treatment:
+            #     d = data.loc[df['process_code'] == t]
+            #     for m in data["municipality_name"].drop_duplicates():
+            #         print(t)
+            #         #d = data.loc[df['process_code'] == t]
+            #         #check = check and (m in d) 
+            #     print(check)
         else:
             data = data.loc[data['process_code'].isin(treatment)]
     figure["data"] = [
@@ -306,4 +299,4 @@ def view_data(button_clicks, button_text):
 
 
 if __name__ == "__main__":
-    app.run_server(debug = False)
+    app.run_server(debug = True)
