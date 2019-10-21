@@ -1,5 +1,6 @@
 import pandas as pd
 import dash
+import dash_table as dt
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import State, Input, Output
@@ -22,8 +23,9 @@ MAPBOX_STYLE = "mapbox://styles/plotlymapbox/cjyivwt3i014a1dpejm5r7dwr"
 COLORS = {
     "theme": {
         "white": "#F3F6FA",
-        "grey1": "#707070",
-        "grey2": "#1E1E1E",
+        "grey": "#707070",
+        "dark1": "#1E1E1E",
+        "dark2": "#2b2b2b",
         "orange": "#DD8600", #DD8600 vs #E67E22
         "yellow": "#FEC036", #FEC036 vs #D1A622
     },
@@ -72,9 +74,9 @@ df["wastewater"]["size"] = 10
 side_panel_layout = html.Div(
     id = "panel-left",
     children = [
-        html.H1(children = "WATERGEEKS"),
         html.Div(
             children = [
+                html.H1(children = "WATERGEEKS"),
                 html.Br(),
                 html.H2(children = "Choose type of plant"), 
                 html.Div(
@@ -117,6 +119,12 @@ side_panel_layout = html.Div(
                     )
                 )
             ]
+        ),
+        html.Div(
+            html.Button(
+                id = "view-data",
+                children = "View data table"
+            )
         )
     ]
 )
@@ -125,7 +133,7 @@ main_panel_layout = html.Div(
     id = "panel-right",
     children = [
         html.Div(
-            id = "world-map-wrapper",
+            id = "panel-right-top",
             children = [
                 dcc.Graph(
                     id = "world-map",
@@ -167,6 +175,37 @@ main_panel_layout = html.Div(
                 ),
             ],
         ),
+        html.Div(
+            id = "panel-right-bottom",
+            children = [
+                dt.DataTable(
+                    id="table",
+                    sort_action="native",
+                    filter_action="native",
+                    row_deletable=True,
+                    style_data={
+                        'whiteSpace': 'normal',
+                        'height': 'auto',
+                    },
+                    style_table={
+                        "paddingRight": "15px",
+                        "overflowY": "scroll",
+                    },
+                    style_cell={
+                        "textAlign": "left",
+                        "fontSize": "12px",
+                        "fontFamily": "sans-serif",
+                        "backgroundColor": COLORS["theme"]["dark1"],
+                        "border": COLORS["theme"]["dark2"],
+                        "width": "100%",
+                        "midWidth": "0px",
+                        "padding": "5px"
+                    },
+                    columns=[{"name": i, "id": i} for i in df["water"].columns],
+                    data=df["water"].to_dict("rows"),
+                )
+            ]
+        )
     ],
 )
 
@@ -181,8 +220,10 @@ app.layout = html.Div(
 
 @app.callback(
     [
+        Output("table", "data"), 
+        Output("table", "columns"), 
         Output("world-map", "figure"),
-        Output("treatment-type", "options")
+        Output("treatment-type", "options"),
     ],
     [
         Input("plant-type", "value"),
@@ -193,7 +234,7 @@ app.layout = html.Div(
         State("world-map", "figure")
     ],
 )
-def update_word_map(plant, sort, treatment, old_figure):
+def update_map_and_data(plant, sort, treatment, old_figure):
     figure = old_figure
     # switch between water and wastewater data
     if plant == "water":
@@ -221,7 +262,38 @@ def update_word_map(plant, sort, treatment, old_figure):
             },
         },
     ]
-    return figure, options
+    data = data.drop(columns=["color", "size"])
+    data["latitude"] = round(data["latitude"], 5)
+    data["longitude"] = round(data["longitude"], 5)
+    table_columns = [{"name": i, "id": i} for i in data.columns]
+    table_data = data.to_dict("rows")
+    return table_data, table_columns, figure, options
+
+@app.callback(
+    [
+        Output("panel-right-top", "style"),
+        Output("panel-right-bottom", "style"),
+        Output("view-data", "children"),
+    ],
+    [
+        Input("view-data", "n_clicks")
+    ],
+    [
+        State("view-data", "children"),
+    ],
+)
+def view_data(button_clicks, button_text):
+    top_style = {"height": "100vh"}
+    bottom_style = {"height": "0vh"}
+    if button_clicks != None:
+        if button_text == "View data table":
+            button_text = "Hide data table"
+            top_style = {"height": "50vh"}
+            bottom_style = {"height": "50vh"}
+        else:
+            button_text = "View data table"
+    return top_style, bottom_style, button_text
+
 
 if __name__ == "__main__":
     app.run_server(debug = True)
