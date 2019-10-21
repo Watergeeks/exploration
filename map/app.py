@@ -99,10 +99,10 @@ side_panel_layout = html.Div(
                     children = dcc.RadioItems(
                         id = "sort-type",
                         options = [
-                            {'label': 'See plants with ALL of the following', 'value': 'AND'},
-                            {'label': 'See plants with ANY of the following', 'value': 'OR'},
+                            {'label': 'See plants with ALL of the following', 'value': 'ALL'},
+                            {'label': 'See plants with ANY of the following', 'value': 'ANY'},
                         ],
-                        value = 'OR',
+                        value = 'ANY',
                         labelStyle = {'display': 'block'}
                     ) 
                 ),
@@ -247,6 +247,9 @@ def update_map_and_data(plant, sort, treatment, old_figure):
     if treatment != None:
         if sort == "ALL":
             data = data.loc[data['process_code'].isin(treatment)] #TODO: edit this!
+            check = True
+            for m in data["municipality_name"].drop_duplicates():
+                print(m)
         else:
             data = data.loc[data['process_code'].isin(treatment)]
     figure["data"] = [
