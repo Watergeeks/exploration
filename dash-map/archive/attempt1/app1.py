@@ -25,11 +25,11 @@ geolocator = Nominatim(user_agent="my-application")
 
 # get coordinates
 df["coordinates"] = df["municipality"].apply(lambda x: geolocator.geocode(x + ", Quebec"))
-df["latitide"] = df["coordinates"].apply(lambda x: x.latitude if x != None else None)
+df["latitude"] = df["coordinates"].apply(lambda x: x.latitude if x != None else None)
 df["longitude"] = df["coordinates"].apply(lambda x: x.longitude if x != None else None)
 
 # rearrange columns for next step
-df = df[["region", "municipality", "installation_name", "installation_code", "latitide", "longitude", "process"]]
+df = df[["region", "municipality", "installation_name", "installation_code", "latitude", "longitude", "process"]]
 print(df)
 
 # create new dataframe to handle processes as individual data points
@@ -66,7 +66,7 @@ print(new_df)
 # define map figure
 fig = px.scatter_mapbox(
     new_df, 
-    lat = "latitide", 
+    lat = "latitude", 
     lon = "longitude", 
     # hover_name = "municipality", 
     hover_data = ["region", "municipality", "installation_name", "installation_code", "process"],

@@ -1,0 +1,205 @@
+#interval {
+    display: none;
+}
+
+/**********************************************************************************************************************/
+/*Side panel*/
+/**********************************************************************************************************************/
+
+.dropdown-text {
+    color: #FEC036;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    word-break: normal;
+    margin: 0 0 1rem 0;
+}
+
+.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: white !important;
+    cursor: pointer;
+    text-align: left;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+.Select-control, .Select-multi-value-wrapper, .Select-menu-outer div {
+    background-color: #2b2b2b;
+}
+
+.Select-control, .Select, .Select-value-label, .Select-clear-zone {
+    color: white;
+}
+
+.Select-menu-outer {
+    background-color: #2b2b2b;
+    border: 1px solid gray !important;
+}
+
+.Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+.Select-arrow {
+    border-color: gray transparent transparent;
+}
+
+.Select-arrow-zone, .Select-clear-zone, .is-open > .Select-control {
+    background-color: #2b2b2b !important;
+}
+
+#panel-left-text {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.satellite-description {
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 1500px) {
+    .dropdown-text {
+        font-size: 1.8rem;
+    }
+
+    .satellite-description {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .dropdown-text {
+        text-align: center;
+    }
+
+    #panel-left-text {
+        align-items: center;
+    }
+
+    .satellite-description {
+        text-align: center;
+    }
+
+}
+
+/**********************************************************************************************************************/
+/*Main Panel*/
+/**********************************************************************************************************************/
+
+/**********************************************************************************************************************/
+/*Upper Panel*/
+/**********************************************************************************************************************/
+
+#world-map-wrapper {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+#world-map {
+    height: 100%;
+    width: 100%;
+}
+
+#world-map-wrapper .sc-bdVaJa.fsmTNM, .sc-bdVaJa.bQWqnK {
+    background-color: #1e1e1e;
+}
+
+#world-map-wrapper .sc-bxivhb.iArJfC, .sc-bxivhb.cmSQpo {
+    background-color: #2b2b2b;
+}
+
+.sc-ifAKCX.dlqMgb, .sc-ifAKCX.dlqMgb:hover, .sc-ifAKCX.igrnnx, .sc-ifAKCX.igrnnx:hover {
+    background-color: #FEC036;
+    border-color: #FEC036;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    #world-map-wrapper {
+        height: 40rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #world-map-wrapper {
+        height: 30rem;
+    }
+
+    .sc-ifAKCX.dlqMgb, .sc-ifAKCX.dlqMgb:hover, .sc-ifAKCX.igrnnx, .sc-ifAKCX.igrnnx:hover {
+        background-color: #FEC036;
+        border-color: #FEC036;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .sc-htoDjs.fppncY.sc-bwzfXH.gRFjMP, .sc-htoDjs.lnpZXS.sc-bwzfXH.gRFjMP {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #world-map-wrapper {
+        height: 20rem;
+    }
+
+    #control-panel-toggle-map {
+        width: 110px !important;
+    }
+
+    .sc-ifAKCX.dlqMgb, .sc-ifAKCX.dlqMgb:hover, .sc-ifAKCX.igrnnx, .sc-ifAKCX.igrnnx:hover {
+        background-color: #FEC036;
+        border-color: #FEC036;
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+    }
+
+    .sc-htoDjs.fppncY.sc-bwzfXH.gRFjMP, .sc-htoDjs.lnpZXS.sc-bwzfXH.gRFjMP {
+        font-size: 0.6rem;
+    }
+}
+
+/**********************************************************************************************************************/
+/*Lower Panel*/
+/**********************************************************************************************************************/
+
+#panel {
+    display: flex;
+    flex-direction: row;
+}
+
+#placeholder {
+    display: none;
+}
+
+@media (max-width: 1800px) {
+    #panel {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    #panel {
+        display: inline;
+    }
+}
