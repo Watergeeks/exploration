@@ -306,4 +306,4 @@ def view_data(button_clicks, button_text):
 
 
 if __name__ == "__main__":
-    app.run_server(debug = True)
+    app.run_server(debug = False)
