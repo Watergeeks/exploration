@@ -1,0 +1,35 @@
+,region_name,municipality_name,installation_name,installation_code,latitude,longitude,process_name,process_code
+0,Gaspésie—Îles-de-la-Madeleine,Cloridorme,Station de purification - Cloridorme (poste chl.),X0009052,49.1857903,-64.8527274,Chloration,CHL
+1,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Chloration,CHL
+2,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Filtration,FIL
+3,Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,47.2144457,-70.2692296,Ozonation,OZ
+4,Saguenay—Lac-Saint-Jean,Saint-David-de-Falardeau,"Station de purification - Post chl. (Village alpin ""Le Valinouet"")",X0009613,48.621563,-71.111069,Chloration,CHL
+5,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Chloration,CHL
+6,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Filtration,FIL
+7,Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,45.60558895,-73.7344173056906,Ozonation,OZ
+8,Capitale-Nationale,Donnacona,Installation de production d'eau potable Donnacona,X0008212,46.676532,-71.73008,Chloration,CHL
+9,Capitale-Nationale,Donnacona,Installation de production d'eau potable Donnacona,X0008212,46.676532,-71.73008,Filtration,FIL
+10,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Chloration,CHL
+11,Estrie,Danville,Station de purification Danville,X0008336,45.785278,-72.0158562,Filtration,FIL
+12,Côte-Nord,La Romaine,Station de purification (Bande indienne de montagnais de la Romaine),X2094939,50.2130197,-60.6762607,Chloration,CHL
+13,Côte-Nord,La Romaine,Station de purification (Bande indienne de montagnais de la Romaine),X2094939,50.2130197,-60.6762607,Filtration,FIL
+14,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Chloration,CHL
+15,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Filtration,FIL
+16,Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,45.6512171,-74.942673,Ozonation,OZ
+17,Laurentides,Labelle,Station de purification - Labelle (post. chl.),X0009632,46.279106,-74.732094,Chloration,CHL
+18,Laurentides,Labelle,Station de purification - Labelle (post. chl.),X0009632,46.279106,-74.732094,Ultraviolet,UB
+19,Bas-Saint-Laurent,Grosses-Roches,Station de purification Grosses-Roches,X0009832,48.9382206,-67.1703669,Chloration,CHL
+20,Bas-Saint-Laurent,Grosses-Roches,Station de purification Grosses-Roches,X0009832,48.9382206,-67.1703669,Ultraviolet,UB
+21,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Chloration,CHL
+22,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Filtration,FIL
+23,Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,47.5717315,-70.2077774,Ultraviolet,UB
+24,Côte-Nord,Sept-Îles,Station de purification Sept-Îles (aut. trai.),X0008231,50.2109579,-66.3790642,Chloration,CHL
+25,Côte-Nord,Sept-Îles,Station de purification Sept-Îles (aut. trai.),X0008231,50.2109579,-66.3790642,Filtration,FIL
+26,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Chloration,CHL
+27,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Filtration,FIL
+28,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Charbon,CHB
+29,Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,45.5172382,-73.4467466,Ultraviolet,UB
+30,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Chloration,CHL
+31,Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,46.862069,-72.394753,Ultraviolet,UB
+32,Nord-du-Québec,Lebel-sur-Quévillon,Lebel-sur-Quévillon - Approv.,X2114563,49.0532523,-76.9811596,Chloration,CHL
+33,Nord-du-Québec,Lebel-sur-Quévillon,Lebel-sur-Quévillon - Approv.,X2114563,49.0532523,-76.9811596,Filtration,FIL
