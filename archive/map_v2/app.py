@@ -32,7 +32,7 @@ COLORS = {
 }
 
 # define function to process data
-def get_data(plant):
+def process_data(plant):
     # load data
     data = pd.read_csv("data/" + plant + "_temp.csv")
     # assign map colors depending on process
@@ -45,16 +45,14 @@ def get_data(plant):
     data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     # define size of data point
     data["size"] = 10
-    # round coordinates
-    data["latitude"] = round(data["latitude"], 5)
-    data["longitude"] = round(data["longitude"], 5)
+    # assign compatibility scores # TODO: calculate properly later, may need to depend on starting plant!
     # return processed data
     return(data)
 
 # load data
 df = {
-    "water": get_data("water"),
-    "wastewater": get_data("wastewater")
+    "water": process_data("water"),
+    "wastewater": process_data("wastewater")
 }
 
 # define function to get dropdown options for processes
@@ -263,7 +261,7 @@ def update_data(plant, sort, treatment):
 )
 def update_table(data):
     data = pd.DataFrame.from_records(data)
-    data = data.drop(columns=["color", "size"])
+    data = data.drop(columns = ["color", "size"])
     data["latitude"] = round(data["latitude"], 5)
     data["longitude"] = round(data["longitude"], 5)
     table_columns = [{"name": i, "id": i} for i in data.columns]
