@@ -4,8 +4,9 @@ import dash_table as dt
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import State, Input, Output
-from generate_colors import generate_colors
+import seaborn as sns
 
+# initialize app
 app = dash.Dash(
     __name__,
     meta_tags = [
@@ -13,7 +14,7 @@ app = dash.Dash(
     ],
 )
 
-# for gunicorn
+# note for gunicorn
 server = app.server
 
 # for mapbox # TODO: fix mapbox styling and figure out how to access style properly
@@ -30,40 +31,36 @@ COLORS = {
     "yellow": "#FEC036", #FEC036 vs #D1A622
 }
 
-# load data
-df = {
-    "water": pd.read_csv("data/water_temp.csv"),
-    "wastewater": pd.read_csv("data/wastewater_temp.csv")
-}
-
-# define colors to depend on process
-def get_colors(df):
-    processes = set(df["process_code"].tolist())
+# define function to process data
+def get_data(plant):
+    # load data
+    data = pd.read_csv("data/" + plant + "_temp.csv")
+    # assign map colors depending on process
+    processes = set(data["process_code"].tolist())
+    rgb_colors = sns.color_palette("husl", len(processes))
+    hex_colors = rgb_colors.as_hex()
     map_colors = {"None": "#FFFFFF"}
-    hex_colors = generate_colors(len(processes))
     for i, p in enumerate(processes):
         map_colors[p] = hex_colors[i]
-    return map_colors
-colors_water = get_colors(df["water"])
-colors_wastewater = get_colors(df["wastewater"])
-df["water"]["color"] = df["water"]["process_code"].apply(lambda x: colors_water[x])
-df["wastewater"]["color"] = df["wastewater"]["process_code"].apply(lambda x: colors_wastewater[x])
+    data["color"] = data["process_code"].apply(lambda p: map_colors[p])
+    # define size of data point
+    data["size"] = 10
+    # round coordinates
+    data["latitude"] = round(data["latitude"], 5)
+    data["longitude"] = round(data["longitude"], 5)
+    # return processed data
+    return(data)
 
-def get_process_dropdown_items(df):
-    processes = df[["process_code", "process_name"]].drop_duplicates()
-    processes = processes.rename(columns = {"process_name": "label", "process_code": "value"})
-    processes = processes.to_dict('records')
-    return(processes)
+df = {
+    "water": get_data("water"),
+    "wastewater": get_data("wastewater")
+}
 
-# define size of data point
-df["water"]["size"] = 10
-df["wastewater"]["size"] = 10
-
-# round coordinates
-df["water"]["latitude"] = round(df["water"]["latitude"], 5)
-df["water"]["longitude"] = round(df["water"]["longitude"], 5)
-df["wastewater"]["latitude"] = round(df["wastewater"]["latitude"], 5)
-df["wastewater"]["longitude"] = round(df["wastewater"]["longitude"], 5)
+def get_process_dropdown_options(data):
+    options = data[["process_code", "process_name"]].drop_duplicates()
+    options = options.rename(columns = {"process_name": "label", "process_code": "value"})
+    options = options.to_dict('records')
+    return(options)
 
 side_panel_layout = html.Div(
     id = "panel-left",
@@ -104,9 +101,9 @@ side_panel_layout = html.Div(
                 html.Div(
                     className = "dropdown", # TODO: generate dropdown list for processes
                     children = dcc.Dropdown(
-                        id = "treatment-type",
+                        id = "process-type",
                         className = "dropdown-component", # TODO: remove this?
-                        options = get_process_dropdown_items(df["water"]),
+                        options = get_process_dropdown_options(df["water"]),
                         clearable = True,
                         multi = True,
                         value = None,
@@ -209,39 +206,32 @@ app.layout = html.Div(
     id = "root",
     children = [
         side_panel_layout,
-        main_panel_layout
+        main_panel_layout,
+        dcc.Store(id="data-store", data=df["water"].to_dict('records'))
     ],
 )
 
+# callback to update data store
 @app.callback(
     [
-        Output("table", "data"), 
-        Output("table", "columns"), 
-        Output("world-map", "figure"),
-        Output("treatment-type", "options"),
+        Output("data-store", "data"),
+        Output("process-type", "options"),
     ],
     [
         Input("plant-type", "value"),
         Input("sort-type", "value"),
-        Input("treatment-type", "value"),
-    ],
-    [
-        State("world-map", "figure")
-    ],
+        Input("process-type", "value"),
+    ]
 )
-def update_map_and_data(plant, sort, treatment, old_figure):
-    figure = old_figure
+def update_data(plant, sort, treatment):
     # switch between water and wastewater data
-    if plant == "water":
-        data = df["water"]
-    else:
-        data = df["wastewater"]
-    # fix options in dropdown list processes
-    options = get_process_dropdown_items(data)
+    data = df["water"] if plant == "water" else df["wastewater"]
+    # update options in dropdown list of processes
+    options = get_process_dropdown_options(data)
     # filter data according to process
     if treatment != None:
         if sort == "ALL":
-            data = data.loc[data['process_code'].isin(treatment)] #TODO: edit this!
+            data = data.loc[data["process_code"].isin(treatment)] # TODO: come up with method
             # check = True
             # for t in treatment:
             #     d = data.loc[df['process_code'] == t]
@@ -251,27 +241,49 @@ def update_map_and_data(plant, sort, treatment, old_figure):
             #         #check = check and (m in d) 
             #     print(check)
         else:
-            data = data.loc[data['process_code'].isin(treatment)]
-    figure["data"] = [
-        {
-            "type": "scattermapbox",
-            "lat": data["latitude"],
-            "lon": data["longitude"],
-            "hoverinfo": "text+lon+lat",
-            "mode": "markers",
-            "marker": {
-                "size": data["size"], 
-                "color": data["color"]
-            },
-        },
+            data = data.loc[data["process_code"].isin(treatment)]
+    return data.to_dict('records'), options
+
+# callback to update table
+@app.callback(
+    [
+        Output("table", "data"), 
+        Output("table", "columns"),
+    ],
+    [
+        Input("data-store", "data"),
     ]
+)
+def update_table(data):
+    data = pd.DataFrame.from_records(data)
     data = data.drop(columns=["color", "size"])
     data["latitude"] = round(data["latitude"], 5)
     data["longitude"] = round(data["longitude"], 5)
     table_columns = [{"name": i, "id": i} for i in data.columns]
     table_data = data.to_dict("rows")
-    return table_data, table_columns, figure, options
+    return table_data, table_columns
 
+# callback to update map
+@app.callback(
+    Output("world-map", "figure"),
+    [
+        Input("data-store", "data"),
+    ],
+    [
+        State("world-map", "figure"),
+    ]
+)
+def update_map(data, figure):
+    data = pd.DataFrame.from_records(data)
+    figure["data"][0]["lat"] = data["latitude"]
+    figure["data"][0]["lon"] = data["longitude"]
+    figure["data"][0]["marker"] = {
+        "size": data["size"], 
+        "color": data["color"]
+    }
+    return figure
+
+# callback to view data by showing bottom panel
 @app.callback(
     [
         Output("panel-right-top", "style"),
@@ -296,7 +308,6 @@ def view_data(button_clicks, button_text):
         else:
             button_text = "View data table"
     return top_style, bottom_style, button_text
-
 
 if __name__ == "__main__":
     app.run_server(debug = True)
