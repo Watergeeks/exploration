@@ -263,7 +263,7 @@ def update_data(plant, sort, treatment):
 )
 def update_table(data):
     data = pd.DataFrame.from_records(data)
-    data = data.drop(columns=["color", "size"])
+    data = data.drop(columns = ["color", "size"])
     data["latitude"] = round(data["latitude"], 5)
     data["longitude"] = round(data["longitude"], 5)
     table_columns = [{"name": i, "id": i} for i in data.columns]
