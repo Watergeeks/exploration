@@ -51,17 +51,20 @@ def get_data(plant):
     # return processed data
     return(data)
 
+# load data
 df = {
     "water": get_data("water"),
     "wastewater": get_data("wastewater")
 }
 
+# define function to get dropdown options for processes
 def get_process_dropdown_options(data):
     options = data[["process_code", "process_name"]].drop_duplicates()
     options = options.rename(columns = {"process_name": "label", "process_code": "value"})
     options = options.to_dict('records')
     return(options)
 
+# define side panel layout
 side_panel_layout = html.Div(
     id = "panel-left",
     children = [
@@ -120,6 +123,7 @@ side_panel_layout = html.Div(
     ]
 )
 
+# define main panel layout
 main_panel_layout = html.Div(
     id = "panel-right",
     children = [
@@ -201,13 +205,16 @@ main_panel_layout = html.Div(
     ],
 )
 
-# define app layout
+# define data store component
+data_store_component = dcc.Store(id="data-store", data=df["water"].to_dict('records'))
+
+# generate app layout
 app.layout = html.Div(
     id = "root",
     children = [
         side_panel_layout,
         main_panel_layout,
-        dcc.Store(id="data-store", data=df["water"].to_dict('records'))
+        data_store_component
     ],
 )
 
