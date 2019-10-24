@@ -38,7 +38,7 @@ COLORS = {
 # define function to process data
 def process_data(plant):
     # load data
-    data = pd.read_csv("data/" + plant + "_temp.csv")
+    data = pd.read_csv("data/" + plant + "_temp.csv", index_col = 0)
     # assign map colors depending on process
     processes = set(data["process_code"].tolist())
     rgb_colors = sns.color_palette("husl", len(processes))
