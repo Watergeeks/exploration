@@ -52,12 +52,12 @@ def process_data(plant):
     data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     # define size of data point
     data["size"] = 10
-    # assign compatibility scores # TODO: calculate properly, may need to depend on starting plant!
+    # assign random compatibility scores # TODO: calculate properly, may need to depend on starting plant!
     municipalities = set(data["municipality_name"].tolist())
     compatibilities = {}
     for m in municipalities:
         compatibilities[m] = random.uniform(0.0, 10.0)
-    data["score"] = data["municipality_name"].apply(lambda m: compatibilities[m]) 
+    data["compatibility_score"] = data["municipality_name"].apply(lambda m: compatibilities[m]) 
     # return processed data
     return(data)
 
@@ -81,6 +81,21 @@ def get_process_options(data):
     options = options.rename(columns = {"process_name": "label", "process_code": "value"})
     options = options.to_dict("records")
     return(options)
+
+def get_map_labels(data):
+    # define map label template
+    template = "Region: {} \n<br />Municipality: {} \n<br />Process: {} \n"
+    labels = []
+    for i, row in data.iterrows():
+        labels.append(
+            template.format(
+                row["region_name"],
+                row["municipality_name"],
+                row["process_name"]
+            )
+        )
+    labels = pd.Series(labels).astype(str)
+    return labels
 
 # define side panel layout
 side_panel_layout = html.Div(
@@ -173,10 +188,8 @@ main_panel_layout = html.Div(
                                 "type": "scattermapbox",
                                 "lat": df["water"]["latitude"],
                                 "lon": df["water"]["longitude"],
-                                "mode": "markers+text",
-                                # "hoverinfo": "text+lon+lat",
-                                # "text": df["water"]["municipality_name"],
-                                # "hoverdata": df["water"][["region_name", "municipality_name", "process_name"]],
+                                "mode": "markers",
+                                "text": get_map_labels(df["water"]), # TODO: reconsider info needed for data points
                                 "marker": {
                                     "size": df["water"]["size"], 
                                     "color": df["water"]["color"]
@@ -378,9 +391,11 @@ def update_table(data):
 def update_map(data, figure):
     # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
-    # update coordinates
-    figure["data"][0]["lat"] = data["latitude"]
-    figure["data"][0]["lon"] = data["longitude"]
+    # update coordinates rounded for easy viewing
+    figure["data"][0]["lat"] = round(data["latitude"], 5)
+    figure["data"][0]["lon"] = round(data["longitude"], 5)
+    # update marker text # TODO: reconsider info needed for data points
+    figure["data"][0]["text"] = get_map_labels(data)
     # update marker styling
     figure["data"][0]["marker"] = {
         "size": data["size"], 
