@@ -50,8 +50,11 @@ def process_data(plant):
     # define size of data point
     data["size"] = 10
     # assign compatibility scores # TODO: calculate properly, may need to depend on starting plant!
-    data["score"] = 0
-    data["score"] = data["score"].apply(lambda x: random.uniform(0.0, 10.0)) 
+    municipalities = set(data["municipality_name"].tolist())
+    compatibilities = {}
+    for m in municipalities:
+        compatibilities[m] = random.uniform(0.0, 10.0)
+    data["score"] = data["municipality_name"].apply(lambda m: compatibilities[m]) 
     # return processed data
     return(data)
 
