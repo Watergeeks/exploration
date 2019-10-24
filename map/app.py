@@ -236,7 +236,18 @@ main_panel_layout = html.Div(
 )
 
 # define data store component
-data_store_component = dcc.Store(id="data-store", data=df["water"].to_dict('records'))
+data_store_components = html.Div(
+    children = [
+        dcc.Store(
+            id = "initial-data-store",
+            data = df["water"].to_dict('records')
+        ),
+        dcc.Store(
+            id = "final-data-store",
+            data = df["water"].to_dict('records')
+        )
+    ]
+)
 
 # generate app layout
 app.layout = html.Div(
@@ -244,31 +255,69 @@ app.layout = html.Div(
     children = [
         side_panel_layout,
         main_panel_layout,
-        data_store_component
+        data_store_components
     ],
 )
 
-# callback to update data store
+# *** TRIAL 2 ***
+
+# callback to refresh data store and refresh dropdown options
 @app.callback(
     [
-        Output("data-store", "data"),
+        Output("initial-data-store", "data"),
+        Output("municipality-name", "options"),
         Output("process-type", "options"),
+        Output("municipality-name", "value"),
     ],
     [
         Input("plant-type", "value"),
-        Input("sort-type", "value"),
-        Input("process-type", "value"),
     ]
 )
-def update_data(plant, sort, treatment):
+def refresh_data_and_dropdown_options(plant):
     # switch between water and wastewater data
     data = df["water"] if plant == "water" else df["wastewater"]
+    # update options in dropdown list of municipalities
+    municipality_options = get_municipality_options(data)
     # update options in dropdown list of processes
-    options = get_process_options(data)
+    process_options = get_process_options(data)
+    # prepare data as records for data store
+    data = data.to_dict("records")
+    return data, municipality_options, process_options, None
+
+# callback to automatically select dropdown values for processes
+@app.callback(
+    Output("process-type", "value"),
+    [
+        Input("municipality-name", "value"),
+        Input("initial-data-store", "data")
+    ],
+)
+def select_dropdown_values(municipality, data):
+    data = pd.DataFrame.from_records(data)
+    if municipality != None:
+        data = data.loc[data["municipality_name"] == municipality]
+    processes = data["process_code"].drop_duplicates().tolist()
+    return processes
+
+# callback to update data store
+@app.callback(
+    Output("final-data-store", "data"),
+    [
+        Input("initial-data-store", "data"),
+        Input("sort-type", "value"),
+        Input("process-type", "value"),
+    ],
+    [
+        State("municipality-name", "value"),
+    ]
+)
+def update_data(data, sort, process, municipality):
+    data = pd.DataFrame.from_records(data)
     # filter data according to process
-    if treatment != None:
+    if process != None:
         if sort == "ALL":
-            data = data.loc[data["process_code"].isin(treatment)] # TODO: come up with method
+            # TODO: come up with correct method
+            data = data.loc[data["process_code"].isin(process)]
             # check = True
             # for t in treatment:
             #     d = data.loc[df['process_code'] == t]
@@ -277,9 +326,101 @@ def update_data(plant, sort, treatment):
             #         #d = data.loc[df['process_code'] == t]
             #         #check = check and (m in d) 
             #     print(check)
+        elif sort == "ANY":
+            data = data.loc[data["process_code"].isin(process)]
         else:
-            data = data.loc[data["process_code"].isin(treatment)]
-    return data.to_dict('records'), options
+            # TODO: come up with correct method, using municipality input
+            data = data.loc[data["process_code"].isin(process)]
+    data = data.to_dict("records")
+    return data
+
+# *** TRIAL 3 ***
+
+# # callback to update data store and update dropdown options
+# @app.callback(
+#     [
+#         Output("initial-data-store", "data"),
+#         Output("municipality-name", "options"),
+#         Output("process-type", "options"),
+#         Output("process-type", "value")
+#     ],
+#     [
+#         Input("plant-type", "value"),
+#         Input("municipality-name", "value"),
+#     ]
+# )
+# def refresh_data_and_dropdown(plant, municipality):
+#     # switch between water and wastewater data
+#     data = df["water"] if plant == "water" else df["wastewater"]
+#     # update options in dropdown list of municipalities
+#     municipality_options = get_municipality_options(data)
+#     # update options in dropdown list of processes
+#     process_options = get_process_options(data)
+#     # select dropdown values for processes
+#     if municipality != None:
+#         data = data.loc[data["municipality_name"] == municipality]
+#     process_selections = data["process_code"].drop_duplicates().tolist()
+#     # prepare data as records for data store
+#     data = data.to_dict("records")
+#     return data, municipality_options, process_options, process_selections
+
+# *** TRIAL 1 ***
+
+# # callback to refresh data store and refresh dropdown options
+# @app.callback(
+#     [
+#         Output("initial-data-store", "data"),
+#         Output("municipality-name", "options"),
+#         Output("municipality-name", "value"),
+#         Output("process-type", "options"),
+#         Output("process-type", "value"),
+#     ],
+#     [
+#         Input("plant-type", "value"),
+#     ]
+# )
+# def refresh_data_and_dropdown(plant):
+#     # switch between water and wastewater data
+#     data = df["water"] if plant == "water" else df["wastewater"]
+#     # update options in dropdown list of municipalities
+#     municipality_options = get_municipality_options(data)
+#     # update options in dropdown list of processes
+#     process_options = get_process_options(data)
+#     # prepare data as records for data store
+#     data = data.to_dict("records")
+#     return data, municipality_options, None, process_options, None
+
+# # callback to automatically select dropdown values for processes
+# @app.callback(
+#     Output("process-type", "value"),
+#     [
+#         Input("municipality-name", "value")
+#     ],
+#     [
+#         State("plant-type", "value"),
+#         State("initial-data-store", "data")
+#     ]
+# )
+# def select_dropdown_values(municipality):
+#     return ""
+
+# # callback to update data store
+# @app.callback(
+#     [
+#         Output("initial-data-store", "data"),
+#     ],
+#     [
+#         Input("sort-type", "value"),
+#         Input("process-type", "value"),
+#     ],
+#     [
+#         State("municipality-name", "value"),
+#         State("plant-type", "value"),
+#         State("initial-data-store", "data")
+#     ]
+# )
+# def update_data_and_dropdown(sort, process, municipality, plant, data):
+#     return data
 
 # callback to update table
 @app.callback(
@@ -288,7 +429,7 @@ def update_data(plant, sort, treatment):
         Output("table", "columns"),
     ],
     [
-        Input("data-store", "data"),
+        Input("final-data-store", "data"),
     ]
 )
 def update_table(data):
@@ -304,7 +445,7 @@ def update_table(data):
 @app.callback(
     Output("world-map", "figure"),
     [
-        Input("data-store", "data"),
+        Input("final-data-store", "data"),
     ],
     [
         State("world-map", "figure"),
@@ -320,31 +461,30 @@ def update_map(data, figure):
     }
     return figure
 
-# callback to view data by showing bottom panel
+# callback to update display mode
 @app.callback(
     [
         Output("panel-right-top", "style"),
-        Output("panel-right-bottom", "style"),
-        Output("view-data", "children"),
+        Output("panel-right-bottom", "style")
     ],
     [
-        Input("view-data", "n_clicks")
-    ],
-    [
-        State("view-data", "children"),
-    ],
+        Input("display-type", "value")
+    ]
 )
-def view_data(button_clicks, button_text):
-    top_style = {"height": "100vh"}
-    bottom_style = {"height": "0vh"}
-    if button_clicks != None:
-        if button_text == "View data table":
-            button_text = "Hide data table"
-            top_style = {"height": "50vh"}
-            bottom_style = {"height": "50vh"}
-        else:
-            button_text = "View data table"
-    return top_style, bottom_style, button_text
+def update_display(display):
+    # make map the primary view
+    if display == "MAP":
+        top_style = {"height": "100vh"}
+        bottom_style = {"height": "0vh"}
+    # make table the primary view
+    elif display == "TABLE": 
+        top_style = {"height": "0vh"}
+        bottom_style = {"height": "100vh"}
+    # make split view
+    else:
+        top_style = {"height": "50vh"}
+        bottom_style = {"height": "50vh"}
+    return top_style, bottom_style
 
 if __name__ == "__main__":
     app.run_server(debug = True)
