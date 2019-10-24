@@ -192,7 +192,8 @@ main_panel_layout = html.Div(
                                 "text": get_map_labels(df["water"]), # TODO: reconsider info needed for data points
                                 "marker": {
                                     "size": df["water"]["size"], 
-                                    "color": df["water"]["color"]
+                                    "color": df["water"]["color"],
+                                    "opacity": 0.2
                                 }
                             }
                         ],
