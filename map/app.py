@@ -49,7 +49,7 @@ def process_data(plant):
     data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     # define size of data point
     data["size"] = 10
-    # assign compatibility scores # TODO: calculate properly later, may need to depend on starting plant!
+    # assign compatibility scores # TODO: calculate properly, may need to depend on starting plant!
     data["score"] = 0
     data["score"] = data["score"].apply(lambda x: random.uniform(0.0, 10.0)) 
     # return processed data
@@ -105,7 +105,6 @@ side_panel_layout = html.Div(
                 placeholder = "select municipality...",
                 options = get_municipality_options(df["water"]),
                 clearable = True,
-                # value = None,
             )
         ),
         html.H3(children = "I am interested in processes such as..."),
@@ -118,7 +117,6 @@ side_panel_layout = html.Div(
                 options = get_process_options(df["water"]),
                 clearable = True,
                 multi = True,
-                # value = None,
             )
         ),
         html.H3(children = "I want to view plants..."),
@@ -126,7 +124,7 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "sort-type",
-                className = "dropdown-component",
+                className = "dropdown-component", # TODO: remove this?
                 options = [
                     {"label": "considered most compatible with me", "value": "COMP"},
                     {"label": "with ALL of the listed processes", "value": "ALL"},
@@ -140,7 +138,7 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "display-type",
-                className = "dropdown-component",
+                className = "dropdown-component", # TODO: remove this?
                 options = [
                     {"label": "a map", "value": "MAP"},
                     {"label": "a table", "value": "TABLE"},
@@ -235,7 +233,7 @@ main_panel_layout = html.Div(
     ],
 )
 
-# define data store component
+# define data store components
 data_store_components = html.Div(
     children = [
         dcc.Store(
@@ -259,9 +257,7 @@ app.layout = html.Div(
     ],
 )
 
-# *** TRIAL 2 ***
-
-# callback to refresh data store and refresh dropdown options
+# callback to refresh data store and dropdown options
 @app.callback(
     [
         Output("initial-data-store", "data"),
@@ -280,7 +276,7 @@ def refresh_data_and_dropdown_options(plant):
     municipality_options = get_municipality_options(data)
     # update options in dropdown list of processes
     process_options = get_process_options(data)
-    # prepare data as records for data store
+    # prepare data in expected format for data store
     data = data.to_dict("records")
     return data, municipality_options, process_options, None
 
@@ -293,6 +289,7 @@ def refresh_data_and_dropdown_options(plant):
     ],
 )
 def select_dropdown_values(municipality, data):
+    # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
     if municipality != None:
         data = data.loc[data["municipality_name"] == municipality]
@@ -312,6 +309,7 @@ def select_dropdown_values(municipality, data):
     ]
 )
 def update_data(data, sort, process, municipality):
+    # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
     # filter data according to process
     if process != None:
@@ -331,6 +329,7 @@ def update_data(data, sort, process, municipality):
         else:
             # TODO: come up with correct method, using municipality input
             data = data.loc[data["process_code"].isin(process)]
+    # prepare data in expected format for data store
     data = data.to_dict("records")
     return data
 
@@ -345,11 +344,16 @@ def update_data(data, sort, process, municipality):
     ]
 )
 def update_table(data):
+    # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
+    # remove columns not necessary for viewing
     data = data.drop(columns = ["color", "size"])
+    # round coordinates for easy viewing
     data["latitude"] = round(data["latitude"], 5)
     data["longitude"] = round(data["longitude"], 5)
+    # prepare columns in expected format for table
     table_columns = [{"name": i, "id": i} for i in data.columns]
+    # prepare data in expected format for table
     table_data = data.to_dict("rows")
     return table_data, table_columns
 
@@ -364,9 +368,12 @@ def update_table(data):
     ]
 )
 def update_map(data, figure):
+    # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
+    # update coordinates
     figure["data"][0]["lat"] = data["latitude"]
     figure["data"][0]["lon"] = data["longitude"]
+    # update marker styling
     figure["data"][0]["marker"] = {
         "size": data["size"], 
         "color": data["color"]
