@@ -61,68 +61,93 @@ df = {
     "wastewater": process_data("wastewater")
 }
 
+# define function to get dropdown options for municipalities
+def get_municipality_options(data):
+    options = data[["municipality_name"]].drop_duplicates()
+    options["municipality_code"] = options["municipality_name"]
+    options = options.rename(columns = {"municipality_name": "label", "municipality_code": "value"})
+    options = options.to_dict("records")
+    return(options)
+
 # define function to get dropdown options for processes
-def get_process_dropdown_options(data):
+def get_process_options(data):
     options = data[["process_code", "process_name"]].drop_duplicates()
     options = options.rename(columns = {"process_name": "label", "process_code": "value"})
-    options = options.to_dict('records')
+    options = options.to_dict("records")
     return(options)
 
 # define side panel layout
 side_panel_layout = html.Div(
     id = "panel-left",
     children = [
+        html.H2(children = "Watergeeks"),
+        html.Br(),
+        html.H3(children = "My plant treats..."),
         html.Div(
-            children = [
-                html.H1(children = "WATERGEEKS"),
-                html.Br(),
-                html.H2(children = "Choose type of plant"), 
-                html.Div(
-                    className = "dropdown", 
-                    children = dcc.Dropdown(
-                        id = "plant-type",
-                        className = "dropdown-component", # TODO: remove this?
-                        options = [
-                            {"label": "Water / Eau potable", "value": "water"},
-                            {"label": "Wastewater / Eau usées", "value": "wastewater"},
-                        ],
-                        clearable = False,
-                        value = "water",
-                    )
-                ),
-                html.Br(),
-                html.H2(children = "Choose type(s) of treatment"), 
-                html.Div(
-                    className = "radio-items",
-                    children = dcc.RadioItems(
-                        id = "sort-type",
-                        options = [
-                            {'label': 'See plants with ALL of the following', 'value': 'ALL'},
-                            {'label': 'See plants with ANY of the following', 'value': 'ANY'},
-                        ],
-                        value = 'ANY',
-                        labelStyle = {'display': 'block'}
-                    ) 
-                ),
-                html.Br(),
-                html.Div(
-                    className = "dropdown", # TODO: generate dropdown list for processes
-                    children = dcc.Dropdown(
-                        id = "process-type",
-                        className = "dropdown-component", # TODO: remove this?
-                        options = get_process_dropdown_options(df["water"]),
-                        clearable = True,
-                        multi = True,
-                        value = None,
-                    )
-                )
-            ]
-        ),
-        html.Div(
-            html.Button(
-                id = "view-data",
-                children = "View data table"
+            className = "dropdown", 
+            children = dcc.Dropdown(
+                id = "plant-type",
+                className = "dropdown-component", # TODO: remove this?
+                options = [
+                    {"label": "water", "value": "water"},
+                    {"label": "wastewater", "value": "wastewater"},
+                ],
+                clearable = False,
+                value = "water",
             )
+        ),
+        html.H3(children = "My municipality is..."),
+        html.Div(
+            className = "dropdown",
+            children = dcc.Dropdown(
+                id = "municipality-name",
+                className = "dropdown-component", # TODO: remove this?
+                placeholder = "select municipality...",
+                options = get_municipality_options(df["water"]),
+                clearable = True,
+                # value = None,
+            )
+        ),
+        html.H3(children = "I am interested in processes such as..."),
+        html.Div(
+            className = "dropdown",
+            children = dcc.Dropdown(
+                id = "process-type",
+                className = "dropdown-component", # TODO: remove this?
+                placeholder = "select processes...",
+                options = get_process_options(df["water"]),
+                clearable = True,
+                multi = True,
+                # value = None,
+            )
+        ),
+        html.H3(children = "I want to view plants..."),
+        html.Div(
+            className = "dropdown",
+            children = dcc.Dropdown(
+                id = "sort-type",
+                className = "dropdown-component",
+                options = [
+                    {"label": "considered most compatible with me", "value": "COMP"},
+                    {"label": "with ALL of the listed processes", "value": "ALL"},
+                    {"label": "with ANY of the listed processes", "value": "ANY"},
+                ],
+                value = "ANY"
+            ) 
+        ),
+        html.H3(children = "...displayed in..."),
+        html.Div(
+            className = "dropdown",
+            children = dcc.Dropdown(
+                id = "display-type",
+                className = "dropdown-component",
+                options = [
+                    {"label": "a map", "value": "MAP"},
+                    {"label": "a table", "value": "TABLE"},
+                    {"label": "both a map and a table", "value": "BOTH"},
+                ],
+                value = "MAP" # TODO: reconsider default
+            ) 
         )
     ]
 )
@@ -238,7 +263,7 @@ def update_data(plant, sort, treatment):
     # switch between water and wastewater data
     data = df["water"] if plant == "water" else df["wastewater"]
     # update options in dropdown list of processes
-    options = get_process_dropdown_options(data)
+    options = get_process_options(data)
     # filter data according to process
     if treatment != None:
         if sort == "ALL":
