@@ -30,7 +30,7 @@ COLORS = {
     "white": "#F3F6FA",
     "grey": "#707070",
     "dark1": "#1E1E1E",
-    "dark2": "#2b2b2b",
+    "dark2": "#2B2B2B",
     "orange": "#DD8600", #DD8600 vs #E67E22
     "yellow": "#FEC036", #FEC036 vs #D1A622
 }
