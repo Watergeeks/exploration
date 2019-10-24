@@ -204,19 +204,19 @@ main_panel_layout = html.Div(
             id = "panel-right-bottom",
             children = [
                 dt.DataTable(
-                    id="table",
-                    sort_action="native",
-                    filter_action="native",
-                    row_deletable=True,
-                    style_data={
-                        'whiteSpace': 'normal',
-                        'height': 'auto',
+                    id = "table",
+                    sort_action = "native",
+                    filter_action = "native",
+                    row_deletable = False,
+                    style_data = {
+                        "whiteSpace": "normal",
+                        "height": "auto",
                     },
-                    style_table={
-                        "paddingRight": "15px",
+                    style_table = {
+                        # "paddingRight": "15px", # TODO: consider how to better see last column
                         "overflowY": "scroll",
                     },
-                    style_cell={
+                    style_cell = {
                         "textAlign": "left",
                         "fontSize": "12px",
                         "fontFamily": "sans-serif",
@@ -226,8 +226,12 @@ main_panel_layout = html.Div(
                         "midWidth": "0px",
                         "padding": "5px"
                     },
-                    columns=[{"name": i, "id": i} for i in df["water"].columns],
-                    data=df["water"].to_dict("rows"),
+                    # TODO: update column widths (https://github.com/plotly/dash-table/issues/432)
+                    # style_cell_conditional = [
+                    #     {"if": {"row_index": "even"}, "backgroundColor": "#f9f9f9"}
+                    # ]
+                    columns = [{"name": i, "id": i} for i in df["water"].columns],
+                    data = df["water"].to_dict("rows"),
                 )
             ]
         )
