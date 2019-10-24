@@ -11,7 +11,10 @@ from dash.dependencies import State, Input, Output
 app = dash.Dash(
     __name__,
     meta_tags = [
-        {"name": "viewport", "content": "width = device-width, initial-scale = 1.0"}
+        {
+            "name": "viewport", 
+            "content": "width = device-width, initial-scale = 1.0"
+        }
     ],
 )
 
@@ -90,13 +93,13 @@ side_panel_layout = html.Div(
             className = "dropdown", 
             children = dcc.Dropdown(
                 id = "plant-type",
-                className = "dropdown-component", # TODO: remove this?
+                className = "dropdown-component",
                 options = [
                     {"label": "water", "value": "water"},
                     {"label": "wastewater", "value": "wastewater"},
                 ],
-                clearable = False,
                 value = "water",
+                clearable = False
             )
         ),
         html.H3(children = "My municipality is..."),
@@ -104,10 +107,10 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "municipality-name",
-                className = "dropdown-component", # TODO: remove this?
+                className = "dropdown-component",
                 placeholder = "select municipality...",
                 options = get_municipality_options(df["water"]),
-                clearable = True,
+                clearable = True
             )
         ),
         html.H3(children = "I am interested in processes such as..."),
@@ -115,11 +118,11 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "process-type",
-                className = "dropdown-component", # TODO: remove this?
+                className = "dropdown-component",
                 placeholder = "select processes...",
                 options = get_process_options(df["water"]),
                 clearable = True,
-                multi = True,
+                multi = True
             )
         ),
         html.H3(children = "I want to view plants..."),
@@ -127,13 +130,14 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "sort-type",
-                className = "dropdown-component", # TODO: remove this?
+                className = "dropdown-component",
                 options = [
                     {"label": "considered most compatible with me", "value": "COMP"},
                     {"label": "with ALL of the listed processes", "value": "ALL"},
                     {"label": "with ANY of the listed processes", "value": "ANY"},
                 ],
-                value = "ANY"
+                value = "ANY",
+                clearable = False
             ) 
         ),
         html.H3(children = "...displayed in..."),
@@ -141,13 +145,14 @@ side_panel_layout = html.Div(
             className = "dropdown",
             children = dcc.Dropdown(
                 id = "display-type",
-                className = "dropdown-component", # TODO: remove this?
+                className = "dropdown-component",
                 options = [
                     {"label": "a map", "value": "MAP"},
                     {"label": "a table", "value": "TABLE"},
                     {"label": "both a map and a table", "value": "BOTH"},
                 ],
-                value = "MAP" # TODO: reconsider default
+                value = "MAP", # TODO: reconsider default
+                clearable = False
             ) 
         )
     ]
@@ -161,7 +166,7 @@ main_panel_layout = html.Div(
             id = "panel-right-top",
             children = [
                 dcc.Graph(
-                    id = "world-map",
+                    id = "map",
                     figure = {
                         "data": [
                             {
@@ -169,14 +174,14 @@ main_panel_layout = html.Div(
                                 "lat": df["water"]["latitude"],
                                 "lon": df["water"]["longitude"],
                                 "mode": "markers+text",
-                                #"hoverinfo": "text+lon+lat",
-                                #"text": df["water"]["municipality_name"],
-                                #"hoverdata": df["water"][["region_name", "municipality_name", "process_name"]],
+                                # "hoverinfo": "text+lon+lat",
+                                # "text": df["water"]["municipality_name"],
+                                # "hoverdata": df["water"][["region_name", "municipality_name", "process_name"]],
                                 "marker": {
                                     "size": df["water"]["size"], 
                                     "color": df["water"]["color"]
-                                },
-                            },
+                                }
+                            }
                         ],
                         "layout": {
                             "hovermode": "closest",
@@ -184,19 +189,19 @@ main_panel_layout = html.Div(
                                 "accesstoken": MAPBOX_ACCESS_TOKEN,
                                 "style": MAPBOX_STYLE,
                                 "center": {"lat": 55, "lon": -71},
-                                "zoom": 4,
+                                "zoom": 4
                             },
                             "showlegend": False,
                             "autosize": True,
-                            "margin": {"t": 0, "r": 0, "b": 0, "l": 0},
+                            "margin": {"t": 0, "r": 0, "b": 0, "l": 0}
                         }
                     },
                     config = {
                         "displayModeBar": False, 
                         "scrollZoom": True
-                    },
-                ),
-            ],
+                    }
+                )
+            ]
         ),
         html.Div(
             id = "panel-right-bottom",
@@ -208,11 +213,11 @@ main_panel_layout = html.Div(
                     row_deletable = False,
                     style_data = {
                         "whiteSpace": "normal",
-                        "height": "auto",
+                        "height": "auto"
                     },
                     style_table = {
                         # "paddingRight": "15px", # TODO: consider how to better see last column
-                        "overflowY": "scroll",
+                        "overflowY": "scroll"
                     },
                     style_cell = {
                         "textAlign": "left",
@@ -229,11 +234,11 @@ main_panel_layout = html.Div(
                     #     {"if": {"row_index": "even"}, "backgroundColor": "#f9f9f9"}
                     # ]
                     columns = [{"name": i, "id": i} for i in df["water"].columns],
-                    data = df["water"].to_dict("rows"),
+                    data = df["water"].to_dict("rows")
                 )
             ]
         )
-    ],
+    ]
 )
 
 # define data store components
@@ -266,10 +271,10 @@ app.layout = html.Div(
         Output("initial-data-store", "data"),
         Output("municipality-name", "options"),
         Output("process-type", "options"),
-        Output("municipality-name", "value"),
+        Output("municipality-name", "value")
     ],
     [
-        Input("plant-type", "value"),
+        Input("plant-type", "value")
     ]
 )
 def refresh_data_and_dropdown_options(plant):
@@ -289,7 +294,7 @@ def refresh_data_and_dropdown_options(plant):
     [
         Input("municipality-name", "value"),
         Input("initial-data-store", "data")
-    ],
+    ]
 )
 def select_dropdown_values(municipality, data):
     # translate dictionary records to a data frame
@@ -305,10 +310,10 @@ def select_dropdown_values(municipality, data):
     [
         Input("initial-data-store", "data"),
         Input("sort-type", "value"),
-        Input("process-type", "value"),
+        Input("process-type", "value")
     ],
     [
-        State("municipality-name", "value"),
+        State("municipality-name", "value")
     ]
 )
 def update_data(data, sort, process, municipality):
@@ -340,10 +345,10 @@ def update_data(data, sort, process, municipality):
 @app.callback(
     [
         Output("table", "data"), 
-        Output("table", "columns"),
+        Output("table", "columns")
     ],
     [
-        Input("final-data-store", "data"),
+        Input("final-data-store", "data")
     ]
 )
 def update_table(data):
@@ -362,12 +367,12 @@ def update_table(data):
 
 # callback to update map
 @app.callback(
-    Output("world-map", "figure"),
+    Output("map", "figure"),
     [
-        Input("final-data-store", "data"),
+        Input("final-data-store", "data")
     ],
     [
-        State("world-map", "figure"),
+        State("map", "figure")
     ]
 )
 def update_map(data, figure):
