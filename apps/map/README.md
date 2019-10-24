@@ -12,13 +12,19 @@ Clone the repository:
 $ git clone https://github.com/Watergeeks/exploration.git
 ```
 
+If you had previously cloned this repository, redirect to the root folder and update as follows:
+
+```
+$ git pull
+```
+
 Redirect to the respective app directory:
 
 ```
 $ cd apps/map
 ```
 
-Install the requirements:
+Install or update the required packages:
 
 ```
 $ pip install -r requirements.txt
