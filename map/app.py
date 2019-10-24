@@ -15,6 +15,9 @@ app = dash.Dash(
     ],
 )
 
+# suppress callback exceptions
+app.config["suppress_callback_exceptions"] = True
+
 # note for gunicorn
 server = app.server
 
