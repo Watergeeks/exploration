@@ -38,6 +38,15 @@ COLORS = {
     "yellow": "#FEC036", #FEC036 vs #D1A622
 }
 
+# # define potential columns
+# COLUMNS = [
+#     "region_name", 
+#     "municipality_name", "municipality_code",
+#     "installation_name", "installation_code", 
+#     "latitude", "longitude", 
+#     "process_name", "process_code"
+# ]
+
 # define function to process data
 def process_data(plant):
     # load data
@@ -60,6 +69,20 @@ def process_data(plant):
     data["compatibility_score"] = data["municipality_name"].apply(lambda m: compatibilities[m]) 
     # return processed data
     return(data)
+
+# # define function to merge data by process
+# def merge_data(data):
+#     columns = data.columns.tolist()
+#     group = ['region_name', 'municipality_name', 'installation_name']
+#     functions = {}
+#     for c in columns:
+#         if c == 'process_name' or c == 'process_code':
+#             functions[c] = ', '.join
+#         elif c not in group:
+#             functions[c] = 'first'
+#     data = data.groupby(group).agg(functions).reset_index()
+#     data['color'] = COLORS["yellow"]
+#     return data
 
 # load data
 df = {
