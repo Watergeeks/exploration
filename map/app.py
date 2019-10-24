@@ -38,14 +38,14 @@ COLORS = {
     "yellow": "#FEC036", #FEC036 vs #D1A622
 }
 
-# # define potential columns
-# COLUMNS = [
-#     "region_name", 
-#     "municipality_name", "municipality_code",
-#     "installation_name", "installation_code", 
-#     "latitude", "longitude", 
-#     "process_name", "process_code"
-# ]
+# define potential columns # TODO: consider moving to merge_data function
+COLUMNS = [
+    "region_name", 
+    "municipality_name", "municipality_code",
+    "installation_name", "installation_code", 
+    "latitude", "longitude", 
+    "process_name", "process_code"
+]
 
 # define function to process data
 def process_data(plant):
@@ -70,19 +70,19 @@ def process_data(plant):
     # return processed data
     return(data)
 
-# # define function to merge data by process
-# def merge_data(data):
-#     columns = data.columns.tolist()
-#     group = ['region_name', 'municipality_name', 'installation_name']
-#     functions = {}
-#     for c in columns:
-#         if c == 'process_name' or c == 'process_code':
-#             functions[c] = ', '.join
-#         elif c not in group:
-#             functions[c] = 'first'
-#     data = data.groupby(group).agg(functions).reset_index()
-#     data['color'] = COLORS["yellow"]
-#     return data
+# define function to merge data by process # TODO: finish implementing here and everywhere
+def merge_data(data):
+    columns = data.columns.tolist()
+    group = ['region_name', 'municipality_name', 'installation_name']
+    functions = {}
+    for c in columns:
+        if c == 'process_name' or c == 'process_code':
+            functions[c] = ', '.join
+        elif c not in group:
+            functions[c] = 'first'
+    data = data.groupby(group).agg(functions).reset_index()
+    data['color'] = COLORS["yellow"]
+    return data
 
 # load data
 df = {
@@ -118,6 +118,11 @@ def get_map_labels(data):
             )
         )
     labels = pd.Series(labels).astype(str)
+
+    # # TODO: FINISH IMPLEMENT DIS  
+    # # get merged data # TODO: reconsider merging
+    # data = merge_data(data)
+    
     return labels
 
 # define side panel layout
@@ -171,10 +176,11 @@ side_panel_layout = html.Div(
                 className = "dropdown-component",
                 options = [
                     {"label": "considered most compatible with me", "value": "COMP"},
-                    {"label": "with ALL of the listed processes", "value": "ALL"},
+                    # TODO: uncomment when sorting method ready
+                    # {"label": "with ALL of the listed processes", "value": "ALL"}, 
                     {"label": "with ANY of the listed processes", "value": "ANY"},
                 ],
-                value = "ANY",
+                value = "COMP",
                 clearable = False
             ) 
         ),
@@ -316,7 +322,7 @@ app.layout = html.Div(
 )
 def refresh_data_and_dropdown_options(plant):
     # switch between water and wastewater data
-    data = df["water"] if plant == "water" else df["wastewater"]
+    data = df[plant]
     # update options in dropdown list of municipalities
     municipality_options = get_municipality_options(data)
     # update options in dropdown list of processes
@@ -346,19 +352,22 @@ def select_dropdown_values(municipality, data):
     Output("final-data-store", "data"),
     [
         Input("initial-data-store", "data"),
-        Input("sort-type", "value"),
-        Input("process-type", "value")
+        Input("municipality-name", "value"),
+        Input("process-type", "value"),
+        Input("sort-type", "value")
     ],
     [
-        State("municipality-name", "value")
+        State("plant-type", "value")
     ]
 )
-def update_data(data, sort, process, municipality):
+def update_data(data, municipality, process, sort, plant):
     # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
     # filter data according to process
-    if process != None:
-        if sort == "ALL":
+    if process != None and process != []:
+        if sort == "ANY":
+            data = data.loc[data["process_code"].isin(process)]
+        elif sort == "ALL":
             # TODO: come up with correct method
             data = data.loc[data["process_code"].isin(process)]
             # check = True
@@ -369,11 +378,16 @@ def update_data(data, sort, process, municipality):
             #         #d = data.loc[df['process_code'] == t]
             #         #check = check and (m in d) 
             #     print(check)
-        elif sort == "ANY":
-            data = data.loc[data["process_code"].isin(process)]
-        else:
-            # TODO: come up with correct method, using municipality input
-            data = data.loc[data["process_code"].isin(process)]
+    else:
+        data = df[plant]
+    # filter data by compatibility
+    if sort == "COMP":
+        if municipality != None:
+            # TODO: come up with non-random method using municipality input
+            data_by_score = data.groupby('municipality_name').agg({'compatibility_score': 'mean'}).reset_index()
+            data_with_score = data_by_score.loc[data_by_score["municipality_name"] == municipality, 'compatibility_score']
+            score = float(data_with_score.to_string(index = False))
+            data = data.loc[(data["compatibility_score"] >= score-0.2) & (data["compatibility_score"] <= score+0.2)]
     # prepare data in expected format for data store
     data = data.to_dict("records")
     return data
@@ -382,13 +396,15 @@ def update_data(data, sort, process, municipality):
 @app.callback(
     [
         Output("table", "data"), 
-        Output("table", "columns")
+        Output("table", "columns"),
+        Output("table", "style_cell_conditional")
     ],
     [
-        Input("final-data-store", "data")
+        Input("final-data-store", "data"),
+        Input("municipality-name", "value")
     ]
 )
-def update_table(data):
+def update_table(data, municipality):
     # translate dictionary records to a data frame
     data = pd.DataFrame.from_records(data)
     # remove columns not necessary for viewing
@@ -400,7 +416,20 @@ def update_table(data):
     table_columns = [{"name": i, "id": i} for i in data.columns]
     # prepare data in expected format for table
     table_data = data.to_dict("rows")
-    return table_data, table_columns
+    # update conditional styling
+    style_cond = []
+    # TODO: finish designing condititonal styling
+    # if municipality != None:
+    #     style_cond.append(
+    #         {
+    #             "if": {
+    #                 "column_id": "municipality_name",
+    #                 "filter_query": "{municipality_name} eq '{}'".format(municipality)
+    #             }, 
+    #             "backgroundColor": COLORS["yellow"]
+    #         }
+    #     )
+    return table_data, table_columns, style_cond
 
 # callback to update map
 @app.callback(
