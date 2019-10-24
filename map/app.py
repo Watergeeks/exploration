@@ -168,8 +168,6 @@ main_panel_layout = html.Div(
                                 "lat": df["water"]["latitude"],
                                 "lon": df["water"]["longitude"],
                                 "mode": "markers+text",
-                                "hoverinfo": "text+lon+lat",
-                                "hoverdata": df["water"]["municipality_name"],
                                 #"hoverinfo": "text+lon+lat",
                                 #"text": df["water"]["municipality_name"],
                                 #"hoverdata": df["water"][["region_name", "municipality_name", "process_name"]],
@@ -183,7 +181,6 @@ main_panel_layout = html.Div(
                             "hovermode": "closest",
                             "mapbox": {
                                 "accesstoken": MAPBOX_ACCESS_TOKEN,
-                                #"style": open("assets/style.json", "r"),
                                 "style": MAPBOX_STYLE,
                                 "center": {"lat": 55, "lon": -71},
                                 "zoom": 4,
