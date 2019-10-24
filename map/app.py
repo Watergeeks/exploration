@@ -1,10 +1,11 @@
+import seaborn as sns
+import random
 import pandas as pd
 import dash
 import dash_table as dt
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import State, Input, Output
-import seaborn as sns
 
 # initialize app
 app = dash.Dash(
@@ -46,6 +47,8 @@ def process_data(plant):
     # define size of data point
     data["size"] = 10
     # assign compatibility scores # TODO: calculate properly later, may need to depend on starting plant!
+    data["score"] = 0
+    data["score"] = data["score"].apply(lambda x: random.uniform(0.0, 10.0)) 
     # return processed data
     return(data)
 
