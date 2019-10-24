@@ -21,7 +21,7 @@ app.config["suppress_callback_exceptions"] = True
 # note for gunicorn
 server = app.server
 
-# for mapbox # TODO: fix mapbox styling and figure out how to access style properly
+# note for mapbox # TODO: fix mapbox styling and figure out how to access style properly
 MAPBOX_ACCESS_TOKEN = "pk.eyJ1IjoicGxvdGx5bWFwYm94IiwiYSI6ImNqdnBvNDMyaTAxYzkzeW5ubWdpZ2VjbmMifQ.TXcBE-xg9BFdV2ocecc_7g"
 MAPBOX_STYLE = "mapbox://styles/plotlymapbox/cjyivwt3i014a1dpejm5r7dwr"
 

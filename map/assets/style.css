@@ -14,7 +14,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #1e1e1e;
+    background-color: #1E1E1E;
     color: #F3F6FA;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -112,8 +112,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     color: #F3F6FA;
-    background-color: #1e1e1e;
-    border: 1px solid #1e1e1e;
+    background-color: #1E1E1E;
+    border: 1px solid #1E1E1E;
     border-radius: 4px;
     box-sizing: border-box;
     /* TODO: need any of below?
@@ -145,19 +145,19 @@ body {
 .dropdown .Select-menu-outer/*, 
 .Select--single > .Select-control .Select-value, .Select-placeholder*/ {
     color: #F3F6FA;
-    background-color: #1e1e1e;
-    border: 1px solid #1e1e1e;
+    background-color: #1E1E1E;
+    border: 1px solid #1E1E1E;
 }
 
 .dropdown .Select--multi > .Select-control .Select-value {
     color: #FEC036;
-    background-color: #2b2b2b;
+    background-color: #2B2B2B;
     border: 1px solid #363328;
 }
 
 .dropdown .Select--multi > .Select-control .Select-value-icon {
     color: #FEC036;
-    background-color: #2b2b2b;
+    background-color: #2B2B2B;
     border-right-color: #363329;
 }
 
@@ -174,13 +174,13 @@ body {
 
 /*
 .Select--multi .Select-value {
-    background-color: #2b2b2b01;
-    color: #2b2b2bee;
-    border: 1px solid #2b2b2b22;
+    background-color: #2B2B2B01;
+    color: #2B2B2Bee;
+    border: 1px solid #2B2B2B22;
 }
 
 .Select--multi .Select-value-icon {
-    border-right: 1px solid #2b2b2b22;
+    border-right: 1px solid #2B2B2B22;
 }
 
 .Select--single > .Select-control .Select-value, .Select-placeholder {
