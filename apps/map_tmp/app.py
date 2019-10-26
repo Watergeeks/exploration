@@ -64,6 +64,7 @@ def process_data(plant):
         map_colors = {'FIL': '#f77189', 'CHB': '#bb9832', 'CHL': '#50b131', 'None': '#FFFFFF', 'UB': '#3ba3ec', 'OZ': '#e866f4'}
     else: 
         map_colors = {'ERR': '#f77189', 'BF': '#d58c32', 'DEG': '#a4a031', 'ENAF': '#50b131', 'BA': '#34ae91', 'ROS': '#37abb5', 'EA': '#3ba3ec', 'BD': '#bb83f4', 'ENA': '#f564d4', 'None': '#FFFFFF'}
+    data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     # define size of data point
     data["size"] = 10
     # assign random compatibility scores # TODO: calculate properly, may need to depend on starting plant!
