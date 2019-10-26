@@ -53,13 +53,13 @@ def process_data(plant):
     data = pd.read_csv("data/" + plant + "_temp.csv", index_col = 0)
     # assign map colors depending on process
     processes = set(data["process_code"].tolist())
-    rgb_colors = sns.color_palette("husl", len(processes))
-    hex_colors = rgb_colors.as_hex()
-    map_colors = {}
-    for i, p in enumerate(processes):
-        map_colors[p] = hex_colors[i]
-    data["color"] = data["process_code"].apply(lambda p: map_colors[p])
-    map_colors["None"] = "#FFFFFF"
+    # rgb_colors = sns.color_palette("husl", len(processes))
+    # hex_colors = rgb_colors.as_hex()
+    # map_colors = {}
+    # for i, p in enumerate(processes):
+    #     map_colors[p] = hex_colors[i]
+    # data["color"] = data["process_code"].apply(lambda p: map_colors[p])
+    # map_colors["None"] = "#FFFFFF"
     if plant == "water": 
         map_colors = {'FIL': '#f77189', 'CHB': '#bb9832', 'CHL': '#50b131', 'None': '#FFFFFF', 'UB': '#3ba3ec', 'OZ': '#e866f4'}
     else: 
