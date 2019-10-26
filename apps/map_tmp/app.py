@@ -52,14 +52,14 @@ def process_data(plant):
     # load data
     data = pd.read_csv("data/" + plant + "_temp.csv", index_col = 0)
     # assign map colors depending on process
-    processes = set(data["process_code"].tolist())
+    # processes = set(data["process_code"].tolist())
     # rgb_colors = sns.color_palette("husl", len(processes))
     # hex_colors = rgb_colors.as_hex()
     # map_colors = {}
     # for i, p in enumerate(processes):
     #     map_colors[p] = hex_colors[i]
-    # data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     # map_colors["None"] = "#FFFFFF"
+    # data["color"] = data["process_code"].apply(lambda p: map_colors[p])
     if plant == "water": 
         map_colors = {'FIL': '#f77189', 'CHB': '#bb9832', 'CHL': '#50b131', 'None': '#FFFFFF', 'UB': '#3ba3ec', 'OZ': '#e866f4'}
     else: 
@@ -71,7 +71,12 @@ def process_data(plant):
     municipalities = set(data["municipality_name"].tolist())
     compatibilities = {}
     for m in municipalities:
-        compatibilities[m] = random.uniform(0.0, 10.0)
+        compatibilities[m] = random.uniform(0.5, 10.0)
+    compatibilities["Montréal"] = 0.24534634536
+    compatibilities["Fort-Coulonge"] = 0.234234546
+    compatibilities["Longueuil"] = 0.33542343
+    compatibilities["La Prairie"] = 0.19885342345
+    compatibilities["Gouvernement régional d'Eeyou Istchee Baie-James"] = 0.3654332345
     data["compatibility_score"] = data["municipality_name"].apply(lambda m: compatibilities[m]) 
     # return processed data
     return(data)
