@@ -1,0 +1,917 @@
+region_name,municipality_name,installation_name,installation_code,process_name,process_code
+Abitibi-Témiscamingue,Belleterre,Belleterre - Approvisionnement,X2114564,Chloration,CHL
+Abitibi-Témiscamingue,Latulipe-et-Gaboury,Latulipe-et-Gaboury - Approv.,X2114246,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Abitibi-Témiscamingue,Laverlochère-Angliers,Angliers - Approvisionnement,X2114253,Chloration,CHL
+Abitibi-Témiscamingue,Macamic,Macamic - Approvisionnement,X2114265,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Abitibi-Témiscamingue,Rouyn-Noranda,Station de purification Rouyn-noranda,X2114341,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Abitibi-Témiscamingue,Témiscaming,Témiscaming - Approvisionnement,X2114319,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Dégelis,Station de purification Dégelis,X2114834,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Bas-Saint-Laurent,Grosses-Roches,Station de purification Grosses-Roches,X0009832,"Chloration
+Ultraviolet","CHL
+UB"
+Bas-Saint-Laurent,La Rédemption,Station de purification La Rédemption,X0009775,Chloration,CHL
+Bas-Saint-Laurent,Lac-au-Saumon,Station de purification Lac-au-Saumon,X0008358,Chloration,CHL
+Bas-Saint-Laurent,Lac-au-Saumon,Système d'approvisionnement sans traitement Parc maison mobile Parent - Réseau 1,X2114824,,
+Bas-Saint-Laurent,Lac-au-Saumon,Système d'approvisionnement sans traitement Parc maison mobile Parent - Réseau 2,X2114826,,
+Bas-Saint-Laurent,Les Méchins,Station de purification Les Méchins - Nouvelle usine,X2124553,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Bas-Saint-Laurent,Mont-Carmel,Station de purification Mont-Carmel,X0008713,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Mont-Joli,Station de purification Mont-Joli,X0009742,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Bas-Saint-Laurent,Notre-Dame-des-Neiges,Station de purification Trois-Pistoles (nouvelle usine),X2067217,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Bas-Saint-Laurent,Rivière-du-Loup,Station de purification Rivière-du-Loup,X0008221,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Saint-Donat,Station de purification Saint-Donat,X0009746,Chloration,CHL
+Bas-Saint-Laurent,Saint-Elzéar-de-Témiscouata,Système d'approvisionnement sans traitement Village Saint-Elzéar,X2052656,,
+Bas-Saint-Laurent,Saint-Fabien,Station de purification Saint-Fabien,X0009793,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Saint-Gabriel-de-Rimouski,Station de purification Saint-Gabriel-de-Rimouski,X0010622,Chloration,CHL
+Bas-Saint-Laurent,Saint-Pascal,Station de purification Saint-Pascal,X0008679,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Saint-Ulric,Station de purification Saint-Ulric,X0009858,Chloration,CHL
+Bas-Saint-Laurent,Sainte-Anne-de-la-Pocatière,Station de purification La Pocatière,X0008614,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Sainte-Félicité,Station de purification Sainte-Félicité,X0009842,Chloration,CHL
+Bas-Saint-Laurent,Sayabec,Station de purification Sayabec,X0010453,Chloration,CHL
+Bas-Saint-Laurent,Témiscouata-sur-le-Lac,Station de purification Cabano (nouvelle usine),X2124413,"Chloration
+Filtration","CHL
+FIL"
+Bas-Saint-Laurent,Témiscouata-sur-le-Lac,Station de purification Notre-Dame-du-Lac,X0008840,Chloration,CHL
+Capitale-Nationale,Beaupré,Installation de production d'eau potable Beaupré,X0008975,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Boischatel,Installation de production d'eau potable Boischatel,X0009111,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Château-Richer,Installation de production d'eau potable Chateau-Richer,X0008998,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Capitale-Nationale,Donnacona,Installation de production d'eau potable Donnacona,X0008212,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Beauport,X0010056,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Charlesbourg,X0010062,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Québec,X0008181,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Capitale-Nationale,Québec,Installation de production d'eau potable - UTE Sainte-Foy,X0008186,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Capitale-Nationale,Saint-Casimir,Installation de production d'eau potable Saint-Casimir,X0010389,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Saint-Casimir,"Installation de production d'eau potable Saint-Casimir, Pied de la Montagne",X2111605,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Saint-Irénée,Installation de production d'eau potable Saint-Irénée,X0008788,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Capitale-Nationale,Saint-Thuribe,Installation de production d'eau potable Saint-Casimir,X0010389,"Chloration
+Filtration","CHL
+FIL"
+Capitale-Nationale,Sainte-Catherine-de-la-Jacques-Cartier,Installation de production d'eau potable Duchesnay,X0010966,"Chloration
+Filtration","CHL
+FIL"
+Centre-du-Québec,Bécancour,Station de purification Bécancour (sta.pur.),X0008299,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Centre-du-Québec,Daveluyville,Station de purification Daveluyville. (sta. pur.),X0008651,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Centre-du-Québec,Drummondville,Installation de production Drummondville (sta. pur.),X0010740,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Centre-du-Québec,Nicolet,Station de purification Nicolet. (sta.pur.),X0008234,"Chloration
+Filtration","CHL
+FIL"
+Centre-du-Québec,Pierreville,Station de purification R.I.A.E.P.B.S.F. (sta.pur.),X0010516,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Centre-du-Québec,Plessisville,Installation de purification Plessisville (sta. pur.),X0008079,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Centre-du-Québec,Saint-Pierre-les-Becquets,Station de purification Saint-Pierre-les-Becque. (post.chl.),X0010543,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Centre-du-Québec,Victoriaville,Station de purification Victoriaville (sta.pur.),X0010730,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Chaudière-Appalaches,Beauceville,Installation de production Beauceville,X0008259,"Chloration
+Filtration","CHL
+FIL"
+Chaudière-Appalaches,L'Islet,Installation de production L'Islet,X0009054,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Chaudière-Appalaches,Lac-Etchemin,Installation de production Lac-Etchemin,X0008245,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Chaudière-Appalaches,Lévis,Installation de production Charny,X0008980,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Chaudière-Appalaches,Lévis,Installation de production Lévis,X0010696,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Chaudière-Appalaches,Lévis,Installation de production St-Romuald,X0010478,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Chaudière-Appalaches,Montmagny,Installation de production Montmagny,X0008218,"Chloration
+Filtration","CHL
+FIL"
+Chaudière-Appalaches,Saint-Anselme,Installation de production St-Anselme,X0009736,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Chaudière-Appalaches,Saint-François-de-la-Rivière-du-Sud,Installation de production Saint-Francois-de-la-Riv.-du-Sud,X0008296,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Chaudière-Appalaches,Saint-Georges,Installation de production Saint-Georges,X0010687,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Chaudière-Appalaches,Saint-Henri,Installation de production Saint-Henri,X2002636,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Chaudière-Appalaches,Saint-Jean-Port-Joli,Installation de production Saint-Jean-Port-Joli,X0009043,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Chaudière-Appalaches,Sainte-Marie,Installation de production Sainte-Marie,X2134730,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Chaudière-Appalaches,Thetford Mines,Installation de production Thetford Mines,X0010786,"Chloration
+Filtration","CHL
+FIL"
+Côte-Nord,Baie-Comeau,Station de purification Baie-Comeau (Mingan) (aut.trai.),X0010426,Chloration,CHL
+Côte-Nord,Baie-Comeau,Station de purification Baie-Comeau (St-Georges)(post.chl.),X0010425,Chloration,CHL
+Côte-Nord,Baie-Comeau,Station de purification Baie-Comeau(Ste-Amélie) (post.chl.),X0010423,Chloration,CHL
+Côte-Nord,Baie-Johan-Beetz,Station de purification Baie-Johan-Beetz (aut.trai.),X0009692,Chloration,CHL
+Côte-Nord,Chute-aux-Outardes,Station de purification Chutes-aux-Outardes (post.chl.),X0008237,Chloration,CHL
+Côte-Nord,Côte-Nord-du-Golfe-du-Saint-Laurent,Station de purification (Harrington-Harbour 2011),X2132535,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Côte-Nord,Fermont,Station de purification Fermont (aut.trai.),X0009997,Chloration,CHL
+Côte-Nord,Kawawachikamach,Station de purification de Kawawachikamach (aut. trai.),X2092640,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Côte-Nord,La Romaine,Station de purification (Bande indienne de montagnais de la Romaine),X2094939,"Chloration
+Filtration","CHL
+FIL"
+Côte-Nord,Les Bergeronnes,Station de purification Les Bergeronnes (post.chl.),X0009961,Chloration,CHL
+Côte-Nord,Les Escoumins,Station de purification Escoumins (post.chl.),X0008243,Chloration,CHL
+Côte-Nord,Port-Cartier,Station de purification Port-Cartier (aut. trait. 2001),X0008255,"Chloration
+Filtration","CHL
+FIL"
+Côte-Nord,Port-Cartier,Station de purification Riviere-Pentecôte (post.chl.),X0009699,Chloration,CHL
+Côte-Nord,Saint-Augustin,Station de purification Saint-Augustin (aut. trai. 2011),X0010722,"Chloration
+Filtration","CHL
+FIL"
+Côte-Nord,Schefferville,Station de purification Schefferville(post.chl.),X0009570,Chloration,CHL
+Côte-Nord,Sept-Îles,Station de purification Sept-Îles (aut. trai.),X0008231,"Chloration
+Filtration","CHL
+FIL"
+Côte-Nord,Tadoussac,Station de purification Tadoussac (aut. trait.),X0008310,"Chloration
+Ultraviolet","CHL
+UB"
+Estrie,Asbestos,Station de purification Asbestos,X0008198,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Estrie,Danville,Station de purification Danville,X0008336,"Chloration
+Filtration","CHL
+FIL"
+Estrie,Eastman,Station de purification Eastman,X0008524,Chloration,CHL
+Estrie,Magog,Station de purification Ville de Magog,X0008196,Chloration,CHL
+Estrie,North Hatley,Poste d'eau potable North Hatley (RIEM),X2128577,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Estrie,Potton,Station de purification Potton-Secteur Owl's Head,X0008501,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Estrie,Saint-Benoît-du-Lac,Station de purification St-Benoît-du-Lac,X0008273,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Estrie,Saint-Denis-de-Brompton,Station de purification Domaine Forest-Poste chloration,X2080359,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Estrie,Sherbrooke,Station de purification Sherbrooke,X0008189,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Estrie,Valcourt,Station de purification Ville de Valcourt,X0008608,"Chloration
+Ultraviolet","CHL
+UB"
+Estrie,Waterville,Station de purification Waterville,X0009298,"Chloration
+Ultraviolet","CHL
+UB"
+Estrie,Windsor,Station de purification Windsor,X0500436,"Chloration
+Filtration","CHL
+FIL"
+Gaspésie—Îles-de-la-Madeleine,Chandler,Station de purification - Newport - Pabos Mills (poste de chloration) (Ville de Chandler),X0009077,"Chloration
+Ultraviolet","CHL
+UB"
+Gaspésie—Îles-de-la-Madeleine,Cloridorme,Station de purification - Cloridorme (poste chl.),X0009052,Chloration,CHL
+Gaspésie—Îles-de-la-Madeleine,Gaspé,Station de purification - Centre-ville Gaspé (poste chl.),X0009057,Chloration,CHL
+Gaspésie—Îles-de-la-Madeleine,Gaspé,Station de purification d'eau - Rivière-au-Renard (Ville de Gaspé) (poste chloration),X0009058,Chloration,CHL
+Gaspésie—Îles-de-la-Madeleine,Gaspé,Système d'approv. sans traitement - Aqueduc la montagne (Gaspé secteur Anse-à-Valleau),X1101276,,
+Gaspésie—Îles-de-la-Madeleine,Gaspé,Système d'approvisionnement sans traitement - Coopérative d'aqueduc de L'Anse au Griffon,X1101278,,
+Gaspésie—Îles-de-la-Madeleine,Grande-Rivière,Station de purification - Grande-Rivière (poste chl.),X0009995,"Chloration
+Filtration","CHL
+FIL"
+Gaspésie—Îles-de-la-Madeleine,La Martre,Système d'approvisionnement en eau sans traitement - La Martre (secteur Est) (auberge),X0009025,,
+Gaspésie—Îles-de-la-Madeleine,La Martre,Système d'approvisionnement en eau sans traitement La Martre (secteur Ouest) (bureau mun.),X0009024,,
+Gaspésie—Îles-de-la-Madeleine,Murdochville,Station de purification - Ville de Murdochville (poste chl.),X0009039,Chloration,CHL
+Gaspésie—Îles-de-la-Madeleine,Percé,Station de purification - Percé (poste chl.),X0009061,Chloration,CHL
+Lanaudière,Berthierville,"Station de purification, Berthierville",X0008659,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Lanaudière,Crabtree,"Station de purification, Crabtree",X0008665,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Lanaudière,Joliette,"Station de purification, Joliette",X0008098,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Lanaudière,L'Assomption,"Station de purification, L'Assomption",X0008686,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Lanaudière,L'Épiphanie,"Station de purification, L'Épiphanie",X0008718,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Lanaudière,Lavaltrie,"Station de purification, Lavaltrie",X0008671,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Lanaudière,Rawdon,"Station de purification, Rawdon, rivière Ouareau (nanofiltration+UV)",X2137144,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Lanaudière,Repentigny,Station de purification - Ville de Repentigny,11430600,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Lanaudière,Saint-Charles-Borromée,"Station de purification d'eau potable, St-Charles-Borromée municipal",X0009159,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Lanaudière,Saint-Cuthbert,"Station de purification, St-Cuthbert",90276130,"Chloration
+Filtration","CHL
+FIL"
+Lanaudière,Terrebonne,"Station de purification, Terrebonne, Régie intermunicipale des Moulins",24846859,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Laurentides,Brownsburg-Chatham,Station de purification - Brownsburg-Chatham (sta. pur.),X0009520,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Laurentides,Deux-Montagnes,Station de purification - Deux-Montagnes,X0010573,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Laurentides,Ferme-Neuve,Station de purification - Ferme-neuve (sta.pur.),X0009312,"Chloration
+Filtration","CHL
+FIL"
+Laurentides,Labelle,Station de purification - Labelle (post. chl.),X0009632,"Chloration
+Ultraviolet","CHL
+UB"
+Laurentides,Lac-Saint-Paul,Poste d'eau potable (Lac-St-Paul) (Lac Boucher),X2146511,,
+Laurentides,Mirabel,Station de purification - Mirabel (St-Benoit - eau surface),X0009451,"Chloration
+Filtration","CHL
+FIL"
+Laurentides,Mont-Laurier,Station de purification - Mont-Laurier,X2105970,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Laurentides,Mont-Tremblant,Station de purification - Mont-Tremblant (La Diable sta. pur.),X0008873,"Chloration
+Filtration","CHL
+FIL"
+Laurentides,Mont-Tremblant,Station de purification - Mont-tremblant (Lac Tremblant),X0008875,"Chloration
+Filtration","CHL
+FIL"
+Laurentides,Oka,Station de purification - Oka (sd) (sta. pur.),X0009429,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Laurentides,Rosemère,Station de purification - Rosemère,X0008485,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Laurentides,Saint-Adolphe-d'Howard,Station de purification - Saint-Adolphe-d'Howard (sta.pur.terrasses),X0008139,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Laurentides,Saint-Adolphe-d'Howard,Station de purification - St-Adolphe-d'Howard (Village),X0008140,Chloration,CHL
+Laurentides,Saint-Eustache,Station de purification - St-Eustache (sta.pur.),X0008125,"Chloration
+Filtration
+Ozonation
+Charbon
+Ultraviolet","CHL
+FIL
+OZ
+CHB
+UB"
+Laurentides,Saint-Jérôme,Station de purification - St-Jérôme (sta. pur.),X0008102,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Laurentides,Sainte-Agathe-des-Monts,Station de purification - Ste-Agathe-des-Monts (Petit Lac des Sables),X0008112,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Laurentides,Sainte-Sophie,Station de purification - Ste-Sophie (sta.pur.),X0008782,"Chloration
+Filtration","CHL
+FIL"
+Laurentides,Sainte-Thérèse,Station de purification - Ste-Thérèse (sta. pur.),X0008104,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Laval,Laval,Usine de filtration Chomedey (eau potable),X1300276,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Laval,Laval,Usine de filtration Pont-Viau (eau potable),X1300277,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Laval,Laval,Usine de filtration Sainte-Rose (eau potable),X1300278,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Mauricie,La Tuque,Station de purification La Tuque,X0010734,"Chloration
+Ultraviolet","CHL
+UB"
+Mauricie,La Tuque,Station de purification Parent,X0009538,"Chloration
+Filtration","CHL
+FIL"
+Mauricie,Lac-aux-Sables,Station de purification Lac-aux-Sables,X0009409,"Chloration
+Ultraviolet","CHL
+UB"
+Mauricie,Saint-Tite,Station de purification Saint-Tite,X0008354,Chloration,CHL
+Mauricie,Shawinigan,"Station de purification Grand-Mère Lac-des-Piles, Shawinigan",X0008261,Chloration,CHL
+Mauricie,Shawinigan,"Système de production d'eau potable Shawinigan, Lac-à-la-Pêche",X0011550,Chloration,CHL
+Mauricie,Trois-Rivières,Station de purification Trois-Rivières,X0008077,"Chloration
+Filtration","CHL
+FIL"
+Montérégie,Acton Vale,Station de purification Acton Vale,X0008756,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Beauharnois,Station de purification Beauharnois - sta. purif. complète,X0009678,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Bedford,Station de purification - Ville de Bedford,X0008496,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Bromont,Station de purification - Ville de Bromont,X0008690,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Montérégie,Candiac,Station de purification Ville de Candiac,X0008160,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Carignan,Station de purification Régie secteau Chambly-Richelieu-Marieville,18188581,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Carignan,Station de purification Carignan,X0008558,"Chloration
+Filtration","CHL
+FIL"
+Montérégie,Châteauguay,Station de purification Ville de Châteauguay (poste chl.),X0010091,"Chloration
+Ultraviolet","CHL
+UB"
+Montérégie,Contrecoeur,Station de purification Contrecoeur,X0010036,"Chloration
+Filtration","CHL
+FIL"
+Montérégie,Coteau-du-Lac,Station de purification Coteau-du-Lac,X0010401,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Cowansville,Station de purification Cowansville (autre traitement),X0008328,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Farnham,Station de purification - Ville de Farnham,X0008200,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Granby,Station de purification Ville de Granby (station purification),X0009150,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Henryville,Station purification de la Régie intermunicipale d'approv. eau potable Henryville-Venise,X1606342,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Huntingdon,Station de purification Huntingdon - sta. purif. complète,X0009050,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,L'Île-Perrot,Station de purification - Ville de L' Île-perrot,X0009381,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,La Prairie,Station de purification Ville de La Prairie,X0009097,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Montérégie,Lacolle,Station de purification Municipalité de Lacolle,X0008515,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Les Coteaux,Station de purification Les Coteaux,X0010777,"Chloration
+Filtration","CHL
+FIL"
+Montérégie,Longueuil,Station de purification Longueuil (local) - stat. purif.,X0008121,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Montérégie,Longueuil,Station de purification Longueuil (régional),X0008120,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Montérégie,Longueuil,Station de purification Longueuil (Saint-Lambert) - Usine Le Royer,X0008136,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Montérégie,Notre-Dame-de-l'Île-Perrot,Station de purification Régie de l'eau de L'Ile-Perrot,X0010436,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Otterburn Park,Station de purification Regie i.e.v.r. Otterburn Park,X0010216,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Saint-Damase,Station de purification Municipalité de Saint-Damase (Montérégie),X0008846,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Saint-Denis-sur-Richelieu,Station de purif. Régie intermunicipale d'aqueduc du Bas-Richelieu (Régie de l'A.I.B.R.),21761408,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Saint-Hyacinthe,Station de purification Ville de Saint-Hyacinthe,X0010032,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive est),X0008118,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Saint-Jean-sur-Richelieu,Station de purification Ville de Saint-Jean-sur-Richelieu (rive ouest),X0008108,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Montérégie,Saint-Pie,Station de purification Ville de St-Pie (filtration),X2067353,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Saint-Zotique,Station de purification Saint-Zotique poste,X0008177,"Chloration
+Filtration
+Charbon
+Ultraviolet","CHL
+FIL
+CHB
+UB"
+Montérégie,Sainte-Barbe,Station de purification Ste-Barbe - trait. complet,X2135885,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Salaberry-de-Valleyfield,Station de purification Salaberry-Valleyfield - traitement complet,X0008095,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Sorel-Tracy,"Station de purification - Régie Intermunicipale de l'eau Tracy, St-Joseph et St-Roch",X0008816,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montérégie,Sorel-Tracy,Station de purification Ville de Sorel-Tracy (secteur Sorel),X1605245,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Sutton,Station de purification Sutton (canton) - aut.traitement,X0008505,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Montérégie,Varennes,Station de purification Régie S.E.V. Varennes,19050129,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Montérégie,Vaudreuil-Dorion,Station de purification Vaudreuil-Dorion (Vaudreuil-Dorion - station purif.),X0010764,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montérégie,Verchères,Station de purification - Municipalité de Verchères (sta.pur.),X0008624,"Chloration
+Filtration","CHL
+FIL"
+Montréal,Dorval,Station de purification Dorval (usine),X0008924,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Montréal,Montréal,Station de purification Lachine (usine 2),X0008090,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montréal,Montréal,Station de purification Montréal (usine Atwater),X0008086,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Montréal,Montréal,Station de purification Montreal (usine Desbaillets),X0008085,"Chloration
+Filtration
+Ozonation
+Ultraviolet","CHL
+FIL
+OZ
+UB"
+Montréal,Montréal,Station de purification Pierrefonds (usine),X0009132,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Montréal,Pointe-Claire,Station de purification Pointe-Claire (usine),X0008943,"Chloration
+Filtration
+Charbon","CHL
+FIL
+CHB"
+Nord-du-Québec,Akulivik,Akulivik - Approvisionnement,X2114284,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Aupaluk,Aupaluk - Approv.,X2114286,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Chibougamau,Poste d'eau potable Chibougamau,X2114560,"Chloration
+Ultraviolet","CHL
+UB"
+Nord-du-Québec,Gouvernement régional d'Eeyou Istchee Baie-James,Radisson (localité) - Approv.,X2114259,"Chloration
+Filtration
+Ozonation
+Charbon
+Ultraviolet","CHL
+FIL
+OZ
+CHB
+UB"
+Nord-du-Québec,Inukjuak,Inukjuak - Approvisionnement,X2114289,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Ivujivik,Ivujivik - Approvisionnement,X2114279,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Kangiqsualujjuaq,Kangiqsualujjuaq - Approv.,X2114288,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Kangiqsujuaq,Kangiqsujuaq - Approvisionnement,X2114290,"Chloration
+Ultraviolet","CHL
+UB"
+Nord-du-Québec,Kangirsuk,Kangirsuk - Approvisionnement,X2114293,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Kuujjuaq,Kuujjuaq - Approvisionnement,X2114283,Chloration,CHL
+Nord-du-Québec,Lebel-sur-Quévillon,Lebel-sur-Quévillon - Approv.,X2114563,"Chloration
+Filtration","CHL
+FIL"
+Nord-du-Québec,Matagami,Matagami - Approvisionnement,X2114243,"Chloration
+Filtration","CHL
+FIL"
+Nord-du-Québec,Puvirnituq,Puvirnituq - Approvisionnement,X2114321,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Quaqtaq,Quaqtaq - Approvisionnement,X2114291,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Salluit,Salluit - Approvisionnement,X2114282,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Tasiujaq,Tasiujaq - Approvisionnement,X2114287,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Nord-du-Québec,Umiujaq,Umiujaq - Approvisionnement,X2114318,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Outaouais,Bryson,Station de purification Bryson (post.chl.),X0009407,Chloration,CHL
+Outaouais,Fort-Coulonge,Station de purification Fort-Coulonge (post.chl.),X0009273,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Outaouais,Gatineau,Station de purification Aylmer (sta.pur.),X0008329,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Outaouais,Gatineau,Station de purification Buckingham (sta.pur.),X0008332,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Outaouais,Gatineau,Station de purification Gatineau (sta.pur.),X0008331,"Chloration
+Filtration","CHL
+FIL"
+Outaouais,Gatineau,Station de purification Hull (sta.pur.),X0008330,"Chloration
+Filtration","CHL
+FIL"
+Outaouais,Gracefield,Station de purification Gracefield (post.chl.),X0008146,"Chloration
+Filtration
+Ozonation
+Charbon","CHL
+FIL
+OZ
+CHB"
+Outaouais,Montebello,Station de purification Montebello (post.chl.),X0009545,"Chloration
+Filtration
+Ozonation","CHL
+FIL
+OZ"
+Outaouais,Pontiac,Station de purification Pontiac (post.chl.),X0009983,Chloration,CHL
+Outaouais,Portage-du-Fort,Station de purification Portage-du-Fort (post.chl.),X0009422,Chloration,CHL
+Outaouais,Thurso,Station de purification Thurso (sta.pur.),X0008164,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Alma,Station de purification Alma (usine de filtration),X0010053,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Poste d'eau potable du secteur Mistassini,X0010045,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Dolbeau-Mistassini,Station de purification Dolbeau (stat. pur.),X0009850,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Lac-Bouchette,Station d'approvisionnement Lac-Bouchette,X2105066,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Saguenay—Lac-Saint-Jean,Péribonka,Poste d'eau potable de Péribonka,X0009828,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Saguenay—Lac-Saint-Jean,Roberval,Station de purification Roberval (station purification),X0010100,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Saguenay,Poste d'eau potable de Saguenay (Chicoutimi-Nord),X0010044,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Saguenay—Lac-Saint-Jean,Saguenay,Station de purification - Secteur Jonquière,X0009978,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Chicoutimi (sta. pur.),X0010043,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Saguenay,Station de purification Jonquiere (secteur Arvida),X0009979,"Chloration
+Filtration","CHL
+FIL"
+Saguenay—Lac-Saint-Jean,Saint-David-de-Falardeau,"Station de purification - Post chl. (Village alpin ""Le Valinouet"")",X0009613,Chloration,CHL
+Saguenay—Lac-Saint-Jean,Saint-Nazaire,Poste d'eau potable de Saint-Nazaire de Chicoutimi,X0009588,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"
+Saguenay—Lac-Saint-Jean,Sainte-Jeanne-d'Arc,Poste d'eau potable de Sainte-Jeanne-d'Arc,X0009834,"Chloration
+Filtration
+Ultraviolet","CHL
+FIL
+UB"

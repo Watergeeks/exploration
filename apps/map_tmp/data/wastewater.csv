@@ -1,0 +1,839 @@
+region_name,municipality_name,municipality_code,process_name,process_code
+Bas-Saint-Laurent,LA TRINITÉ-DES-MONTS,10010-1,Roseaux (marais artificiel),ROS
+Bas-Saint-Laurent,SAINT-SIMON (RIMOUSKI),11055-1,Roseaux (marais artificiel),ROS
+Centre-du-Québec,LEMIEUX,38020-2,Roseaux (marais artificiel),ROS
+Centre-du-Québec,SAINTS-MARTYRS-CANADIENS,39005-1,Roseaux (marais artificiel),ROS
+Chaudière-Appalaches,SAINT-SÉVERIN (BEAUCE),27070-1,Roseaux (marais artificiel),ROS
+Chaudière-Appalaches,SAINTE-APOLLINE-DE-PATTON,18025-1,Roseaux (marais artificiel),ROS
+Estrie,CHARTIERVILLE,41020-1,Roseaux (marais artificiel),ROS
+Estrie,PIOPOLIS,30020-1,Roseaux (marais artificiel),ROS
+Estrie,STOKE,35140-1,Roseaux (marais artificiel),ROS
+Laurentides,SAINT-ANDRÉ-D'ARGENTEUIL (CARILLON),76010-1,Roseaux (marais artificiel),ROS
+Mauricie,SAINTE-URSULE (PETIT POSTE),51040-1,Roseaux (marais artificiel),ROS
+Montérégie,FRELIGHSBURG,46010-1,Roseaux (marais artificiel),ROS
+Montérégie,NOTRE-DAME-DE-STANBRIDGE,46100-1,Roseaux (marais artificiel),ROS
+Montérégie,SAINT-VALENTIN,56030-1,Roseaux (marais artificiel),ROS
+Montérégie,SUTTON (JUNCTION),46058-1,Roseaux (marais artificiel),ROS
+Outaouais,CHELSEA (MILL),82025-2,Roseaux (marais artificiel),ROS
+Saguenay--Lac-Saint-Jean,SAINT-HENRI-DE-TAILLON,93070-1,Roseaux (marais artificiel),ROS
+Abitibi-Témiscamingue,AMOS,84455-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ANGLIERS,85080-1,Dégrillage fin,DEG
+Abitibi-Témiscamingue,BARRAUTE,88022-1,Étangs aérés,EA
+Abitibi-Témiscamingue,BÉARN,85020-1,Étangs non aérés,ENA
+Abitibi-Témiscamingue,BRYSON,84025-1,Étangs à rétention réduite,ERR
+Abitibi-Témiscamingue,DUPARQUET,87005-1,Étangs aérés,EA
+Abitibi-Témiscamingue,DUPUY,87085-1,Étangs aérés,EA
+Abitibi-Témiscamingue,LA SARRE,87090-1,Étangs aérés,EA
+Abitibi-Témiscamingue,LAUNAY,84420-1,Fosse septique,FS
+Abitibi-Témiscamingue,LAVERLOCHÈRE,85050-1,Étangs aérés,EA
+Abitibi-Témiscamingue,LORRAINVILLE,85037-1,Étangs aérés,EA
+Abitibi-Témiscamingue,MACAMIC,84365-1,Étangs aérés,EA
+Abitibi-Témiscamingue,MALARTIC,89015-1,Étangs aérés,EA
+Abitibi-Témiscamingue,NOTRE-DAME-DU-NORD,83500-1,Étangs aérés,EA
+Abitibi-Témiscamingue,PALMAROLLE,87025-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ROUYN-NORANDA,86040-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ROUYN-NORANDA (ARNTFIELD-A),86042-2,Filtre à tourbe,FT
+Abitibi-Témiscamingue,ROUYN-NORANDA (ARNTFIELD-B),86042-3,Filtre à tourbe,FT
+Abitibi-Témiscamingue,ROUYN-NORANDA (BEAUDRY),86042-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ROUYN-NORANDA (ÉVAIN),83710-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ROUYN-NORANDA (GRANADA),83670-1,Étangs aérés,EA
+Abitibi-Témiscamingue,ROUYN-NORANDA (NORANDA-NORD),86040-2,Étangs aérés,EA
+Abitibi-Témiscamingue,SAINT-BRUNO-DE-GUIGUES,83380-1,Étangs non aérés,ENA
+Abitibi-Témiscamingue,SAINT-ÉDOUARD-DE-FABRE,83300-1,Étangs non aérés,ENA
+Abitibi-Témiscamingue,SAINT-EUGÈNE-DE-GUIGUES,85085-1,Étangs non aérés,ENA
+Abitibi-Témiscamingue,SAINT-FÉLIX-DE-DALQUIER,88060-1,Étangs aérés,EA
+Abitibi-Témiscamingue,SAINT-MATHIEU-D'HARRICANA,84435-1,Fosse septique,FS
+Abitibi-Témiscamingue,SENNETERRE,84530-1,Étangs aérés,EA
+Abitibi-Témiscamingue,TASCHEREAU,87042-1,Étangs à rétention réduite,ERR
+Abitibi-Témiscamingue,TÉMISCAMING (TEMBEC),83220-1,Dégrillage fin,DEG
+Abitibi-Témiscamingue,TRÉCESSON (VILLEMONTEL),88075-1,Filtres intermittents enfouis,FIE
+Abitibi-Témiscamingue,VAL-D'OR,84180-1,Boues activées,BA
+Abitibi-Témiscamingue,VAL-D'OR (ÎLE SISCOE),89008-2,Disques biologiques,BD
+Abitibi-Témiscamingue,VAL-D'OR (LOUVICOURT),89008-1,Étangs à rétention réduite,ERR
+Abitibi-Témiscamingue,VILLE-MARIE (DUHAMEL),75700-1,Étangs aérés,EA
+Bas-Saint-Laurent,ALBERTVILLE,07025-1,Filtre à tourbe,FT
+Bas-Saint-Laurent,AMQUI,05430-1,Étangs aérés,EA
+Bas-Saint-Laurent,AUCLAIR,13045-1,Étangs aérés,EA
+Bas-Saint-Laurent,BAIE-DES-SABLES,08080-1,Étangs aérés,EA
+Bas-Saint-Laurent,CACOUNA,12055-1,Boues activées,BA
+Bas-Saint-Laurent,CACOUNA (2011),12057-1,Étangs aérés,EA
+Bas-Saint-Laurent,CAUSAPSCAL,05240-1,Étangs aérés,EA
+Bas-Saint-Laurent,DÉGELIS,09150-1,Étangs aérés,EA
+Bas-Saint-Laurent,DÉGELIS (CAMPING MUNICIPAL),13005-1,Disques biologiques,BD
+Bas-Saint-Laurent,KAMOURASKA,14050-1,Étangs aérés,EA
+Bas-Saint-Laurent,L'ISLE-VERTE,12040-1,Étangs aérés,EA
+Bas-Saint-Laurent,LA POCATIÈRE,10760-1,Étangs aérés,EA
+Bas-Saint-Laurent,LA RÉDEMPTION,09005-1,Étangs aérés,EA
+Bas-Saint-Laurent,LAC-AU-SAUMON,05480-1,Étangs aérés,EA
+Bas-Saint-Laurent,LAC-DES-AIGLES,13060-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,LES MÉCHINS,08005-1,Dégrillage fin,DEG
+Bas-Saint-Laurent,MATANE,06600-1,Étangs aérés,EA
+Bas-Saint-Laurent,MATANE (PETIT-MATANE),06580-1,Étangs aérés,EA
+Bas-Saint-Laurent,MATANE (SAINT-LUC),06560-1,Étangs aérés,EA
+Bas-Saint-Laurent,MONT-CARMEL,10370-1,Étangs aérés,EA
+Bas-Saint-Laurent,PADOUE,09040-1,Étangs aérés,EA
+Bas-Saint-Laurent,POHÉNÉGAMOOK,10140-1,Étangs aérés,EA
+Bas-Saint-Laurent,PRICE,09065-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,RIMOUSKI,07570-1,Étangs aérés,EA
+Bas-Saint-Laurent,RIMOUSKI (SAINTE-BLANDINE),07620-1,Étangs aérés,EA
+Bas-Saint-Laurent,RIMOUSKI (SECTEUR DES BERGES),10065-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,RIMOUSKI (SECTEUR LE BIC),07660-1,Étangs aérés,EA
+Bas-Saint-Laurent,RIVIÈRE-BLEUE,09310-1,Étangs aérés,EA
+Bas-Saint-Laurent,RIVIÈRE-DU-LOUP,08720-1,Étangs aérés,EA
+Bas-Saint-Laurent,RIVIÈRE-OUELLE,14065-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-ALEXANDRE-DE-KAMOURASKA,14035-1,Boues activées,BA
+Bas-Saint-Laurent,SAINT-ANACLET-DE-LESSARD,07550-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-ANDRÉ (BAS-SAINT-LAURENT),14040-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-ANTONIN (SECTEUR RIVIÈRE VERTE),12015-2,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-ANTONIN (SECTEUR VILLAGE),12015-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-ARSÈNE,12065-1,Étangs non aérés,ENA
+Bas-Saint-Laurent,SAINT-BRUNO-DE-KAMOURASKA,14010-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-CHARLES-GARNIER,09010-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-CLÉMENT,11005-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-CLÉOPHAS,07090-1,Étangs non aérés,ENA
+Bas-Saint-Laurent,SAINT-CYPRIEN (RIV. DU LOUP),12005-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-CYPRIEN (RIV. DU LOUP) (FT),12005-2,Filtre à tourbe,FT
+Bas-Saint-Laurent,SAINT-DAMASE (BAS ST-LAURENT),07105-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-DONAT (BAS-ST-LAURENT),09030-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-ÉPIPHANE,12030-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-EUGÈNE-DE-LADRIÈRE,10075-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-EUSÈBE,13030-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-FABIEN,07680-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-GABRIEL-DE-RIMOUSKI,09025-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-GABRIEL-LALEMANT,10330-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-HONORÉ-DE-TÉMISCOUATA,13090-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-HUBERT-DE-RIVIÈRE-DU-LOUP,08210-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-JEAN-DE-DIEU,11010-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-JOSEPH-DE-KAMOURASKA,14030-1,Filtre à tourbe,FT
+Bas-Saint-Laurent,SAINT-LÉON-LE-GRAND (LA MATAPÉDIA),07030-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-LOUIS-DU-HA! HA!,13080-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-MARC-DU-LAC-LONG,13020-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-MATHIEU-DE-RIOUX,11050-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-MÉDARD,11025-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-MICHEL-DU-SQUATEC,13065-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-MODESTE,12020-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-MOÏSE,07095-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-NARCISSE-DE-RIMOUSKI,07350-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-NOËL,07100-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-OCTAVE-DE-MÉTIS,09055-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-ONÉSIME-D'IXWORTH,14080-1,Bio-fosse MN,BFS
+Bas-Saint-Laurent,SAINT-PACÔME,14070-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-PASCAL,10420-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-PAUL-DE-LA-CROIX,12035-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-PHILIPPE-DE-NÉRI,14060-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-RENÉ-DE-MATANE,08035-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-THARCISIUS,05520-1,Étangs non aérés,ENA
+Bas-Saint-Laurent,SAINT-ULRIC,08073-1,Étangs à rétention réduite,ERR
+Bas-Saint-Laurent,SAINT-VALÉRIEN,07640-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINT-VIANNEY,05540-1,Étangs non aérés,ENA
+Bas-Saint-Laurent,SAINT-VIANNEY,07075-1,Étangs non aérés et filtre,ENAF
+Bas-Saint-Laurent,SAINTE-ANGÈLE-DE-MÉRICI,09035-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-FÉLICITÉ (MATANE),06440-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-FLAVIE (MONT-JOLI),07510-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-HÉLÈNE,10440-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-IRÈNE,07040-1,Filtre à tourbe,FT
+Bas-Saint-Laurent,SAINTE-LUCE,09095-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-LUCE (LUCEVILLE),07530-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAINTE-MARGUERITE-MARIE (MATAPÉDIA),07005-1,Filtre à tourbe,FT
+Bas-Saint-Laurent,SAINTE-RITA,11015-1,Étangs aérés,EA
+Bas-Saint-Laurent,SAYABEC,05610-1,Étangs aérés,EA
+Bas-Saint-Laurent,TÉMISCOUATA-SUR-LE-LAC (CABANO),09500-1,Étangs aérés,EA
+Bas-Saint-Laurent,TÉMISCOUATA-SUR-LE-LAC (N-D-DU-LAC BA-Q),13035-1,Boues activées - mesure débit à l'effluent,BA-Q
+Bas-Saint-Laurent,TROIS-PISTOLES,08460-1,Étangs aérés,EA
+Bas-Saint-Laurent,VAL-BRILLANT,07080-1,Étangs aérés,EA
+Capitale-Nationale,BAIE-SAINT-PAUL (RIV.DU-GOUFFRE),12350-1,Étangs aérés,EA
+Capitale-Nationale,BEAUPRÉ,21025-1,Physico-chimique,PC
+Capitale-Nationale,BOISCHATEL-L'A.-GARDIEN-CH.-RICHER,21045-1,Physico-chimique,PC
+Capitale-Nationale,CAP-SANTÉ,34030-1,Étangs aérés,EA
+Capitale-Nationale,CLERMONT,11480-1,Étangs aérés,EA
+Capitale-Nationale,DESCHAMBAULT,34055-1,Étangs aérés,EA
+Capitale-Nationale,DESCHAMBAULT-GRONDINES (PARC INDUSTRIEL),34058-1,Étangs aérés,EA
+Capitale-Nationale,DONNACONA,29280-1,Étangs aérés,EA
+Capitale-Nationale,FOSSAMBAULT-SUR-LE-LAC,29140-1,Étangs aérés,EA
+Capitale-Nationale,FOSSAMBAULT-SUR-LE-LAC (2013),22010-1,Étangs aérés,EA
+Capitale-Nationale,L'ISLE-AUX-COUDRES,16023-1,Étangs à rétention réduite,ERR
+Capitale-Nationale,LA MALBAIE,15012-1,Physico-chimique,PC
+Capitale-Nationale,LA MALBAIE (MONT-GRAND-FONDS),15013-1,Filtre à tourbe,FT
+Capitale-Nationale,LAC-DELAGE,20490-1,Étangs aérés,EA
+Capitale-Nationale,LES ÉBOULEMENTS,12250-1,Étangs aérés,EA
+Capitale-Nationale,LES ÉBOULEMENTS (ST-JOSEPH-DE-LA-RIVE),16048-1,Dégrillage fin,DEG
+Capitale-Nationale,NEUVILLE,34007-1,Étangs à rétention réduite,ERR
+Capitale-Nationale,NEUVILLE (PLACE DES ILETS OUEST),34007-2,Disques biologiques,BD
+Capitale-Nationale,NOTRE-DAME-DES-MONTS,11580-1,Étangs non aérés,ENA
+Capitale-Nationale,PONT-ROUGE,29200-1,Étangs aérés,EA
+Capitale-Nationale,PORTNEUF,34045-1,Étangs aérés,EA
+Capitale-Nationale,QUÉBEC (EST),00020-1,Biofiltration,BF
+Capitale-Nationale,QUÉBEC (OUEST),00020-2,Biofiltration,BF
+Capitale-Nationale,SAINT-AIMÉ-DES-LACS,11500-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-ALBAN,34097-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-BASILE,29320-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-CASIMIR,34078-2,Étangs à rétention réduite,ERR
+Capitale-Nationale,SAINT-FRANÇOIS-DE-L'ÎLE-D'ORLÉANS,20005-1,Filtre à tourbe,FT
+Capitale-Nationale,SAINT-HILARION,12300-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-IRÉNÉE,15005-1,Dégrillage fin,DEG
+Capitale-Nationale,SAINT-JEAN-DE-L'ÎLE-D'ORLÉANS,20015-1,Étangs à rétention réduite,ERR
+Capitale-Nationale,SAINT-MARC-DES-CARRIÈRES,34065-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-PIERRE-DE-L'ÎLE-D'ORLÉANS,20025-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-RAYMOND,34128-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-SIMÉON (CHARLEVOIX),11120-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-THURIBE,34085-1,Bionest,BION
+Capitale-Nationale,SAINT-TITE-DES-CAPS,21005-1,Étangs à rétention réduite,ERR
+Capitale-Nationale,SAINT-UBALDE,29720-1,Étangs aérés,EA
+Capitale-Nationale,SAINT-URBAIN,12400-1,Étangs aérés,EA
+Capitale-Nationale,SAINTE-BRIGITTE-DE-LAVAL,17460-1,Étangs aérés,EA
+Capitale-Nationale,SAINTE-BRIGITTE-DE-LAVAL (2010),22045-4,Étangs aérés,EA
+Capitale-Nationale,SAINTE-CATHERINE-J-CARTIER (2),22005-1,Étangs aérés,EA
+Capitale-Nationale,SAINTE-CATHERINE-JC-COIN PERDU,29130-2,Étangs aérés,EA
+Capitale-Nationale,SAINTE-FAMILLE,20010-1,Étangs aérés,EA
+Capitale-Nationale,STONEHAM,20560-1,Étangs aérés,EA
+Centre-du-Québec,BAIE-DU-FEBVRE (1993),50100-1,Étangs non aérés - mesure débit à l'effluent,ENAQ
+Centre-du-Québec,BÉCANCOUR (GENTILLY),33320-2,Étangs aérés,EA
+Centre-du-Québec,BÉCANCOUR (PRÉCIEUX-SANG),33320-3,Étangs aérés,EA
+Centre-du-Québec,BÉCANCOUR (SAINTE-GERTRUDE),33320-1,Étangs aérés,EA
+Centre-du-Québec,BÉCANCOUR (SECTEUR OUEST),33320-4,Étangs aérés,EA
+Centre-du-Québec,BERNIERVILLE (ST-FERDINAND),27350-1,Étangs aérés,EA
+Centre-du-Québec,CHESTERVILLE,39030-1,Étangs aérés,EA
+Centre-du-Québec,DAVELUYVILLE,39155-1,Étangs aérés,EA
+Centre-du-Québec,DESCHAILLONS-SUR-SAINT-LAURENT,28790-1,Étangs aérés,EA
+Centre-du-Québec,DRUMMONDVILLE,41720-1,Étangs aérés,EA
+Centre-du-Québec,FORTIERVILLE,38045-1,Étangs aérés,EA
+Centre-du-Québec,GRAND-SAINT-ESPRIT,50065-1,Étangs aérés,EA
+Centre-du-Québec,HAM-NORD,26690-1,Étangs aérés,EA
+Centre-du-Québec,INVERNESS,32058-1,Étangs aérés,EA
+Centre-du-Québec,KINGSEY FALLS,41120-1,Étangs aérés,EA
+Centre-du-Québec,L'AVENIR,49025-1,Étangs aérés,EA
+Centre-du-Québec,LYSTER,27510-1,Étangs aérés,EA
+Centre-du-Québec,MANSEAU,38025-1,Étangs aérés,EA
+Centre-du-Québec,NICOLET,50075-1,Étangs aérés,EA
+Centre-du-Québec,NOTRE-DAME-DU-BON-CONSEIL,49075-1,Étangs aérés,EA
+Centre-du-Québec,PIERREVILLE,50113-1,Étangs aérés,EA
+Centre-du-Québec,PLESSISVILLE,27750-1,Étangs aérés,EA
+Centre-du-Québec,PRINCEVILLE,34470-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-ALBERT,34680-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-BONAVENTURE,49125-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-CÉLESTIN (ANNAVILLE),33360-1,Étangs non aérés,ENA
+Centre-du-Québec,SAINT-CYRILLE-DE-WENDOVER,41660-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-CYRILLE-DE-WENDOVER (HÉBERT),49070-1,Filtres intermittents à recirculation,FIR
+Centre-du-Québec,SAINT-FÉLIX-DE-KINGSEY,41200-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-FRANÇOIS-DU-LAC,50130-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-GERMAIN-DE-GRANTHAM,41730-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-GUILLAUME,42300-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-LÉONARD-D'ASTON,50042-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-PIERRE-BAPTISTE,32050-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-SYLVÈRE,38005-1,Étangs aérés,EA
+Centre-du-Québec,SAINT-WENCESLAS (SD),33400-1,Étangs non aérés,ENA
+Centre-du-Québec,SAINTE-EULALIE,33470-1,Étangs non aérés,ENA
+Centre-du-Québec,SAINTE-PERPÉTUE,33560-1,Étangs aérés,EA
+Centre-du-Québec,TINGWICK,39025-1,Étangs aérés,EA
+Centre-du-Québec,VICTORIAVILLE,34440-1,Boues activées,BA
+Centre-du-Québec,WARWICK,34280-1,Étangs aérés,EA
+Centre-du-Québec,WICKHAM,41440-1,Étangs aérés,EA
+Chaudière-Appalaches,ADSTOCK (SACRÉ-COEUR-DE-MARIE),31056-1,Étangs aérés,EA
+Chaudière-Appalaches,ADSTOCK (SAINT-MÉTHODE),24770-1,Étangs aérés,EA
+Chaudière-Appalaches,ARMAGH,19037-1,Boues activées,BA
+Chaudière-Appalaches,BEAUCEVILLE,23380-1,Boues activées,BA
+Chaudière-Appalaches,BEAULAC,26200-1,Étangs aérés,EA
+Chaudière-Appalaches,BEAUMONT,15780-1,Étangs à rétention réduite,ERR
+Chaudière-Appalaches,BEAUMONT (2011),19105-4,Étangs aérés,EA
+Chaudière-Appalaches,BERTHIER-SUR-MER,14700-1,Étangs aérés,EA
+Chaudière-Appalaches,CAP-SAINT-IGNACE,14510-1,Étangs aérés,EA
+Chaudière-Appalaches,DISRAELI,26600-1,Étangs aérés,EA
+Chaudière-Appalaches,DOSQUET,33040-1,Étangs aérés,EA
+Chaudière-Appalaches,EAST-BROUGHTON,23460-1,Étangs aérés,EA
+Chaudière-Appalaches,FRAMPTON,26005-1,Étangs aérés,EA
+Chaudière-Appalaches,HONFLEUR,19070-1,Étangs aérés,EA
+Chaudière-Appalaches,L'ISLET,17075-1,Étangs aérés,EA
+Chaudière-Appalaches,LA DURANTAYE,19090-1,Étangs aérés,EA
+Chaudière-Appalaches,LA GUADELOUPE,24650-1,Étangs aérés,EA
+Chaudière-Appalaches,LAC-ETCHEMIN,22230-1,Étangs aérés,EA
+Chaudière-Appalaches,LAC-ETCHEMIN (SAINTE-GERMAINE),22250-1,Étangs aérés,EA
+Chaudière-Appalaches,LAURIER-STATION,28440-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (ALEX COUTURE),25030-1,Boues activées,BA
+Chaudière-Appalaches,LÉVIS (BREAKEYVILLE - 2008),25213-5,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (BREAKEYVILLE),25015-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (PARC DE L'ÉRABLIÈRE),25043-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (SAINT-ÉTIENNE),21220-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (SAINT-JEAN),21300-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (SAINT-NICOLAS),25045-1,Boues activées - mesure débit à l'effluent,BA-Q
+Chaudière-Appalaches,LÉVIS (SAINT-ROMUALD),21550-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (SANIMAX ACI) (BA-Q),25213-4,Boues activées - mesure débit à l'effluent,BA-Q
+Chaudière-Appalaches,LÉVIS (STATION DESJARDINS),21480-1,Étangs aérés,EA
+Chaudière-Appalaches,LÉVIS (VAL DES BOIS),25213-6,Fosse septique,FS
+Chaudière-Appalaches,LOTBINIÈRE,28660-1,Étangs aérés,EA
+Chaudière-Appalaches,MONTMAGNY,14550-1,Étangs aérés,EA
+Chaudière-Appalaches,NOTRE-DAME-AUXILIATRICE-BUCKLAND,19010-1,Étangs aérés,EA
+Chaudière-Appalaches,NOTRE-DAME-DES-PINS,23370-1,Disques biologiques,BD
+Chaudière-Appalaches,NOTRE-DAME-DU-ROSAIRE,18040-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ADALBERT,17015-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-AGAPIT,28280-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ANSELME,22490-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ANTOINE-DE-TILLY,33095-1,Dégrillage fin,DEG
+Chaudière-Appalaches,SAINT-APOLLINAIRE,28490-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-APOLLINAIRE (2013),33090-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-AUBERT,13680-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-BENJAMIN,28025-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-BENOÎT-LABRE,29100-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-BERNARD,22750-1,Boues activées,BA
+Chaudière-Appalaches,SAINT-CAMILLE-DE-LELLIS,28070-1,Étangs à rétention réduite,ERR
+Chaudière-Appalaches,SAINT-CHARLES-DE-BELLECHASSE,15600-1,Boues activées,BA
+Chaudière-Appalaches,SAINT-CÔME-LINIÈRE,23170-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-CYPRIEN (ETCHEMINS),28040-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-DAMIEN-DE-BUCKLAND,19030-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ÉDOUARD-DE-LOTBINIÈRE,33080-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ELZÉAR (BEAUCE),23700-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-EPHREM-DE-BEAUCE,23270-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-FABIEN-DE-PANET,14240-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-FRANÇOIS-DE-LA-RIVIÈRE-DU-SUD,18060-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-FRÉDÉRIC,27065-1,Étangs à rétention réduite,ERR
+Chaudière-Appalaches,SAINT-GÉDÉON-DE-BEAUCE,24130-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-GEORGES (BEAUCE),23320-1,Boues activées,BA
+Chaudière-Appalaches,SAINT-GEORGES (SAINT-JEAN-DE-LA-LANDE),29090-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-GERVAIS,15570-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-GILLES,33035-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-HENRI,21140-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-HONORÉ-DE-SHENLEY,23230-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ISIDORE,22570-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-JANVIER-DE-JOLY,33065-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-JEAN-PORT-JOLI,13660-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-JOSEPH-DE-BEAUCE,23600-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-JOSEPH-DE-COLERAINE,27210-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-JOSEPH-DE-COLERAINE(FIR),31045-1,Filtres intermittents à recirculation,FIR
+Chaudière-Appalaches,SAINT-JULES,27055-1,Disques biologiques,BD
+Chaudière-Appalaches,SAINT-JUST-DE-BRETENIÈRES,18005-1,Étangs à rétention réduite,ERR
+Chaudière-Appalaches,SAINT-JUST-DE-BRETENIÈRES (ENA),18005-2,Étangs non aérés,ENA
+Chaudière-Appalaches,SAINT-LAMBERT-DE-LAUZON (2004),26070-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-LAZARE-DE-BELLECHASSE,15340-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-LÉON-DE-STANDON,22290-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-LUC-DE-BELLECHASSE,22270-1,Étangs non aérés,ENA
+Chaudière-Appalaches,SAINT-MAGLOIRE,15200-1,Fossé à infiltration rapide,FAIR
+Chaudière-Appalaches,SAINT-MALACHIE,22340-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-MALACHIE (LA CRAPAUDIÈRE),19025-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-MARCEL,17020-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-MARTIN,23220-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-MICHEL-DE-BELLECHASSE,19110-1,Dégrillage fin,DEG
+Chaudière-Appalaches,SAINT-NARCISSE-DE-BEAURIVAGE,33030-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-NAZAIRE-DE-DORCHESTER,19015-1,Disques biologiques,BD
+Chaudière-Appalaches,SAINT-NAZAIRE-DE-DORCHESTER (2012),19015-2,Disques biologiques,BD
+Chaudière-Appalaches,SAINT-NÉRÉE,15400-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-ODILON-DE-CRANBOURNE,22210-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-PAMPHILE,17010-1,Étangs non aérés,ENA
+Chaudière-Appalaches,SAINT-PATRICE-DE-BEAURIVAGE,33025-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-PHILÉMON,19005-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-PHILÉMON (MASSIF DU SUD),19005-2,Étangs non aérés,ENA
+Chaudière-Appalaches,SAINT-PHILÉMON-2011 (MASSIF DU SUD),19005-3,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-PIERRE-DE-LA-RIVIÈRE-DU-SUD,18055-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-PROSPER,22180-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-RAPHAËL,15510-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-SYLVESTRE,33007-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-THÉOPHILE,29005-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-VALLIER,19117-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINT-VICTOR,23430-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-AGATHE-DE-LOTBINIÈRE,33015-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-AURÉLIE,23110-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-CLAIRE,19055-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-CLOTILDE-DE-BEAUCE,31060-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-CROIX,33100-1,Dégrillage fin,DEG
+Chaudière-Appalaches,SAINTE-EUPHÉMIE-SUR-RIV-DU-SUD,18035-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-HÉNÉDINE,22450-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-JUSTINE,22130-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-LOUISE,17060-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-MARGUERITE,22390-1,Étangs non aérés,ENA
+Chaudière-Appalaches,SAINTE-MARIE,23680-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-PERPÉTUE (L'ISLET),17030-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTE-ROSE-DE-WATFORD,28030-1,Étangs aérés,EA
+Chaudière-Appalaches,SAINTS-ANGES,23640-1,Étangs aérés,EA
+Chaudière-Appalaches,SCOTT,26048-1,Étangs aérés,EA
+Chaudière-Appalaches,SCOTT (2011),26048-2,Étangs aérés,EA
+Chaudière-Appalaches,THETFORD MINES (BLACK LAKE),27220-1,Boues activées,BA
+Chaudière-Appalaches,THETFORD MINES (PONTBRIAND),31084-1,Étangs aérés,EA
+Chaudière-Appalaches,TOURVILLE,13500-1,Étangs aérés,EA
+Chaudière-Appalaches,TRING-JONCTION,23530-1,Étangs aérés,EA
+Chaudière-Appalaches,VAL-ALAIN,33070-1,Étangs aérés,EA
+Côte-Nord,BAIE-COMEAU (MARQUETTE),97345-2,Étangs aérés,EA
+Côte-Nord,BAIE-COMEAU (MINGAN),97345-1,Étangs aérés,EA
+Côte-Nord,BAIE-JOHAN-BEETZ,98035-1,Dégrillage fin,DEG
+Côte-Nord,BLANC-SABLON (SECTEUR BLANC-SABLON),98005-1,Dégrillage fin,DEG
+Côte-Nord,BLANC-SABLON (SECTEUR LOURDES),98005-2,Dégrillage fin,DEG
+Côte-Nord,BONNE-ESPÉRANCE (RIV. ST-PAUL),98010-2,Dégrillage fin,DEG
+Côte-Nord,BONNE-ESPÉRANCE (VIEUX-FORT),98010-1,Dégrillage fin,DEG
+Côte-Nord,FERMONT,97035-1,Dégrillage fin,DEG
+Côte-Nord,FORESTVILLE,97435-1,Étangs aérés,EA
+Côte-Nord,HAVRE-SAINT-PIERRE,98040-1,Dégrillage fin,DEG
+Côte-Nord,L'ÎLE-D'ANTICOSTI (PORT MENIER),98020-1,Dégrillage fin,DEG
+Côte-Nord,LES ESCOUMINS,95025-1,Dégrillage fin,DEG
+Côte-Nord,LONGUE-POINTE-DE-MINGAN,98045-1,Étangs aérés,EA
+Côte-Nord,PORT-CARTIER,97020-1,Étangs aérés,EA
+Côte-Nord,RIVIÈRE-AU-TONNERRE,97200-1,Étangs aérés,EA
+Côte-Nord,SACRÉ-COEUR,95010-1,Étangs aérés,EA
+Côte-Nord,SAINT-AUGUSTIN (CÔTE-NORD),98012-1,Étangs à rétention réduite,ERR
+Côte-Nord,SCHEFFERVILLE,98450-1,Physico-chimique,PC
+Côte-Nord,SEPT-ÎLES (ALOUETTE),97007-3,Étangs aérés,EA
+Côte-Nord,SEPT-ÎLES (CLARKE),97270-1,Étangs aérés,EA
+Côte-Nord,SEPT-ÎLES (GALLIX),97015-1,Étangs aérés,EA
+Côte-Nord,SEPT-ÎLES (MOISIE-MALIOTENAM),97005-1,Dégrillage fin,DEG
+Côte-Nord,SEPT-ÎLES (VILLE),97010-1,Étangs aérés,EA
+Côte-Nord,TADOUSSAC,95005-1,Dégrillage fin,DEG
+Estrie,ASBESTOS,35700-1,Boues activées,BA
+Estrie,ASCOT-CORNER (BD),36250-1,Disques biologiques,BD
+Estrie,ASCOT-CORNER (EA),36250-2,Étangs aérés,EA
+Estrie,AUDET,30055-1,Étangs aérés,EA
+Estrie,AYER'S-CLIFF (VL),37600-1,Boues activées,BA
+Estrie,BONSECOURS (SD),39450-1,Filtres intermittents à recirculation,FIR
+Estrie,BURY,25710-1,Étangs non aérés,ENA
+Estrie,COATICOOK,37280-1,Étangs aérés,EA
+Estrie,COATICOOK (BARNSTON),37300-1,Étangs aérés,EA
+Estrie,COMPTON,25380-1,Étangs aérés,EA
+Estrie,COOKSHIRE-EATON (COOKSHIRE),25520-1,Étangs aérés,EA
+Estrie,COOKSHIRE-EATON (JOHNVILLE),41038-1,Fosse septique,FS
+Estrie,COOKSHIRE-EATON (SAWYERVILLE),25500-1,Étangs aérés,EA
+Estrie,COURCELLES,24580-1,Étangs aérés,EA
+Estrie,DANVILLE,35720-1,Étangs aérés,EA
+Estrie,DIXVILLE,44023-1,Étangs aérés,EA
+Estrie,DUDSWELL,41117-1,Biotour,BIOT
+Estrie,EAST ANGUS,41060-1,Étangs aérés,EA
+Estrie,EASTMAN,38340-1,Étangs aérés,EA
+Estrie,FRONTENAC,24210-1,Étangs non aérés,ENA
+Estrie,FRONTENAC (MERCIER),24210-2,Étangs non aérés,ENA
+Estrie,LA PATRIE,25600-1,Étangs non aérés,ENA
+Estrie,LAC-DROLET,30080-1,Étangs non aérés,ENA
+Estrie,LAC-MÉGANTIC,24200-1,Boues activées,BA
+Estrie,LAMBTON,24500-1,Étangs aérés,EA
+Estrie,LAWRENCEVILLE,39400-1,Étangs aérés,EA
+Estrie,MAGOG,37720-1,Boues activées,BA
+Estrie,MAGOG (OMERVILLE),37740-1,Étangs aérés,EA
+Estrie,MARTINVILLE,25360-1,Étangs non aérés,ENA
+Estrie,MILAN,30040-1,Étangs aérés,EA
+Estrie,NANTES,24320-1,Étangs non aérés,ENA
+Estrie,NORTH HATLEY,37650-1,Étangs aérés,EA
+Estrie,NOTRE-DAME-DES-BOIS,30010-1,Étangs aérés,EA
+Estrie,ORFORD,45115-2,Étangs aérés,EA
+Estrie,POTTON,45030-1,Étangs non aérés,ENA
+Estrie,POTTON (OWL'S HEAD),45030-2,Étangs aérés,EA
+Estrie,RACINE,42032-1,Étangs aérés,EA
+Estrie,RICHMOND,35640-1,Étangs aérés,EA
+Estrie,SAINT-ADRIEN,26710-1,Étangs aérés,EA
+Estrie,SAINT-BENOÎT-DU-LAC (ABBAYE),45080-1,Boues activées,BA
+Estrie,SAINT-CLAUDE,42100-1,Disques biologiques,BD
+Estrie,SAINT-DENIS-DE-BROMPTON (BROMPTON),42025-1,Étangs aérés,EA
+Estrie,SAINT-DENIS-DE-BROMPTON (MONTJOIE),35220-1,Étangs aérés,EA
+Estrie,SAINT-DENIS-DE-BROMPTON (VILLAGE),35220-2,Étangs aérés,EA
+Estrie,SAINT-FRANÇOIS-XAVIER-DE-BROMPTON,35450-1,Étangs aérés,EA
+Estrie,SAINT-GEORGES-DE-WINDSOR,40032-1,Étangs aérés,EA
+Estrie,SAINT-HERMÉNÉGILDE,44015-1,Disques biologiques,BD
+Estrie,SAINT-ISIDORE-DE-CLIFTON,41012-1,Disques biologiques,BD
+Estrie,SAINT-LUDGER,24170-1,Étangs aérés,EA
+Estrie,SAINT-MALO,44003-1,Étangs aérés,EA
+Estrie,SAINT-ROBERT-BELLARMIN,24110-1,Étangs non aérés,ENA
+Estrie,SAINT-ROMAIN,24420-1,Étangs non aérés,ENA
+Estrie,SAINT-SÉBASTIEN,24410-1,Étangs aérés,EA
+Estrie,SAINTE-ANNE-DE-LA-ROCHELLE,42050-1,Étangs aérés,EA
+Estrie,SAINTE-CÉCILE-DE-WHITTON,30050-1,Étangs aérés,EA
+Estrie,SAINTE-EDWIDGE-DE-CLIFTON,44055-1,Étangs aérés,EA
+Estrie,SCOTSTOWN,25680-1,Étangs aérés,EA
+Estrie,SHERBROOKE,36350-1,Biofiltration,BF
+Estrie,SHERBROOKE (BROMPTONVILLE),35170-1,Étangs aérés,EA
+Estrie,SHERBROOKE (DEAUVILLE),36400-1,Étangs aérés,EA
+Estrie,SHERBROOKE (ROCK-FOREST),36500-1,Boues activées,BA
+Estrie,SHERBROOKE (SAINT-ÉLIE),36600-1,Étangs aérés,EA
+Estrie,STANSTEAD (BEEBE-PLAIN),37440-1,Étangs aérés,EA
+Estrie,STANSTEAD (FITCHBAY),45025-1,Étangs aérés,EA
+Estrie,STANSTEAD (GEORGEVILLE),45025-2,Étangs aérés,EA
+Estrie,STANSTEAD (ROCK-ISLAND),37380-1,Boues activées,BA
+Estrie,STANSTEAD (STANSTEAD-PLAIN),37420-1,Étangs aérés,EA
+Estrie,STORNOWAY,30105-1,Étangs non aérés,ENA
+Estrie,STRATFORD,26150-1,Étangs aérés,EA
+Estrie,VALCOURT,39600-1,Étangs aérés,EA
+Estrie,WATERVILLE,25440-1,Étangs aérés,EA
+Estrie,WEEDON,26380-1,Étangs aérés,EA
+Estrie,WEEDON (SAINT-GÉRARD),26350-1,Étangs aérés,EA
+Estrie,WINDSOR,35480-1,Étangs aérés,EA
+Estrie,WOTTON,40017-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,BONAVENTURE,04280-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,CAPLAN,05060-1,Dégrillage fin,DEG
+Gaspésie--Îles-de-la-Madeleine,CARLETON,04480-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,CHANDLER,02035-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,CHANDLER (NEWPORT),02040-1,Dégrillage fin,DEG
+Gaspésie--Îles-de-la-Madeleine,GASPÉ,02500-1,Physico-chimique,PC
+Gaspésie--Îles-de-la-Madeleine,GASPÉ (PETIT-CAP),03005-2,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,GASPÉ (RIVIÈRE AU RENARD),03005-1,Dégrillage fin,DEG
+Gaspésie--Îles-de-la-Madeleine,GRANDE-RIVIÈRE,02200-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,GRANDE-VALLÉE,03020-1,Dégrillage fin,DEG
+Gaspésie--Îles-de-la-Madeleine,HOPE,05025-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,LES ÎLES (CAP-AUX-MEULES),01300-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,LES ÎLES (FATIMA),01350-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,LES ÎLES (HAVRE-AUBERT),01008-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,LES ÎLES (HAVRE-AUX-MAISONS),01030-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,LES ÎLES (L'ÉTANG-DU-NORD),01015-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,MARIA,04460-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,MARSOUI,03550-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,MATAPÉDIA,06045-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,MONT-SAINT-PIERRE,04015-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,NEW RICHMOND,04360-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,NEW RICHMOND (PIN ROUGE),05070-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,NOUVELLE,04530-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,PASPÉBIAC,04250-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,PERCÉ,02150-1,Disques biologiques,BD
+Gaspésie--Îles-de-la-Madeleine,PERCÉ (CAP D'ESPOIR),02005-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,POINTE-A-LA-CROIX,06030-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,PORT-DANIEL-GASCONS,04170-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,SAINT-ALPHONSE,05065-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,SAINT-ELZÉAR (BONAVENTURE),05050-1,Étangs non aérés,ENA
+Gaspésie--Îles-de-la-Madeleine,SAINT-MAXIME-DU-MONT-LOUIS,04010-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,SAINT-SIMÉON (BONAVENTURE),04310-1,Étangs aérés,EA
+Gaspésie--Îles-de-la-Madeleine,SAINTE-ANNE-DES-MONTS,04040-1,Étangs à rétention réduite,ERR
+Gaspésie--Îles-de-la-Madeleine,SAINTE-THÉRÈSE-DE-GASPÉ,02180-1,Étangs aérés,EA
+Lanaudière,BERTHIERVILLE,49220-1,Étangs aérés,EA
+Lanaudière,CHERTSEY,62047-1,Filtres intermittents à recirculation,FIR
+Lanaudière,CHERTSEY (2010),62047-2,Filtres intermittents à recirculation,FIR
+Lanaudière,CHERTSEY (LAC CLERMOUSTIER),62047-3,Disques biologiques,BD
+Lanaudière,CRABTREE,58150-1,Boues activées,BA
+Lanaudière,JOLIETTE,61025-1,Étangs aérés,EA
+Lanaudière,L'ASSOMPTION,62420-1,Étangs aérés,EA
+Lanaudière,L'ÉPIPHANIE (V),62360-1,Étangs aérés,EA
+Lanaudière,LANORAIE,52015-1,Étangs aérés,EA
+Lanaudière,LAVALTRIE,52005-1,Étangs aérés,EA
+Lanaudière,MASCOUCHE (LACHENAIE),62310-1,Étangs aérés,EA
+Lanaudière,RAWDON,61360-1,Étangs aérés,EA
+Lanaudière,REPENTIGNY,62200-1,Physico-chimique,PC
+Lanaudière,REPENTIGNY (LE GARDEUR),60010-1,Étangs aérés,EA
+Lanaudière,SAINT-ALEXIS,63020-1,Étangs aérés,EA
+Lanaudière,SAINT-AMBROISE-DE-KILDARE,58310-1,Étangs aérés,EA
+Lanaudière,SAINT-BARTHÉLEMY,52055-1,Étangs aérés,EA
+Lanaudière,SAINT-CALIXTE,61420-1,Étangs aérés,EA
+Lanaudière,SAINT-CÔME,62065-1,Boues activées,BA
+Lanaudière,SAINT-CUTHBERT,52062-1,Étangs aérés,EA
+Lanaudière,SAINT-DAMIEN,62075-1,Disques biologiques,BD
+Lanaudière,SAINT-DONAT (LANAUDIÈRE),62060-1,Étangs non aérés et filtre,ENAF
+Lanaudière,SAINT-DONAT (LES CIMES),62060-2,Filtres intermittents à recirculation,FIR
+Lanaudière,SAINT-ESPRIT,61200-1,Étangs aérés,EA
+Lanaudière,SAINT-FELIX-DE-VALOIS,58480-1,Étangs aérés,EA
+Lanaudière,SAINT-GABRIEL,49400-1,Boues activées,BA
+Lanaudière,SAINT-IGNACE-DE-LOYOLA,52045-1,Étangs aérés,EA
+Lanaudière,SAINT-JACQUES,61280-1,Boues activées,BA
+Lanaudière,SAINT-JEAN-DE-MATHA,58510-1,Étangs aérés,EA
+Lanaudière,SAINT-LIN-LAURENTIDES (AGRANDISSEMENT),63048-2,Étangs aérés,EA
+Lanaudière,SAINT-MICHEL-DES-SAINTS,49600-1,Étangs aérés,EA
+Lanaudière,SAINT-NORBERT,52070-1,Étangs aérés,EA
+Lanaudière,SAINT-ROCH-DE-L'ACHIGAN,62480-1,Boues activées,BA
+Lanaudière,SAINT-SULPICE,62110-1,Étangs aérés,EA
+Lanaudière,SAINT-THOMAS,61027-1,Étangs aérés,EA
+Lanaudière,SAINT-ZÉNON,49570-1,Étangs aérés,EA
+Lanaudière,SAINTE-BÉATRIX,58550-1,Étangs aérés,EA
+Lanaudière,SAINTE-ÉLISABETH,52030-1,Étangs aérés,EA
+Lanaudière,SAINTE-ÉMÉLIE-DE-L'ÉNERGIE (ERR),62070-1,Étangs à rétention réduite,ERR
+Lanaudière,SAINTE-JULIENNE,61400-1,Étangs aérés,EA
+Lanaudière,SAINTE-MARIE-SALOMÉ,63005-1,Étangs aérés,EA
+Lanaudière,SAINTE-MÉLANIE,58370-1,Oxydation rapide avec polissage,ORP
+Lanaudière,TERREBONNE,64010-1,Étangs aérés,EA
+Lanaudière,TERREBONNE (LA PLAINE),62510-2,Étangs aérés,EA
+Laurentides,BLAINVILLE-SAINTE-THÉRÈSE,73010-1,Étangs aérés,EA
+Laurentides,BOISBRIAND,63110-1,Biofiltration,BF
+Laurentides,BOISBRIAND (2009),73005-1,Biofiltration,BF
+Laurentides,BRÉBEUF,63700-1,Filtres intermittents à recirculation,FIR
+Laurentides,BROWNSBURG,76040-1,Étangs aérés,EA
+Laurentides,DEUX-MONTAGNES,73180-1,Étangs aérés,EA
+Laurentides,FERME-NEUVE,79100-1,Étangs aérés,EA
+Laurentides,GRENVILLE,76055-1,Étangs à rétention réduite,ERR
+Laurentides,KIAMIKA,79025-1,Étangs aérés,EA
+Laurentides,L'ASCENSION,76580-1,Filtres intermittents enfouis,FIE
+Laurentides,LA CONCEPTION,76120-1,Fosse septique,FS
+Laurentides,LA CONCEPTION,78115-1,Disques biologiques,BD
+Laurentides,LABELLE,78120-1,Étangs aérés,EA
+Laurentides,LAC-DES-ÉCORCES,79075-1,Étangs aérés,EA
+Laurentides,LACHUTE,76020-1,Étangs aérés,EA
+Laurentides,MIRABEL (SAINT-BENOIT),73650-3,Étangs aérés,EA
+Laurentides,MIRABEL (SAINT-CANUT),73650-1,Boues activées,BA
+Laurentides,MIRABEL (SAINT-JANVIER),73650-2,Étangs aérés,EA
+Laurentides,MIRABEL (SAINTE-MARIANNE),74005-1,Étangs aérés,EA
+Laurentides,MIRABEL (ST-HERMAS),73650-4,Étangs aérés,EA
+Laurentides,MONT-LAURIER,76650-1,Étangs aérés,EA
+Laurentides,MONT-TREMBLANT (SAINT-JOVITE) (AGRAND.),78102-3,Boues activées,BA
+Laurentides,MONT-TREMBLANT (STATION MONT-TREMBLANT),78102-2,Étangs aérés,EA
+Laurentides,MONT-TREMBLANT (VILLAGE),78102-1,Étangs aérés,EA
+Laurentides,OKA,73420-1,Étangs aérés,EA
+Laurentides,PRÉVOST,63400-1,Étangs aérés,EA
+Laurentides,RIVIÈRE-ROUGE (L'ANNONCIATION),76520-1,Étangs aérés,EA
+Laurentides,ROSEMÈRE (LORRAINE),73025-1,Physico-chimique,PC
+Laurentides,SAINT-ADOLPHE-D'HOWARD,74660-1,Étangs aérés,EA
+Laurentides,SAINT-ADOLPHE-D'HOWARD (LES TERRASSES),74660-2,Étangs aérés,EA
+Laurentides,SAINT-ANDRÉ-D'ARGENTEUIL (EST),76005-1,Étangs aérés,EA
+Laurentides,SAINT-EUSTACHE,72005-1,Biofiltration,BF
+Laurentides,SAINT-FAUSTIN-LAC-CARRÉ,78047-1,Étangs aérés,EA
+Laurentides,SAINT-JÉRÔME-MÉTROPOLITAIN,75015-1,Étangs aérés,EA
+Laurentides,SAINT-PLACIDE,72043-1,Disques biologiques,BD
+Laurentides,SAINT-SAUVEUR,63440-1,Étangs aérés,EA
+Laurentides,SAINTE-ADÈLE (ALPINE INN),63510-1,Étangs aérés,EA
+Laurentides,SAINTE-ADÈLE (MONT-GABRIEL),63450-2,Étangs aérés,EA
+Laurentides,SAINTE-ADÈLE (MONT-ROLLAND),63450-1,Boues activées,BA
+Laurentides,SAINTE-AGATHE-DES-MONTS,63610-1,Boues activées,BA
+Laurentides,SAINTE-ANNE-DES-PLAINES,73035-1,Étangs aérés,EA
+Laurentides,SAINTE-ANNE-DU-LAC,76700-1,Étangs aérés,EA
+Laurentides,SAINTE-LUCIE-DES-LAURENTIDES,63590-1,Étangs aérés,EA
+Laurentides,SAINTE-MARGUERITE-LAC-MASSON,63580-1,Étangs aérés,EA
+Laurentides,SAINTE-SOPHIE,63280-1,Étangs aérés,EA
+Laurentides,VAL-DAVID,63530-2,Étangs aérés,EA
+Laurentides,VAL-MORIN,63530-1,Fosse septique,FS
+Laval,LAVAL (FABREVILLE),64500-1,Physico-chimique,PC
+Laval,LAVAL (LAPINIÈRE),64500-3,Physico-chimique,PC
+Laval,LAVAL (SAINTE-ROSE-AUTEUIL),64500-2,Biofiltration,BF
+Mauricie,CHAMPLAIN,37220-1,Étangs à rétention réduite,ERR
+Mauricie,CHARETTE,36005-1,Étangs à rétention réduite,ERR
+Mauricie,GRANDES-PILES,35040-1,Étangs à rétention réduite,ERR
+Mauricie,HÉROUXVILLE,32510-1,Étangs aérés,EA
+Mauricie,LA TUQUE,32660-1,Étangs aérés,EA
+Mauricie,LAC-AUX-SABLES (2012),35010-2,Étangs aérés,EA
+Mauricie,LAC-ÉDOUARD,90012-1,Filtres intermittents à recirculation,FIR
+Mauricie,LOUISEVILLE,51015-1,Étangs aérés,EA
+Mauricie,MASKINONGÉ,51005-1,Étangs aérés,EA
+Mauricie,SAINT-ADELPHE,35015-1,Étangs aérés,EA
+Mauricie,SAINT-ALEXIS-DES-MONTS,51065-1,Étangs à rétention réduite,ERR
+Mauricie,SAINT-ÉDOUARD-DE-MASKINONGÉ,51050-1,Étangs à rétention réduite,ERR
+Mauricie,SAINT-ÉTIENNE-DES-GRÈS,43400-1,Étangs aérés,EA
+Mauricie,SAINT-JUSTIN,51045-1,Étangs aérés,EA
+Mauricie,SAINT-LÉON-LE-GRAND (MASKINONGÉ),51035-1,Étangs à rétention réduite,ERR
+Mauricie,SAINT-MAURICE,32330-1,Étangs aérés,EA
+Mauricie,SAINT-NARCISSE (MAURICIE),37040-1,Étangs aérés,EA
+Mauricie,SAINT-PAULIN,51060-1,Étangs aérés,EA
+Mauricie,SAINT-PAULIN (2010),51060-2,Étangs aérés,EA
+Mauricie,SAINT-ROCH-DE-MÉKINAC,35045-1,Filtres intermittents à recirculation,FIR
+Mauricie,SAINT-SÉVERIN (MAURICIE),35020-1,Étangs aérés,EA
+Mauricie,SAINT-STANISLAS,37015-1,Étangs à rétention réduite,ERR
+Mauricie,SAINT-TITE,35025-1,Étangs aérés,EA
+Mauricie,SAINTE-ANGÈLE-DE-PRÉMONT,51055-1,Étangs aérés,EA
+Mauricie,SAINTE-ANNE-DE-LA-PÉRADE,37205-1,Étangs aérés,EA
+Mauricie,SAINTE-GENEVIÈVE-DE-BATISCAN,37215-1,Étangs aérés,EA
+Mauricie,SAINTE-THÈCLE,35050-1,Étangs aérés,EA
+Mauricie,SAINTE-URSULE,47260-1,Étangs aérés,EA
+Mauricie,SHAWINIGAN,36030-1,Étangs aérés,EA
+Mauricie,SHAWINIGAN (GRAND-MÈRE),32550-1,Étangs aérés,EA
+Mauricie,SHAWINIGAN (SAINT-GÉRARD),43560-1,Étangs aérés,EA
+Mauricie,SHAWINIGAN (SAINT-JEAN-DES-PILES),32560-1,Disques biologiques,BD
+Mauricie,SHAWINIGAN (ST-JEAN-DES-PILES) 2011,36033-1,Étangs aérés,EA
+Mauricie,SHAWINIGAN-SUD,32360-1,Étangs aérés,EA
+Mauricie,TROIS-RIVIÈRES (POINTE-DU-LAC),43200-1,Étangs aérés,EA
+Mauricie,TROIS-RIVIÈRES (RED MILL),37067-2,Fosse septique,FS
+Mauricie,TROIS-RIVIÈRES (SAINT-LOUIS),32310-1,Étangs aérés,EA
+Mauricie,TROIS-RIVIÈRES (SAINTE-MARTHE),37050-1,Filtres intermittents à recirculation,FIR
+Mauricie,TROIS-RIVIÈRES (VALLEY INN),37067-1,Filtre à tourbe,FT
+Mauricie,TROIS-RIVIÈRES MÉTROPOLITAIN,32260-1,Étangs aérés,EA
+Mauricie,YAMACHICHE,43270-1,Étangs aérés,EA
+Montérégie,ABERCORN,46005-2,Étangs à rétention réduite,ERR
+Montérégie,ACTON-VALE,40400-1,Étangs aérés,EA
+Montérégie,ANGE-GARDIEN,52120-1,Étangs aérés,EA
+Montérégie,BEAUHARNOIS,70180-1,Boues activées,BA
+Montérégie,BEAUHARNOIS (MELOCHEVILLE),70460-1,Étangs aérés,EA
+Montérégie,BEDFORD,54360-1,Étangs aérés,EA
+Montérégie,BRIGHAM,38700-1,Étangs aérés,EA
+Montérégie,BROMONT,38780-1,Étangs aérés,EA
+Montérégie,CARIGNAN,57010-1,Étangs aérés,EA
+Montérégie,CARIGNAN (2012),57010-2,Étangs aérés,EA
+Montérégie,CHAMBLY,56120-1,Étangs aérés,EA
+Montérégie,CHAMBLY (AGRANDISSEMENT),57005-3,Étangs aérés,EA
+Montérégie,CHÂTEAUGUAY,69600-1,Biofiltration,BF
+Montérégie,CONTRECOEUR,57780-1,Étangs aérés,EA
+Montérégie,COTEAU-DU-LAC,71300-1,Étangs aérés,EA
+Montérégie,COTEAU-DU-LAC (ÉPUR. PARC INDUSTRIEL),71040-1,Boues activées,BA
+Montérégie,COWANSVILLE,54480-1,Boues activées,BA
+Montérégie,DUNHAM,54450-1,Étangs aérés,EA
+Montérégie,FARNHAM,54750-1,Boues activées,BA
+Montérégie,FRANKLIN,69010-1,Étangs aérés,EA
+Montérégie,GRANBY,39240-1,Boues activées,BA
+Montérégie,HEMMINGFORD,68010-1,Étangs aérés,EA
+Montérégie,HENRYVILLE,53200-1,Disques biologiques,BD
+Montérégie,HINCHINBROOKE,69045-1,Étangs aérés,EA
+Montérégie,HOWICK,69025-1,Étangs aérés,EA
+Montérégie,HUDSON,71100-1,Boues activées,BA
+Montérégie,HUNTINGDON,69055-1,Étangs aérés,EA
+Montérégie,L'ÎLE-PERROT,72150-1,Biofiltration,BF
+Montérégie,LA PRAIRIE (SAINTE-CATHERINE),66500-1,Boues activées,BA
+Montérégie,LA PRÉSENTATION,54035-1,Étangs aérés,EA
+Montérégie,LAC-BROME (KNOWLTON),38500-1,Étangs aérés,EA
+Montérégie,LAC-BROME (OUEST),38500-2,Fosse septique,FS
+Montérégie,LACOLLE,55120-1,Étangs aérés,EA
+Montérégie,LES CÈDRES,71050-1,Étangs aérés,EA
+Montérégie,LONGUEUIL,56650-1,Physico-chimique,PC
+Montérégie,MARIEVILLE,52400-1,Boues activées,BA
+Montérégie,MASSUEVILLE,50180-1,Étangs aérés,EA
+Montérégie,MERCIER,67045-1,Étangs aérés,EA
+Montérégie,MONT-SAINT-GRÉGOIRE,53550-1,Disques biologiques,BD
+Montérégie,MONT-SAINT-GRÉGOIRE 2009,56097-2,Réacteur biologique à support fluidisé,RBSF
+Montérégie,NAPIERVILLE (SAINT-CYPRIEN),68030-1,Étangs aérés,EA
+Montérégie,NOTRE-DAME-DE-L'ÎLE-PERROT,71065-1,Étangs aérés,EA
+Montérégie,NOTRE-DAME-DE-L'ÎLE-PERROT,72130-1,Étangs aérés,EA
+Montérégie,NOYAN,56015-1,Réacteur biologique à support fluidisé,RBSF
+Montérégie,ORMSTOWN (SAINT-MALACHIE),69780-1,Étangs aérés,EA
+Montérégie,PINCOURT,72180-1,Boues activées,BA
+Montérégie,RIGAUD,72680-1,Étangs aérés,EA
+Montérégie,RIVIÈRE-BEAUDETTE,71005-1,Filtres intermittents à recirculation,FIR
+Montérégie,ROXTON-FALLS,39730-1,Étangs aérés,EA
+Montérégie,ROXTON-POND,39340-1,Étangs aérés,EA
+Montérégie,SAINT-ALEXANDRE,53450-1,Étangs aérés,EA
+Montérégie,SAINT-ALPHONSE (GRANBY),39260-1,Fosse septique,FS
+Montérégie,SAINT-AMABLE,59015-1,Étangs aérés,EA
+Montérégie,SAINT-ANICET,69070-1,Disques biologiques,BD
+Montérégie,SAINT-ARMAND,46017-1,Étangs aérés,EA
+Montérégie,SAINT-BRUNO-SAINT-BASILE-LE-GRAND,57020-1,Étangs aérés,EA
+Montérégie,SAINT-CÉSAIRE,52240-1,Étangs aérés,EA
+Montérégie,SAINT-CHARLES-SUR-RICHELIEU,57057-1,Étangs à rétention réduite,ERR
+Montérégie,SAINT-CHRYSOSTOME (ST-JEAN-C),69020-1,Étangs aérés,EA
+Montérégie,SAINT-CLET,71045-1,Étangs aérés,EA
+Montérégie,SAINT-DAMASE,51120-1,Étangs aérés,EA
+Montérégie,SAINT-DENIS-SUR-RICHELIEU,57068-1,Étangs à rétention réduite,ERR
+Montérégie,SAINT-DENIS-SUR-RICHELIEU (BONDUELLE),57068-2,Étangs aérés avec bassin complètement mélangé,EACM
+Montérégie,SAINT-DOMINIQUE,54060-1,Étangs aérés,EA
+Montérégie,SAINT-ÉDOUARD,68045-1,Étangs aérés,EA
+Montérégie,SAINT-ÉTIENNE-DE-BEAUHARNOIS,70030-1,Étangs à rétention réduite,ERR
+Montérégie,SAINT-HUGUES,40750-1,Disques biologiques,BD
+Montérégie,SAINT-HYACINTHE,51460-1,Boues activées,BA
+Montérégie,SAINT-ISIDORE 2008 (MONTÉRÉGIE),67040-1,Étangs aérés,EA
+Montérégie,SAINT-JEAN-BAPTISTE,52600-1,Boues activées,BA
+Montérégie,SAINT-JEAN-SUR-RICHELIEU,55750-1,Physico-chimique,PC
+Montérégie,SAINT-JEAN-SUR-RICHELIEU (L'ACADIE),56083-1,Étangs aérés,EA
+Montérégie,SAINT-JUDE,54110-1,Étangs aérés,EA
+Montérégie,SAINT-LAZARE,71105-1,Étangs aérés,EA
+Montérégie,SAINT-LIBOIRE,40300-1,Étangs aérés,EA
+Montérégie,SAINT-LOUIS,54120-1,Étangs aérés,EA
+Montérégie,SAINT-LOUIS-DE-GONZAGUE,70035-1,Étangs aérés,EA
+Montérégie,SAINT-MATHIAS-SUR-RICHELIEU,55065-1,Disques biologiques,BD
+Montérégie,SAINT-MATHIEU-DE-BELOEIL,57045-1,Filtres intermittents à recirculation,FIR
+Montérégie,SAINT-MATHIEU-DE-BELOEIL (EA),57045-2,Étangs aérés,EA
+Montérégie,SAINT-MICHEL - DES MERLES (BD),68050-1,Disques biologiques,BD
+Montérégie,SAINT-NAZAIRE-D'ACTON,48050-1,Étangs aérés,EA
+Montérégie,SAINT-OURS (SAINT-ROCH),53040-1,Étangs aérés,EA
+Montérégie,SAINT-PATRICE-DE-SHERRINGTON,68025-1,Étangs aérés,EA
+Montérégie,SAINT-PAUL-D'ABBOTSFORD,55015-1,Étangs aérés,EA
+Montérégie,SAINT-PAUL-DE-L'ÎLE-AUX-NOIX,56035-1,Étangs à rétention réduite,ERR
+Montérégie,SAINT-PHILIPPE,67010-1,Étangs aérés,EA
+Montérégie,SAINT-PHILIPPE (2008),67010-2,Étangs aérés,EA
+Montérégie,SAINT-PIE,40120-1,Étangs aérés,EA
+Montérégie,SAINT-POLYCARPE,71020-2,Étangs aérés,EA
+Montérégie,SAINT-RÉMI,68055-1,Étangs aérés,EA
+Montérégie,SAINT-ROBERT,53020-1,Étangs aérés,EA
+Montérégie,SAINT-SIMON,40280-1,Étangs aérés,EA
+Montérégie,SAINT-STANISLAS-DE-KOSTKA,70040-1,Étangs à rétention réduite,ERR
+Montérégie,SAINT-TÉLESPHORE (DALHOUSIE),71015-1,Étangs aérés,EA
+Montérégie,SAINT-TÉLESPHORE (VILLAGE),71015-2,Étangs aérés,EA
+Montérégie,SAINT-THÉODORE-D'ACTON,40480-1,Étangs aérés,EA
+Montérégie,SAINT-URBAIN-PREMIER,70005-1,Étangs aérés,EA
+Montérégie,SAINT-VALÉRIEN-DE-MILTON (2004),54065-3,Étangs aérés,EA
+Montérégie,SAINT-VALÉRIEN-DE-MILTON (2009),54065-4,Étangs aérés,EA
+Montérégie,SAINT-VALÉRIEN-DE-MILTON (RBS),54065-1,Boues activées,BA
+Montérégie,SAINT-ZOTIQUE (AGRANDISSEMENT),71025-2,Étangs aérés,EA
+Montérégie,SAINTE-ANGÈLE-DE-MONNOIR,52320-1,Étangs aérés,EA
+Montérégie,SAINTE-BRIGIDE-D'IBERVILLE,56105-1,Étangs aérés,EA
+Montérégie,SAINTE-CLOTILDE,68020-1,Étangs à rétention réduite,ERR
+Montérégie,SAINTE-HÉLÈNE-DE-BAGOT,40600-1,Disques biologiques,BD
+Montérégie,SAINTE-JULIE,57280-1,Étangs aérés,EA
+Montérégie,SAINTE-JULIE (2007),59010-1,Étangs aérés,EA
+Montérégie,SAINTE-MADELEINE-SAINTE-MARIE-MADELEINE,54025-1,Étangs aérés,EA
+Montérégie,SAINTE-MARTINE,69360-1,Étangs aérés,EA
+Montérégie,SAINTE-VICTOIRE-DE-SOREL,53025-1,Étangs aérés,EA
+Montérégie,SALABERRY-DE-VALLEYFIELD,70670-1,Boues activées,BA
+Montérégie,SHEFFORD,47035-1,Étangs aérés,EA
+Montérégie,SOREL-TRACY,50730-1,Étangs aérés,EA
+Montérégie,STANBRIDGE EAST,46045-1,Disques biologiques,BD
+Montérégie,SUTTON,46055-1,Étangs aérés,EA
+Montérégie,UPTON,48035-1,Étangs aérés,EA
+Montérégie,VALLÉE DU RICHELIEU (BELOEIL),57040-1,Physico-chimique,PC
+Montérégie,VARENNES,57320-1,Étangs aérés,EA
+Montérégie,VAUDREUIL-DORION,72260-1,Boues activées,BA
+Montérégie,VAUDREUIL-DORION (2013),71083-1,Boues activées,BA
+Montérégie,VENISE-EN-QUÉBEC,54220-1,Étangs aérés,EA
+Montérégie,VERCHÈRES,57520-1,Étangs aérés,EA
+Montérégie,WARDEN,39180-1,Étangs aérés,EA
+Montérégie,WATERLOO,39160-1,Étangs aérés,EA
+Montérégie,YAMASKA,53072-1,Étangs aérés,EA
+Montréal,MONTRÉAL (ÎLE NOTRE-DAME),00065-2,Étangs aérés,EA
+Montréal,MONTRÉAL (STATION JEAN-R.-MARCOTTE),00065-1,Physico-chimique,PC
+Nord-du-Québec,AKULIVIK,99125-1,Étangs non aérés,ENA
+Nord-du-Québec,AUPALUK,99105-1,Étangs non aérés,ENA
+Nord-du-Québec,CHIBOUGAMAU,98200-1,Étangs aérés,EA
+Nord-du-Québec,FERMONT (2011),97035-2,Étangs aérés,EA
+Nord-du-Québec,INUKJUAK,99085-1,Étangs non aérés,ENA
+Nord-du-Québec,IVUJIVIK,99140-1,Étangs non aérés,ENA
+Nord-du-Québec,KANGIQSUALUJJUAQ,99090-1,Étangs non aérés,ENA
+Nord-du-Québec,KANGIQSUJUAQ,99130-1,Étangs non aérés,ENA
+Nord-du-Québec,KANGIRSUK,99110-1,Étangs non aérés,ENA
+Nord-du-Québec,KUUJJUAQ,99095-1,Étangs non aérés,ENA
+Nord-du-Québec,KUUJJUARAPIK,99075-1,Étangs aérés,EA
+Nord-du-Québec,LEBEL-SUR-QUÉVILLON,99005-1,Étangs aérés,EA
+Nord-du-Québec,MATAGAMI,99015-1,Boues activées,BA
+Nord-du-Québec,QUAQTAQ,99115-1,Étangs non aérés,ENA
+Nord-du-Québec,TASIUJAQ,99100-1,Étangs non aérés,ENA
+Nord-du-Québec,UMIUJAQ,99080-1,Étangs non aérés,ENA
+Outaouais,BOUCHETTE,78430-1,Disques biologiques,BD
+Outaouais,CAMPBELL'S-BAY,80260-1,Disques biologiques,BD
+Outaouais,CANTLEY (LAFORTUNE),82020-1,Étangs aérés,EA
+Outaouais,CHELSEA (FARM POINT),82025-3,Étangs aérés,EA
+Outaouais,FASSETT,80005-1,Étangs à rétention réduite,ERR
+Outaouais,FORT-COULONGE,84060-1,Étangs aérés,EA
+Outaouais,GATINEAU,00079-1,Boues activées,BA
+Outaouais,GATINEAU (MASSON-ANGERS),81010-1,Étangs aérés,EA
+Outaouais,GRACEFIELD,83032-1,Étangs à rétention réduite,ERR
+Outaouais,L'ISLE-AUX-ALLUMETTES (CHAPEAU),80350-1,Disques biologiques,BD
+Outaouais,LA PÊCHE (WAKEFIELD),82035-1,Étangs aérés,EA
+Outaouais,LAC-SAINTE-MARIE,83020-1,Boues activées,BA
+Outaouais,MANIWAKI,78590-1,Étangs aérés,EA
+Outaouais,MONTEBELLO,80010-1,Étangs à rétention réduite,ERR
+Outaouais,NOTRE-DAME-DE-LA-SALETTE,82010-1,Étangs aérés,EA
+Outaouais,NOTRE-DAME-DU-PORTAGE,12080-1,Segflo et Filtre Ecoflex,SFE
+Outaouais,PAPINEAUVILLE,75240-1,Étangs aérés,EA
+Outaouais,PLAISANCE,75280-1,Étangs aérés,EA
+Outaouais,PONTIAC (QUYON),82030-1,Étangs aérés,EA
+Outaouais,SAINT-ANDRÉ-AVELLIN,80025-1,Étangs aérés,EA
+Outaouais,SAINT-ANTONIN 2010 (RIVIÈRE-VERTE),12015-3,Étangs aérés,EA
+Outaouais,SHAWVILLE,84010-1,Boues activées,BA
+Outaouais,THURSO (PAPIERS FRASER),80050-1,Boues activées,BA
+Outaouais,VAL-DES-MONTS (PERKINS),82015-1,Filtres intermittents à recirculation,FIR
+Saguenay--Lac-Saint-Jean,ALBANEL,90310-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,ALMA,93480-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,ALMA (GRANDE DÉCHARGE),93480-2,Fosse septique,FS
+Saguenay--Lac-Saint-Jean,ALMA (ISLE MALIGNE),93480-3,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,ALMA (SAINT-COEUR-DE-MARIE),93530-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,BÉGIN,94250-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,CHAMBORD,90160-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,DESBIENS(CHAMBORD),90160-2,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,DOLBEAU-MISTASSINI (DOLBEAU),90290-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,DOLBEAU-MISTASSINI (MISTASSINI),90275-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,GIRARDVILLE,92505-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,HÉBERTVILLE,93020-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,HÉBERTVILLE-STATION,93025-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,L'ANSE-SAINT-JEAN,94010-1,Dégrillage fin,DEG
+Saguenay--Lac-Saint-Jean,L'ASCENSION-DE-NOTRE-SEIGNEUR,93065-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,LA DORÉ,91050-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,LAC-BOUCHETTE,90110-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,LAMARCHE,93060-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,LAROUCHE,94440-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,MÉTABETCHOUAN (LAC-A-LA-CROIX),93240-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,MÉTABETCHOUAN (MÉTABETCHOUAN),93320-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,NORMANDIN,92040-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,PÉRIBONKA,90270-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,PETIT-SAGUENAY,94205-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,ROBERVAL,90170-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAGUENAY (CHICOUTIMI),94300-1,Boues activées,BA
+Saguenay--Lac-Saint-Jean,SAGUENAY (JONQUIÈRE),94420-1,Boues activées,BA
+Saguenay--Lac-Saint-Jean,SAGUENAY (LA BAIE),94190-1,Boues activées,BA
+Saguenay--Lac-Saint-Jean,SAGUENAY (LATERRIÈRE),94230-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAGUENAY (LE NORVÉGIEN),94068-3,Bionest,BION
+Saguenay--Lac-Saint-Jean,SAGUENAY (SAINT-JEAN-BAPTISTE),94300-2,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAGUENAY (SHIPSHAW-NORD),94490-2,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAGUENAY (SHIPSHAW-SUD),94490-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-AMBROISE,94090-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-AUGUSTIN (LAC-SAINT-JEAN),92005-1,Étangs non aérés,ENA
+Saguenay--Lac-Saint-Jean,SAINT-BRUNO,93030-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-CHARLES-DE-BOURGET,94085-1,Dégrillage fin,DEG
+Saguenay--Lac-Saint-Jean,SAINT-DAVID-DE-FALARDEAU,94600-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-DAVID-DE-FALARDEAU (LE VALINOUËT),94245-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-FÉLICIEN,90350-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-FÉLICIEN (ST-MÉTHODE),90280-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-FÉLIX-D'OTIS,94180-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-FRANÇOIS-DE-SALES,90150-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-FULGENCE,94035-1,Dégrillage fin,DEG
+Saguenay--Lac-Saint-Jean,SAINT-GÉDÉON (LSJ),93360-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-HONORÉ,94510-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-HONORÉ (TREMBLAY),94500-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-NAZAIRE,93045-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-PRIME,90190-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINT-STANISLAS (LAC-SAINT-JEAN),92070-1,Étangs non aérés,ENA
+Saguenay--Lac-Saint-Jean,SAINTE-HEDWIDGE,90180-1,Étangs aérés,EA
+Saguenay--Lac-Saint-Jean,SAINTE-JEANNE-D'ARC,90260-1,Étangs aérés,EA
