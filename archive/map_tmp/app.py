@@ -72,7 +72,7 @@ def process_data(plant):
     compatibilities = {}
     for m in municipalities:
         compatibilities[m] = random.uniform(0.5, 10.0)
-    compatibilities["Montréal"] = 0.24534634536
+    compatibilities["Montréal"] = 0.24534634536 # TODO: manually done for Montreal
     compatibilities["Fort-Coulonge"] = 0.234234546
     compatibilities["Longueuil"] = 0.33542343
     compatibilities["La Prairie"] = 0.19885342345
