@@ -4,6 +4,7 @@ import platform
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+import pandas as pd
 
 
 def check_if_element_exists(id):
@@ -55,6 +56,16 @@ if __name__ == '__main__':
         'results_button': 'PublishedOpportunitySortbtn',
         'results_next': 'PageNext',
         'results_table': 'tblResults',
+        'listing_title': 'lbOppTitle',
+        'listing_type': 'lbOppType',
+        'listing_contract_type': 'lbContractType',
+        'listing_date_publication': 'lbPublicationDateText',
+        'listing_date_conclusion': 'lblAdjDate',
+        'listing_date_complaints': 'lblDeadlineReceiptComplaintsDate',
+        'listing_organization': 'lbOrganisation',
+        'listing_address': 'OrganizationAddressTextvalue',
+        'listing_contact': None,
+        'listing_website': None,
     }
 
     # set path to chrome driver
@@ -106,8 +117,17 @@ if __name__ == '__main__':
     # pause
     time.sleep(2)
 
+    # initialize dictionary to store listing data as lists for each field before merging as columns of data frame
+    listing = {}
+    # note what fields to collect listing data for
+    # TODO: consider what fields to include/exclude (here and in dictionary of IDs)
+    fields = ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address']
+    # initialize empty lists for each field in dictionary
+    for field in fields:
+        listing[field] = []
+
     # get links from table of search results from first page
-    links = get_links([])
+    listing['link'] = get_links(listing['link'])
     # get links from table of search results from every next page
     while browser.find_element_by_id(ID['results_next']).get_attribute('style') != 'display: none;':
         # visit next page
@@ -115,14 +135,14 @@ if __name__ == '__main__':
         # pause
         time.sleep(2)
         # get links for curent page
-        links = get_links(links)
+        listing['link'] = get_links(listing['link'])
 
     print()
-    print('STATUS: gathered links to ' + str(len(links)) + ' listings from each page of search results')
+    print('STATUS: gathered links to ' + str(len(listing['link'])) + ' listings from each page of search results')
     print()
 
     # TODO: change to visit all links instead of just 5 when ready
-    for link in links[:5]:
+    for link in listing['link'][:5]:
         # pause
         time.sleep(1)
         # open new tab, does not switch to new window
@@ -143,8 +163,9 @@ if __name__ == '__main__':
         browser.switch_to.window(browser.window_handles[0])
 
     print()
-    print('STATUS: visited ' + str(len(links)) + ' listings') 
-    # print('STATUS: collected data from ' + str(len(links)) + ' listings') # TODO: change status when accomplished
+    # TODO: change status when accomplished
+    # print('STATUS: collected data from ' + str(len(listing['link'])) + ' listings')
+    print('STATUS: visited ' + str(len(listing['link'])) + ' listings') 
     print()
 
     # pause
