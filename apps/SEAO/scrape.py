@@ -104,7 +104,7 @@ if __name__ == '__main__':
     browser.find_element_by_id(ID['results_button']).click()
 
     # pause
-    time.sleep(1)
+    time.sleep(2)
 
     # get links from table of search results from first page
     links = get_links([])
@@ -113,9 +113,38 @@ if __name__ == '__main__':
         # visit next page
         browser.get(browser.find_element_by_id(ID['results_next']).get_attribute('href'))
         # pause
-        time.sleep(1)
+        time.sleep(2)
         # get links for curent page
         links = get_links(links)
+
+    print()
+    print('STATUS: ' + str(len(links)) + ' links gathered from eahc page of search results')
+    print()
+
+    for link in links[:5]:
+        print(link)
+
+    # for link in links[:5]:
+    #     # open new tab, does not switch to new window
+    #     browser.execute_script('window.open("");')
+    #     # switch to new window
+    #     browser.switch_to.window(browser.window_handles[1])
+    #     # visit respective link
+    #     browser.get(link)
+    #     # pause
+    #     time.sleep(1)
+    #     # do something # TODO: change actions here!
+    #     print(link)
+    #     # pause
+    #     time.sleep(1)
+    #     # close active window
+    #     browser.close()
+    #     # switch back to original window
+    #     #driver.switch_to.window(driver.window_handles[0])
+
+    print()
+    print('STATUS: ' + str(len(links)) + ' links visited')
+    print()
 
     # pause
     time.sleep(1)
