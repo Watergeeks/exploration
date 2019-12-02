@@ -3,14 +3,28 @@ import argparse
 import platform
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.ui import Select
 
 
-def click_if_button_exists(id):
+def check_if_element_exists(id):
     try:
-        browser.find_element_by_id(id).click()
+        browser.find_element_by_id(id)
     except NoSuchElementException:
         return False
     return True
+
+
+def click_if_element_exists(id):
+    if check_if_element_exists(id):
+        browser.find_element_by_id(id).click()
+
+
+def get_links(links):
+    results = browser.find_element_by_id(ID['results_table']).find_elements_by_tag_name('tr')
+    for row in results[1:]:
+        links.append(row.find_elements_by_tag_name('td')[1].find_element_by_tag_name('a').get_attribute('href'))
+    print(len(links))
+    return links
 
 
 if __name__ == '__main__':
@@ -35,7 +49,12 @@ if __name__ == '__main__':
         'search_any': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_anyKeywordsTextBox',
         'search_all': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_allKeywordsTextBox',
         'search_none': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_noneKeywordsTextBox',
-        'search_button': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_searchAdv1Button'
+        'search_button': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_searchAdv1Button',
+        'results_sort': 'PublishedOpportunitySortByDropDown',
+        'results_limit': 'PublishedOpportunityResultsPerPageDropDown',
+        'results_button': 'PublishedOpportunitySortbtn',
+        'results_next': 'PageNext',
+        'results_table': 'tblResults',
     }
 
     # set path to chrome driver
@@ -57,27 +76,49 @@ if __name__ == '__main__':
     browser.find_element_by_id(ID['login_button']).click()
 
     # pause
-    time.sleep(2)
+    time.sleep(1)
 
     # agree to renew session if asked
-    click_if_button_exists(ID['login_session'])
+    click_if_element_exists(ID['login_session'])
 
     # pause
-    time.sleep(2)
+    time.sleep(1)
 
     # visit advanced search page
     browser.find_element_by_id(ID['search_link']).click()
 
     # pause
-    time.sleep(2)
+    time.sleep(1)
 
     # insert search criteria 
     browser.find_element_by_id(ID['search_any']).send_keys(args.searchany)
     browser.find_element_by_id(ID['search_all']).send_keys(args.searchall)
     browser.find_element_by_id(ID['search_button']).click()
+    
+    # pause
+    time.sleep(1)
+
+    # increase number of listings per page and sort listings by category
+    Select(browser.find_element_by_id(ID['results_sort'])).select_by_visible_text('Catégorie')
+    Select(browser.find_element_by_id(ID['results_limit'])).select_by_visible_text('100')
+    browser.find_element_by_id(ID['results_button']).click()
 
     # pause
-    time.sleep(10)
+    time.sleep(1)
+
+    # get links from table of search results from first page
+    links = get_links([])
+    # get links from table of search results from every next page
+    while browser.find_element_by_id(ID['results_next']).get_attribute('style') != 'display: none;':
+        # visit next page
+        browser.get(browser.find_element_by_id(ID['results_next']).get_attribute('href'))
+        # pause
+        time.sleep(1)
+        # get links for curent page
+        links = get_links(links)
+
+    # pause
+    time.sleep(1)
 
     # close browser
-    browser.quit()
+    # browser.quit()
