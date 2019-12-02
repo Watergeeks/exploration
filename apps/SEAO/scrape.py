@@ -118,32 +118,33 @@ if __name__ == '__main__':
         links = get_links(links)
 
     print()
-    print('STATUS: ' + str(len(links)) + ' links gathered from eahc page of search results')
+    print('STATUS: gathered links to ' + str(len(links)) + ' listings from each page of search results')
     print()
 
+    # TODO: change to visit all links instead of just 5 when ready
     for link in links[:5]:
+        # pause
+        time.sleep(1)
+        # open new tab, does not switch to new window
+        browser.execute_script('window.open("");')
+        # switch to new window
+        browser.switch_to.window(browser.window_handles[1])
+        # visit respective link
+        browser.get(link)
+        # pause
+        time.sleep(1)
+        # do something # TODO: change actions here!
         print(link)
-
-    # for link in links[:5]:
-    #     # open new tab, does not switch to new window
-    #     browser.execute_script('window.open("");')
-    #     # switch to new window
-    #     browser.switch_to.window(browser.window_handles[1])
-    #     # visit respective link
-    #     browser.get(link)
-    #     # pause
-    #     time.sleep(1)
-    #     # do something # TODO: change actions here!
-    #     print(link)
-    #     # pause
-    #     time.sleep(1)
-    #     # close active window
-    #     browser.close()
-    #     # switch back to original window
-    #     #driver.switch_to.window(driver.window_handles[0])
+        # pause
+        time.sleep(1)
+        # close active window
+        browser.close()
+        # switch back to original window
+        browser.switch_to.window(browser.window_handles[0])
 
     print()
-    print('STATUS: ' + str(len(links)) + ' links visited')
+    print('STATUS: visited ' + str(len(links)) + ' listings') 
+    # print('STATUS: collected data from ' + str(len(links)) + ' listings') # TODO: change status when accomplished
     print()
 
     # pause
