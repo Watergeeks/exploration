@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#
+# Create a virtualenv. Note that python 3.5 is the minimal requirement
+#
+virtualenv -p python3.5 env
+#
+source env/bin/activate
+#
+pip3 install -r requirements.txt
+pip3 install -r dev_requirements.txt
+#
+python3 setup.py develop

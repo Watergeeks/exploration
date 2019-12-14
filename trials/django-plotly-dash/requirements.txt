@@ -1,0 +1,11 @@
+dash
+dash-core-components
+dash-html-components
+dash-renderer
+plotly
+dpd-components
+
+dash-bootstrap-components
+
+Django>=2,<2.3
+Flask>=1.0.2
