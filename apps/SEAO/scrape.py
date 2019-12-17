@@ -60,6 +60,11 @@ def get_ids():
         'listing_address': 'OrganizationAddressTextvalue',
         'listing_contact': None,
         'listing_website': None,
+        'listing_tags': 'pnlUNSPSC', 
+        'listing_class_code': 'UNSPSC_Code',
+        'listing_class_name': 'UNSPSC_Desc',
+        'listing_category_code': 'Label4',
+        'listing_category_name': 'Label5',
     }
     return ids
 
@@ -76,11 +81,9 @@ def main(ARGS, IDS):
             return False
         return True
 
-
     def click_if_element_exists(id):
         if check_if_element_exists(id):
             browser.find_element_by_id(id).click()
-
 
     def get_links(links):
         results = browser.find_element_by_id(IDS['results_table']).find_elements_by_tag_name('tr')
@@ -142,7 +145,7 @@ def main(ARGS, IDS):
     listing = {}
     # note what fields to collect listing data for
     # TODO: consider what fields to include/exclude (here and in dictionary of IDs)
-    fields = ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address']
+    fields = ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']
     # initialize empty lists for each field in dictionary
     for field in fields:
         listing[field] = []
@@ -162,8 +165,9 @@ def main(ARGS, IDS):
     print('STATUS: gathered links to ' + str(len(listing['link'])) + ' listings from each page of search results')
     print()
 
-    # TODO: change to visit all links instead of just 5 when ready
-    for link in listing['link'][:5]:
+    # TODO: temporarily reduce length of links list to 5 for test
+    listing['link'] = listing['link'][:2]
+    for link in listing['link']:
         # pause
         time.sleep(1)
         # open new tab, does not switch to new window
@@ -174,8 +178,18 @@ def main(ARGS, IDS):
         browser.get(link)
         # pause
         time.sleep(1)
-        # do something # TODO: change actions here!
-        print(link)
+        # store information from desired fields
+        for f in fields[1:]:
+            if f in ['class_code', 'class_name', 'category_code', 'category_name']:
+                list_values = browser.find_elements_by_xpath('//div[@id="'+IDS['listing_tags']+'"]/div/div/ul/li/span[@id="'+IDS['listing_'+f]+'"]')
+                list_values = [value.text for value in list_values]
+                listing[f].append(list_values)
+            else:
+                if check_if_element_exists(IDS['listing_'+f]):
+                    value = browser.find_element_by_id(IDS['listing_'+f]).text
+                    listing[f].append(value)
+                else:
+                    listing[f].append(None)
         # pause
         time.sleep(1)
         # close active window
@@ -183,17 +197,20 @@ def main(ARGS, IDS):
         # switch back to original window
         browser.switch_to.window(browser.window_handles[0])
 
+    # convert stored lists into dataframe
+    results = pd.DataFrame(data=listing)
+    print(results)
+    results.to_csv('results.csv')
+
     print()
-    # TODO: change status when accomplished
-    # print('STATUS: collected data from ' + str(len(listing['link'])) + ' listings')
-    print('STATUS: visited ' + str(len(listing['link'])) + ' listings') 
+    print('STATUS: collected data from ' + str(len(listing['link'])) + ' listings')
     print()
 
     # pause
     time.sleep(1)
 
     # close browser
-    # browser.quit()
+    browser.quit()
 
 
 ##############################################################################################################
@@ -204,4 +221,4 @@ if __name__ == '__main__':
     ARGS = get_arguments()
     # define element IDs
     IDS = get_ids()
-    main(ARGS, IDS)
+    main(ARGS, IDS) 
