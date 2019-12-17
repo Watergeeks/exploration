@@ -100,7 +100,7 @@ def main(ARGS, IDS, FIELDS):
     print('\nSTATUS: gathered links to ' + str(len(listing['link'])) + ' listings from each page of search results\n')
 
     # TODO: temporarily reduce length of links list to 2 for test
-    listing['link'] = listing['link'][:2]
+    # listing['link'] = listing['link'][:2]
     for link in listing['link']:
         # pause
         time.sleep(1)
