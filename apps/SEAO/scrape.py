@@ -5,71 +5,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
 import pandas as pd
-
-
-def get_arguments():
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('-username', 
-                        type=str, 
-                        default='watergeeks', 
-                        help='username')
-    parser.add_argument('-password', 
-                        type=str, 
-                        default='Password!@#$', 
-                        help='password')
-    parser.add_argument('-searchany', 
-                        type=str, 
-                        default='"eau potable" "eaux usées"', 
-                        help='search any of these keywords')
-    parser.add_argument('-searchall', 
-                        type=str, 
-                        default='traitement', 
-                        help='search all of these keywords')
-    parser.add_argument('-searchnone', 
-                        type=str, 
-                        default='', 
-                        help='search none of these keywords')
-    args = parser.parse_args()
-    return args
-
-
-def get_ids():
-    ids = {
-        'root': 'ctl00_ctl00_phContent_',
-        'login_username': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_txtUserCode',
-        'login_password': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_txtPassword',
-        'login_button': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_btnLogin',
-        'login_session': 'ctl00_ctl00_phContent_UCMessageBox1_btnYes',
-        'search_link': 'ctl00_ctl00_liAdvanced',
-        'search_any': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_anyKeywordsTextBox',
-        'search_all': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_allKeywordsTextBox',
-        'search_none': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_noneKeywordsTextBox',
-        'search_button': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_searchAdv1Button',
-        'results_sort': 'PublishedOpportunitySortByDropDown',
-        'results_limit': 'PublishedOpportunityResultsPerPageDropDown',
-        'results_button': 'PublishedOpportunitySortbtn',
-        'results_next': 'PageNext',
-        'results_table': 'tblResults',
-        'listing_title': 'lbOppTitle',
-        'listing_type': 'lbOppType',
-        'listing_contract_type': 'lbContractType',
-        'listing_date_publication': 'lbPublicationDateText',
-        'listing_date_conclusion': 'lblAdjDate',
-        'listing_date_complaints': 'lblDeadlineReceiptComplaintsDate',
-        'listing_organization': 'lbOrganisation',
-        'listing_address': 'OrganizationAddressTextvalue',
-        'listing_contact': None,
-        'listing_website': None,
-        'listing_tags': 'pnlUNSPSC', 
-        'listing_class_code': 'UNSPSC_Code',
-        'listing_class_name': 'UNSPSC_Desc',
-        'listing_category_code': 'Label4',
-        'listing_category_name': 'Label5',
-    }
-    return ids
-
-
-##############################################################################################################
+from arguments import *
 
 
 def main(ARGS, IDS):
@@ -143,11 +79,8 @@ def main(ARGS, IDS):
 
     # initialize dictionary to store listing data as lists for each field before merging as columns of data frame
     listing = {}
-    # note what fields to collect listing data for
-    # TODO: consider what fields to include/exclude (here and in dictionary of IDs)
-    fields = ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']
     # initialize empty lists for each field in dictionary
-    for field in fields:
+    for field in FIELDS:
         listing[field] = []
 
     # get links from table of search results from first page
@@ -177,7 +110,7 @@ def main(ARGS, IDS):
         # pause
         time.sleep(1)
         # store information from desired fields
-        for f in fields[1:]:
+        for f in FIELDS[1:]:
             if f in ['class_code', 'class_name', 'category_code', 'category_name']:
                 list_values = browser.find_elements_by_xpath('//div[@id="'+IDS['listing_tags']+'"]/div/div/ul/li/span[@id="'+IDS['listing_'+f]+'"]')
                 list_values = [value.text for value in list_values]
@@ -213,8 +146,11 @@ def main(ARGS, IDS):
 
 
 if __name__ == '__main__':
-    # read user arguments
-    ARGS = get_arguments()
+    # define user arguments
+    ARGS = Arguments()
     # define element IDs
-    IDS = get_ids()
+    IDS = ARGS.ids
+    # define fields to scrape from listings
+    FIELDS = ARGS.fields
+    # run main method
     main(ARGS, IDS) 
