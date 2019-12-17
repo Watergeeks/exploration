@@ -17,7 +17,10 @@ def main(ARGS, IDS, FIELDS):
 
     def open_browser():
         # set path to chrome driver
-        CHROME_PATH = os.path.join('driver', 'chromedriver')
+        if os.name == 'nt':
+            CHROME_PATH = os.path.join('driver', 'chromedriver.exe')
+        else:
+            CHROME_PATH = os.path.join('driver', 'chromedriver')
         # if platform.system() == 'Windows':
         #     CHROME_PATH = os.path.join('driver', 'chromedriver.exe')
         # else:
