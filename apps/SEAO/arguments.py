@@ -1,4 +1,12 @@
-
+import sys
+import os
+import time
+import argparse
+import platform
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.ui import Select
+import pandas as pd
 
 class Arguments():
     def __init__(self):
@@ -11,6 +19,7 @@ class Arguments():
         self.fields = ['link', 'title', 'type', 'contract_type', 
                        'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 
                        'class_code', 'class_name', 'category_code', 'category_name']
+        # TODO: ensure respective element ID for fields are listed here as 'listing_<field>'
         self.ids = {
             'root': 'ctl00_ctl00_phContent_',
             'login_username': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_txtUserCode',
@@ -21,7 +30,10 @@ class Arguments():
             'search_any': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_anyKeywordsTextBox',
             'search_all': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_allKeywordsTextBox',
             'search_none': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UcSearchJumelageKeyWords_noneKeywordsTextBox',
+            'search_class_codes_button1': 'UNSPSCCriteriaToggleImage',
+            'search_class_codes_button2': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UCSearchAdvanceOtherCriteriaPlusA1_UNSPSCAddLinkButton',
             'search_button': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_searchAdv1Button',
+            'category_table': 'tblFondColore',
             'results_sort': 'PublishedOpportunitySortByDropDown',
             'results_limit': 'PublishedOpportunityResultsPerPageDropDown',
             'results_button': 'PublishedOpportunitySortbtn',
