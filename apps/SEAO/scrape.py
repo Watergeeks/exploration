@@ -18,7 +18,7 @@ def main(ARGS, IDS, FIELDS):
     def open_browser():
         # set path to chrome driver
         if platform.system() == 'Windows':
-            CHROME_PATH = 'driver/chromedriver.exe'
+            CHROME_PATH = 'driver/chromedriver'
         else:
             CHROME_PATH = 'driver/chromedriver'
         # open browser and set window size
