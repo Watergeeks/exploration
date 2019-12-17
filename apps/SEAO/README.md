@@ -1,4 +1,4 @@
-# Interactive Map of Water/Wastewater Plants
+# SEAO Web Scraping Tool
 
 ## About this app
 
