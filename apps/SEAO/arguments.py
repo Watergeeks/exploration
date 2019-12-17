@@ -7,7 +7,7 @@ class Arguments():
         self.searchany = '"eau potable" "eaux usées"'
         self.searchall = 'traitement'
         self.searchnone = ''
-        # TODO: consider what fields to include/exclude (here and in dictionary of element IDs)
+        # TODO: consider what fields to include/exclude
         self.fields = ['link', 'title', 'type', 'contract_type', 
                        'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 
                        'class_code', 'class_name', 'category_code', 'category_name']
