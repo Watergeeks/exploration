@@ -57,6 +57,7 @@ def scrape_codes():
         list_codes = [cell.find_element_by_tag_name('a').text for cell in list_cells]
         return list_codes
     # collect codes for each segment, family, class and commodity
+    # TODO: remove [:2] when ready to do for all codes
     list_segments = collect(None)
     for s in list_segments[:2]:
         list_families = collect(s)
@@ -103,4 +104,4 @@ if __name__ == '__main__':
     scrape_codes()
 
     print('\n>>> Quitting browser...')
-    #quit_browser()
+    quit_browser()
