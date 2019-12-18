@@ -8,6 +8,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
 import pandas as pd
 
+
 class Arguments():
     def __init__(self):
         self.username = 'watergeeks'
@@ -20,7 +21,7 @@ class Arguments():
                        'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 
                        'class_code', 'class_name', 'category_code', 'category_name']
         # TODO: ensure respective element ID for fields are listed here as 'listing_<field>'
-        self.ids = {
+        self.elements = {
             'root': 'ctl00_ctl00_phContent_',
             'login_username': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_txtUserCode',
             'login_password': 'ctl00_ctl00_phContent_phLeftBigCol_UCLogin_txtPassword',
