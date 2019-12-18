@@ -89,7 +89,7 @@ if __name__ == '__main__':
     # define user arguments
     ARGS = Arguments()
     # define element IDs
-    IDS = ARGS.ids
+    IDS = ARGS.elements
     # define fields to scrape from listings
     FIELDS = ARGS.fields
 
