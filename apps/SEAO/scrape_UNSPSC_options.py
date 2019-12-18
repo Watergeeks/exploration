@@ -38,18 +38,40 @@ def login():
     time.sleep(1)
 
 
-def collect():
-    # initialize empty list of codes
-    list_codes = []
-    # visit page with initial list of UNSPSC codes
-    browser.get('https://www.seao.ca/Recherche/ajouter_UNSPSC.aspx?')
-    # pause
-    time.sleep(1)
-    # TODO: do something with ID['category_table']
-    list_cells = browser.find_elements_by_xpath('//table[@class="'+IDS['category_table']+'"]/tbody/tr/td[2]')
-    # list_links = [cell.find_element_by_tag_name('a').get_attribute('href') for cell in list_cells]
-    list_codes = [cell.find_element_by_tag_name('a').text for cell in list_cells]
-    print(list_codes)
+def scrape_codes():
+    # initialize dictionary to store UNSPSC code options as lists before merging as columns of data frame
+    codes = {}
+    # initialize empty lists for each column
+    for col in ['segment', 'family', 'class', 'commodity']:
+        codes[col] = []
+    # define link with initial list of UNSPSC codes
+    base_link = 'https://www.seao.ca/Recherche/ajouter_UNSPSC.aspx?' 
+    # define function to standardize process for scraping UNSPSC codes from a table
+    def collect(code):
+        # visit page with respective list of UNSPSC codes
+        browser.get(base_link + ('Code=' + code if code else ''))
+        # pause
+        time.sleep(1)
+        # collect codes on page
+        list_cells = browser.find_elements_by_xpath('//table[@class="'+IDS['category_table']+'"]/tbody/tr/td[2]')
+        list_codes = [cell.find_element_by_tag_name('a').text for cell in list_cells]
+        return list_codes
+    # collect codes for each segment, family, class and commodity
+    list_segments = collect(None)
+    for s in list_segments[:2]:
+        list_families = collect(s)
+        for f in list_families[:2]:
+            list_classes = collect(f)
+            for c in list_classes[:2]:
+                list_commodities = collect(c)
+                codes['commodity'].extend(list_commodities)
+                codes['class'].extend([c for i in range(len(list_commodities))])
+                codes['family'].extend([f for i in range(len(list_commodities))])
+                codes['segment'].extend([s for i in range(len(list_commodities))])
+    # convert stored lists into dataframe and save as csv
+    df_codes = pd.DataFrame(data=codes)
+    print(df_codes)
+    df_codes.to_csv('result_UNSPSC_codes.csv')
     # pause
     time.sleep(2)
 
@@ -78,7 +100,7 @@ if __name__ == '__main__':
     login()
 
     print('\n>>> Gathering UNSPSC options...')
-    collect()
+    scrape_codes()
 
     print('\n>>> Quitting browser...')
     #quit_browser()
