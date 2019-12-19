@@ -38,7 +38,7 @@ def login():
     time.sleep(1)
 
 
-def scrape_codes():
+def scrape_UNSPSC():
     # initialize dictionary to store UNSPSC code options as lists before merging as columns of data frame
     codes = {}
     # initialize empty lists for each column
