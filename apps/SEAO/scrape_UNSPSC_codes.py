@@ -43,7 +43,8 @@ def scrape_codes():
     codes = {}
     # initialize empty lists for each column
     for col in ['segment', 'family', 'class', 'commodity']:
-        codes[col] = []
+        codes[col+'_code'] = []
+        codes[col+'_name'] = []
     # define link with initial list of UNSPSC codes
     base_link = 'https://www.seao.ca/Recherche/ajouter_UNSPSC.aspx?' 
     # define function to standardize process for scraping UNSPSC codes from a table
@@ -52,23 +53,35 @@ def scrape_codes():
         browser.get(base_link + ('Code=' + code if code else ''))
         # pause
         time.sleep(1)
-        # collect codes on page
-        list_cells = browser.find_elements_by_xpath('//table[@class="'+IDS['category_table']+'"]/tbody/tr/td[2]')
-        list_codes = [cell.find_element_by_tag_name('a').text for cell in list_cells]
-        return list_codes
+        # collect codes and respective names on page
+        cells_codes = browser.find_elements_by_xpath('//table[@class="'+IDS['category_table']+'"]/tbody/tr/td[2]')
+        list_codes = [cell.find_element_by_tag_name('a').text for cell in cells_codes]
+        cells_names = browser.find_elements_by_xpath('//table[@class="'+IDS['category_table']+'"]/tbody/tr/td[3]')
+        list_names = [cell.find_element_by_tag_name('label').text for cell in cells_names]
+        return list_codes, list_names
     # collect codes for each segment, family, class and commodity
     # TODO: remove [:2] when ready to do for all codes
-    list_segments = collect(None)
-    for s in list_segments[:2]:
-        list_families = collect(s)
-        for f in list_families[:2]:
-            list_classes = collect(f)
-            for c in list_classes[:2]:
-                list_commodities = collect(c)
-                codes['commodity'].extend(list_commodities)
-                codes['class'].extend([c for i in range(len(list_commodities))])
-                codes['family'].extend([f for i in range(len(list_commodities))])
-                codes['segment'].extend([s for i in range(len(list_commodities))])
+    list_segment_codes, list_segment_names = collect(None)
+    for i in range(len(list_segment_codes[:2])):
+        s_c = list_segment_codes[i]
+        s_n = list_segment_names[i]
+        list_family_codes, list_family_names = collect(s_c)
+        for j in range(len(list_family_codes[:2])):
+            f_c = list_family_codes[j]
+            f_n = list_family_names[j]
+            list_class_codes, list_class_names = collect(f_c)
+            for k in range(len(list_class_codes[:2])):
+                c_c = list_class_codes[k]
+                c_n = list_class_names[k]
+                list_commodity_codes, list_commodity_names = collect(c_c)
+                codes['commodity_code'].extend(list_commodity_codes)
+                codes['class_code'].extend([c_c for i in range(len(list_commodity_codes))])
+                codes['family_code'].extend([f_c for i in range(len(list_commodity_codes))])
+                codes['segment_code'].extend([s_c for i in range(len(list_commodity_codes))])
+                codes['commodity_name'].extend(list_commodity_names)
+                codes['class_name'].extend([c_n for i in range(len(list_commodity_names))])
+                codes['family_name'].extend([f_n for i in range(len(list_commodity_names))])
+                codes['segment_name'].extend([s_n for i in range(len(list_commodity_names))])
     # convert stored lists into dataframe and save as csv
     df_codes = pd.DataFrame(data=codes)
     print(df_codes)
