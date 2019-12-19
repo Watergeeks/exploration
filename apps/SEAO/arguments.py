@@ -6,6 +6,7 @@ import platform
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 
 
