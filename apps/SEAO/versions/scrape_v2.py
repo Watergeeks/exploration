@@ -18,14 +18,10 @@ def main(ARGS, IDS, FIELDS):
 
     def open_browser():
         # set path to chrome driver
-        if os.name == 'nt':
-            CHROME_PATH = os.path.join(sys.executable, 'driver', 'chromedriver.exe')
+        if platform.system() == 'Windows':
+            CHROME_PATH = os.path.join('driver', 'chromedriver.exe')
         else:
             CHROME_PATH = os.path.join('driver', 'chromedriver')
-        # if platform.system() == 'Windows':
-        #     CHROME_PATH = os.path.join('driver', 'chromedriver.exe')
-        # else:
-        #     CHROME_PATH = os.path.join('driver', 'chromedriver')
         # open browser and set window size
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('--headless')
