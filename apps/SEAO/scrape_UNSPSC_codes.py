@@ -65,19 +65,19 @@ def scrape_codes():
     # collect codes for each segment, family, class and commodity 
     # TODO: remove [:2] when ready to do for all codes
     list_segment_codes, list_segment_names = collect(None)
-    for i in range(len(list_segment_codes[:2])):
+    for i in range(len(list_segment_codes)):
         # refresh timer to record time to scrape next segment
         prev_time = time.time()
         # note segment code and name
         s_c = list_segment_codes[i]
         s_n = list_segment_names[i]
         list_family_codes, list_family_names = collect(s_c)
-        for j in range(len(list_family_codes[:2])):
+        for j in range(len(list_family_codes)):
             # note family code and name
             f_c = list_family_codes[j]
             f_n = list_family_names[j]
             list_class_codes, list_class_names = collect(f_c)
-            for k in range(len(list_class_codes[:2])):
+            for k in range(len(list_class_codes)):
                 # note class code and name
                 c_c = list_class_codes[k]
                 c_n = list_class_names[k]
