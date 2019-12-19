@@ -1,0 +1,82 @@
+>>> Defining constant arguments...
+
+>>> Opening browser...
+
+>>> Logging in...
+
+>>> Gathering UNSPSC options...
+
+Recording time to scrape each segment:
+10000000 Plantes et animaux vivants, accessoires et fournitures: 67.7287 seconds
+11000000 Minéraux, textiles et matières végétales et animales non comestibles: 72.6884 seconds
+12000000 Produits chimiques (y compris les produits biochimiques) et gazeux: 87.7001 seconds
+13000000 Matériaux de résine, colophane, caoutchouc, mousse, film et élastomères: 20.1422 seconds
+14000000 Matériaux et produits de papier: 23.0195 seconds
+15000000 Carburants et combustibles, additifs, lubrifiants et produits anticorrosifs: 20.0727 seconds
+20000000 Machines et accessoires - mine et forage de puits: 95.6709 seconds
+21000000 Machines et matériel d'exploitation agricole et forestière, de pêche et d'aquaculture: 24.0931 seconds
+22000000 Machines, équipement et accessoires de construction: 14.695 seconds
+23000000 Machines de transformation et de fabrication et accessoires - industriel: 126.3719 seconds
+24000000 Appareils de manutention, matériel de stockage et matériel d'emballage, accessoires et fournitures: 56.8115 seconds
+25000000 Véhicules industriels, véhicules militaires et véhicules de particulier, accessoires et éléments: 148.0128 seconds
+26000000 Machines de production et de distribution d'énergie et accessoires: 75.8427 seconds
+27000000 Outil et machinerie générale: 76.3946 seconds
+30000000 Composante et fourniture de structure, de bâtiment et de construction: 197.0587 seconds
+31000000 Composant et fourniture de fabrication: 487.3794 seconds
+32000000 Composante et accessoire électronique et électrique: 41.8372 seconds
+39000000 Composantes, accessoires et fournitures pour systèmes électriques et d'éclairage: 62.2313 seconds
+40000000 Système, équipement et composante de chauffage, ventilation et circulation d'air: 75.8575 seconds
+41000000 Équipement de laboratoire, de mesure, d'observation et d'essai: 300.744 seconds
+42000000 Matériel, fournitures et accessoires médicaux: 686.5947 seconds
+43000000 Technologies de l'information, radiodiffusion et télécommunications: 146.8636 seconds
+44000000 Équipement, accessoire et fourniture de bureau: 109.0067 seconds
+45000000 Équipement et fournitures pour l'imprimerie, la photographie et l'audio-visuel: 82.2826 seconds
+46000000 Équipement et fournitures de défense, de maintien de l'ordre et de sécurité: 135.6407 seconds
+47000000 Matériel et produits de nettoyage: 65.8217 seconds
+48000000 Équipement et fourniture pour l'industrie des services: 59.9996 seconds
+49000000 Matériel, fourniture et accessoire musicaux et récréatifs: 123.4948 seconds
+50000000 Aliments, boissons et produits du tabac: 175.7702 seconds
+51000000 Médicaments et produits pharmaceutiques: 412.5657 seconds
+52000000 Meubles, articles de maison, appareils électroménagers et électroniques: 97.9337 seconds
+53000000 Vêtements, bagages et produits de soins personnels: 123.291 seconds
+54000000 Horlogerie, bijouterie et joaillerie: 45.0961 seconds
+55000000 Imprimés: 44.3615 seconds
+56000000 Ameublement et articles d'ameublement: 104.0262 seconds
+60000000 Instruments de musique, jeux et jouets, artisanat de création, matériel éducatif, produits, accessoires et fournitures: 444.226 seconds
+70000000 Services d'agriculture, de pêche, d'exploitation forestière et de pourvoirie: 161.5813 seconds
+71000000 Services - industries minière, pétrolière et gazière: 200.469 seconds
+72000000 Services - bâtiment, travaux de construction et entretien: 97.7457 seconds
+73000000 Services - production et fabrication industrielles: 157.0574 seconds
+76000000 Services de nettoyage industriel: 62.7202 seconds
+77000000 Services environnementaux: 68.9075 seconds
+78000000 Services de transport, d'entreprosage, de messagerie et d'aménagement de bureau: 128.9971 seconds
+80000000 Services de gestion, de professionnels spécialisés et d'administration: 178.3052 seconds
+81000000 Services reliés au génie, à l'architecture, à la recherche, aux sciences et à la technologie: 176.2443 seconds
+82000000 Services d'édition, de design, de graphisme et de beaux-arts: 108.441 seconds
+83000000 Services publics et services liés au secteur public: 81.013 seconds
+84000000 Services financiers et d'assurance: 94.365 seconds
+85000000 Services de soins de santé: 114.6382 seconds
+86000000 Services d'enseignement et de formation: 98.8692 seconds
+90000000 Services de voyages, de restauration, d'hébergement et de divertissement: 107.1558 seconds
+91000000 Services personnels et domestiques: 52.0038 seconds
+92000000 Services - défense nationale, ordre public, sécurité publique: 97.1523 seconds
+93000000 Services - politique et affaires civiques: 178.8316 seconds
+94000000 Clubs et organisations: 108.805 seconds
+99000000 Traitement de subventions gouvernementales: 3.7176 seconds
+All UNSPSC options: 7211.3012 seconds
+
+Data frame for codes/names of all UNSPSC options
+      segment_code                                       segment_name  ... commodity_code                                     commodity_name
+0         10000000  Plantes et animaux vivants, accessoires et fou...  ...       10101501                                               Chat
+1         10000000  Plantes et animaux vivants, accessoires et fou...  ...       10101502                                              Chien
+2         10000000  Plantes et animaux vivants, accessoires et fou...  ...       10101504                                              Vison
+3         10000000  Plantes et animaux vivants, accessoires et fou...  ...       10101505                                                Rat
+4         10000000  Plantes et animaux vivants, accessoires et fou...  ...       10101506                                             Cheval
+...            ...                                                ...  ...            ...                                                ...
+18427     94000000                             Clubs et organisations  ...       94132001         Services de défense des droits des enfants
+18428     94000000                             Clubs et organisations  ...       94132002                Services de défense des prisonniers
+18429     94000000                             Clubs et organisations  ...       94132003  Associations de défense contre la torture phys...
+18430     94000000                             Clubs et organisations  ...       94132004  Associations de défense de la liberté d'expres...
+18431     94000000                             Clubs et organisations  ...       94132005           Associations de défense du droit de vote
+
+[18432 rows x 8 columns]
