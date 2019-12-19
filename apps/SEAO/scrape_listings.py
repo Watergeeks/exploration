@@ -12,9 +12,9 @@ def check_if_element_exists(id):
 def open_browser():
     # set path to chrome driver
     if platform.system() == 'Windows':
-        CHROME_PATH = 'driver/chromedriver.exe'
+        CHROME_PATH = os.path.join(sys.executable, 'driver', 'chromedriver.exe')
     else:
-        CHROME_PATH = 'driver/chromedriver'
+        CHROME_PATH = os.path.join('driver', 'chromedriver')
     # open browser and set window size
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
