@@ -6,6 +6,7 @@ import platform
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.keys import Keys
 import pandas as pd
 
 
@@ -13,10 +14,12 @@ class Arguments():
     def __init__(self):
         self.username = 'watergeeks'
         self.password = 'Password!@#$'
+        # TODO: consider search criteria
         self.searchany = '"eau potable" "eaux usées"'
         self.searchall = 'traitement'
         self.searchnone = ''
-        # TODO: consider what fields to include/exclude
+        self.searchUNSPSC = ['40151500', '40150000']
+        # TODO: consider what fields to include/exclude in csv
         self.fields = ['link', 'title', 'type', 'contract_type', 
                        'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 
                        'class_code', 'class_name', 'category_code', 'category_name']
@@ -34,6 +37,16 @@ class Arguments():
             'search_class_codes_button1': 'UNSPSCCriteriaToggleImage',
             'search_class_codes_button2': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_UCSearchAdvanceOtherCriteriaPlusA1_UNSPSCAddLinkButton',
             'search_button': 'ctl00_ctl00_phContent_phLeftBigCol_ctl00_searchAdv1Button',
+            'UNSPSC_search_link': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_keywordLinkButton',
+            'UNSPSC_search_type': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_SearchType_0',
+            'UNSPSC_search_by': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_lstSearchBy',
+            'UNSPSC_search_keywords': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_txtRecherche',
+            'UNSPSC_search_button': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_btnRechercher',
+            'UNSPSC_search_select': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_Resultats_rptClass_ctl00_chkAllRechSelect',
+            'UNSPSC_search_confirm': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_UNSPSCRecherche1_Resultats_btnSelectionner',
+            'UNSPSC_select': 'cbxUNSPSCCheckAll',
+            'UNSPSC_confirm': 'ctl00_ctl00_phContent_phOneCol_UCUNSPSCSelection1_returnButton',
+            'search_class_codes_select': 'cbxUNSPSCCheckAll',
             'category_table': 'tblFondColore',
             'results_sort': 'PublishedOpportunitySortByDropDown',
             'results_limit': 'PublishedOpportunityResultsPerPageDropDown',

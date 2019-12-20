@@ -1,0 +1,19 @@
+>>> Defining constant arguments...
+
+>>> Opening browser...
+
+>>> Logging in...
+
+>>> Searching for listings based on given criteria...
+
+>>> Gathering data from listings in search results...
+
+STATUS: gathered links to 2 listings from each page of search results
+
+                                                link  ...                                      category_name
+0  https://www.seao.ca/OpportunityPublication/Con...  ...    [Matériel de climatisation et de réfrigération]
+1  https://www.seao.ca/OpportunityPublication/Con...  ...  [Moteurs, turbines, composants et accessoires ...
+
+[2 rows x 13 columns]
+
+STATUS: collected data from 2 listings
