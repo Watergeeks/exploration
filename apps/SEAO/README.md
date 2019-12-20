@@ -37,10 +37,10 @@ Open `arguments.py` in a text editor to make the following updates if desired:
     - `self.username`: The username required for logging into [SEAO](https://seao.ca/)
     - `self.password`: The password required for logging into [SEAO](https://seao.ca/)
 - Insert search criteria:
-    - `self.searchany`: e.g. `'"eau potable" "eaux usées"'`
-    - `self.searchall`: e.g. `'traitement'`
-    - `self.searchnone`: e.g. `''`
-    - `self.searchUNSPSC`: e.g. `['40151500', '40150000']`
+    - `self.searchany`: e.g. `'"eau potable" "eaux usées"'`.
+    - `self.searchall`: e.g. `'traitement'`.
+    - `self.searchnone`: e.g. `''`.
+    - `self.searchUNSPSC`: UNSPSC codes to search for e.g. `['40151500', '40150000']`. You can see the index of UNSPSC options [here](result_UNSPSC.csv).
 - Consider what data to scrape:
     - `self.fields`: Fields to include as columns in the saved csv e.g. `['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']`
 
@@ -61,10 +61,6 @@ $ python3 scrape_listings.py
 ```
 
 Open `result_listings.csv` to see results.
-
-## Errors
-
-https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 ## Resources
 
