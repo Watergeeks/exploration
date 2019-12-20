@@ -50,7 +50,7 @@ Currently there are two Chrome drivers saved at `drivers/` for two operating sys
 
 Depending on what operating system and version of Chrome you are working with, you may have to [redownload the appropriate chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and save it in directory `drivers/`. 
 
-To find out what version of Chrome you need, open a window in Chrome and go to *Help* -> *About Google Chrome*
+To find out what version of Chrome you need, open a window in Chrome and go to *Help* -> *About Google Chrome*.
 
 ### Scrape listings
 
