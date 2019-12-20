@@ -60,6 +60,12 @@ Run the app to scrape listings found based on given search criteria:
 $ python3 scrape_listings.py
 ```
 
+Or if you are using Git Bash on Windows:
+
+```
+$ py scrape_listings.py
+```
+
 Open [result_listings.csv](result_listings.csv) to see results.
 
 ## Resources
