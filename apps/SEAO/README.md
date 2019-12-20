@@ -30,6 +30,14 @@ Install or update the required packages:
 $ pip install -r requirements.txt
 ```
 
+### Update driver
+
+Currently there are two Chrome drivers saved in the directory [drivers](drivers/) for two operating systems (i.e. Mac and Windows). 
+
+Depending on what operating system and version of Chrome you are working with, you may have to [redownload the appropriate chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and save it in directory [drivers](drivers/). 
+
+To find out what version of Chrome you need, open a window in Chrome and go to *Help* -> *About Google Chrome*.
+
 ### Update arguments
 
 Open [arguments.py](arguments.py) in a text editor to do the following if necessary:
@@ -43,14 +51,6 @@ Open [arguments.py](arguments.py) in a text editor to do the following if necess
     - `self.searchUNSPSC`: Search for these UNSPSC codes e.g. `['40151500', '40150000']`. You can see the index of available UNSPSC options [here](result_UNSPSC.csv).
 - Consider what data to scrape:
     - `self.fields`: Scrape and store these fields as columns in the saved csv e.g. `['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']`
-
-### Update driver
-
-Currently there are two Chrome drivers saved in the directory [drivers](drivers/) for two operating systems (i.e. Mac and Windows). 
-
-Depending on what operating system and version of Chrome you are working with, you may have to [redownload the appropriate chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and save it in directory [drivers](drivers/). 
-
-To find out what version of Chrome you need, open a window in Chrome and go to *Help* -> *About Google Chrome*.
 
 ### Scrape listings
 
