@@ -4,7 +4,7 @@
 
 This application is a tool to webscrape listing data from [SEAO](https://seao.ca/). The user can specify search/save options in `arguments.py`.
 
-## Run this app locally
+## Use this app locally
 
 Clone the repository:
 
@@ -30,13 +30,29 @@ Install or update the required packages:
 $ pip install -r requirements.txt
 ```
 
-Run the app:
+# Update arguments
+
+Open `arguments.py` in a text editor to make the following updates if desired:
+- Insert login details:
+    - `self.username`: The username required for logging into [SEAO](https://seao.ca/)
+    - `self.password`: The password required for logging into [SEAO](https://seao.ca/)
+- Insert search criteria:
+    - `self.searchany`: e.g. '"eau potable" "eaux usées"'
+    - `self.searchall`: e.g. 'traitement'
+    - `self.searchnone`: e.g. ''
+    - `self.searchUNSPSC`: e.g. ['40151500', '40150000']
+- Consider what data to scrape:
+    - `self.fields`: Fields to include as columns in the saved csv e.g. ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']
+
+# Scrape listings
+
+Run the app to scrape listings found based on given search criteria:
 
 ```
-$ python3 scrape.py
+$ python3 scrape_listings.py
 ```
 
-Open `results.csv` to see results.
+Open `result_listings.csv` to see results.
 
 ## Errors
 
