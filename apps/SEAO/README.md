@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 
 ### Update arguments
 
-Open `arguments.py` in a text editor to make the following updates if desired:
+Open `arguments.py` in a text editor to do the following if necessary:
 - Insert login details:
     - `self.username`: The username required for logging into [SEAO](https://seao.ca/)
     - `self.password`: The password required for logging into [SEAO](https://seao.ca/)
@@ -60,7 +60,7 @@ Run the app to scrape listings found based on given search criteria:
 $ python3 scrape_listings.py
 ```
 
-Open `result_listings.csv` to see results.
+Open [result_listings.csv](result_listings.csv) to see results.
 
 ## Resources
 
