@@ -2,7 +2,7 @@
 
 ## About this app
 
-This application is a tool to webscrape listing data from [SEAO](https://seao.ca/). The user can specify search/save options in `arguments.py`.
+This application is a tool to webscrape listing data from [SEAO](https://seao.ca/). The user can specify search/save options in [arguments.py](arguments.py).
 
 ## Use this app locally
 
@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 
 ### Update arguments
 
-Open `arguments.py` in a text editor to do the following if necessary:
+Open [arguments.py](arguments.py) in a text editor to do the following if necessary:
 - Insert login details:
     - `self.username`: The username required for logging into [SEAO](https://seao.ca/)
     - `self.password`: The password required for logging into [SEAO](https://seao.ca/)
@@ -46,9 +46,9 @@ Open `arguments.py` in a text editor to do the following if necessary:
 
 ### Update driver
 
-Currently there are two Chrome drivers saved at `drivers/` for two operating systems (i.e. Mac and Windows). 
+Currently there are two Chrome drivers saved in the directory [drivers](drivers/) for two operating systems (i.e. Mac and Windows). 
 
-Depending on what operating system and version of Chrome you are working with, you may have to [redownload the appropriate chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and save it in directory `drivers/`. 
+Depending on what operating system and version of Chrome you are working with, you may have to [redownload the appropriate chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and save it in directory [drivers](drivers/). 
 
 To find out what version of Chrome you need, open a window in Chrome and go to *Help* -> *About Google Chrome*.
 
