@@ -38,6 +38,10 @@ $ python3 scrape.py
 
 Open `results.csv` to see results.
 
+## Errors
+
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 ## Resources
 
 * [SEAO](https://seao.ca/)
