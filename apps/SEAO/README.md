@@ -30,7 +30,7 @@ Install or update the required packages:
 $ pip install -r requirements.txt
 ```
 
-#### Update arguments
+### Update arguments
 
 Open `arguments.py` in a text editor to make the following updates if desired:
 - Insert login details:
@@ -44,7 +44,7 @@ Open `arguments.py` in a text editor to make the following updates if desired:
 - Consider what data to scrape:
     - `self.fields`: Fields to include as columns in the saved csv e.g. ['link', 'title', 'type', 'contract_type', 'date_publication', 'date_conclusion', 'date_complaints', 'organization', 'address', 'class_code', 'class_name', 'category_code', 'category_name']
 
-#### Scrape listings
+### Scrape listings
 
 Run the app to scrape listings found based on given search criteria:
 
