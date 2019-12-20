@@ -44,32 +44,15 @@ def search_listings():
         # insert search criteria 
         browser.find_element_by_id(IDS['search_any']).send_keys(ARGS.searchany)
         browser.find_element_by_id(IDS['search_all']).send_keys(ARGS.searchall)
-        # toggle search box for UNSPSC codes 
-        browser.find_element_by_id(IDS['search_class_codes_button1']).click()
-        # pause
-        time.sleep(2)
-        # check initial list of UNSPSC codes
-        browser.find_element_by_id(IDS['search_class_codes_button2']).click()
-        # find desired UNSPSC options
-        browser.find_element_by_id(IDS['UNSPSC_search_link']).click()
-        browser.find_element_by_id(IDS['UNSPSC_search_type']).click()
-        Select(browser.find_element_by_id(IDS['UNSPSC_search_by'])).select_by_visible_text('Expression exacte')
-        for code in ARGS.searchUNSPSC:
-            # find option by its code
-            browser.find_element_by_id(IDS['UNSPSC_search_keywords']).clear()
-            browser.find_element_by_id(IDS['UNSPSC_search_keywords']).send_keys(code)
-            browser.find_element_by_id(IDS['UNSPSC_search_button']).click()
-            # select and confirm option 
-            browser.find_element_by_id(IDS['UNSPSC_search_select']).click()
-            browser.find_element_by_id(IDS['UNSPSC_search_confirm']).click()
-            # pause
-            time.sleep(1)
-        # select and confirm all options together
-        browser.find_element_by_id(IDS['UNSPSC_select']).click()
-        browser.find_element_by_id(IDS['UNSPSC_confirm']).click()
-        browser.find_element_by_id(IDS['search_class_codes_select']).click()
-        # click search button
         browser.find_element_by_id(IDS['search_button']).click()
+        # TODO: finish working out how to retrieve desired UNSPSC codes
+        # # toggle search box for UNSPSC codes 
+        # browser.find_element_by_id(IDS['search_class_codes_button1']).click()
+        # # pause
+        # time.sleep(2)
+        # # check initial list of UNSPSC codes
+        # browser.find_element_by_id(IDS['search_class_codes_button2']).click()
+        # # ...
         # pause
         time.sleep(1)
         # increase number of listings per page and sort listings by category
@@ -103,6 +86,8 @@ def scrape_listings():
         # get links for curent page
         listing['link'] = get_links(listing['link'])
     print('\nSTATUS: gathered links to ' + str(len(listing['link'])) + ' listings from each page of search results\n')
+    # TODO: temporarily reduce length of links list to 2 for test
+    listing['link'] = listing['link'][:2]
     for link in listing['link']:
         # pause
         time.sleep(1)
@@ -135,7 +120,7 @@ def scrape_listings():
     # convert stored lists into dataframe
     results = pd.DataFrame(data=listing)
     print(results)
-    results.to_csv('result_listings.csv')
+    results.to_csv('results.csv')
     print('\nSTATUS: collected data from ' + str(len(listing['link'])) + ' listings\n')
 
 
