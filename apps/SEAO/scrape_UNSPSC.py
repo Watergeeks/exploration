@@ -98,7 +98,7 @@ def scrape_UNSPSC():
     print('All UNSPSC options: ' + str(delta_time) + ' seconds')
     # convert stored lists into dataframe and save as csv
     df_codes = pd.DataFrame(data=codes)
-    print('\nData frame for codes/names of all UNSPSC options')
+    print('\nData frame for codes/names of all UNSPSC options:')
     print(df_codes)
     df_codes.to_csv('result_UNSPSC_options.csv')
     # pause
