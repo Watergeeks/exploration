@@ -129,7 +129,7 @@ if __name__ == '__main__':
     login()
 
     print('\n>>> Gathering UNSPSC options...')
-    scrape_codes()
+    scrape_UNSPSC()
 
     print('\n>>> Quitting browser...')
     quit_browser()
